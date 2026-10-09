@@ -1,5 +1,5 @@
 schema_version: "1.0"
-rule_version: "0.1.0"
+rule_version: "0.1.1"
 origin: expert
 
 description:
@@ -10,7 +10,7 @@ description:
   text: >
     Confere se a data de recebimento do auto de infração não é anterior à data de lavratura.
   justification: >
-    O auto é recebido depois de lavrado; a ordem inversa indica erro de data. Mesma família de IB-12 no IBAMA. É sinal para revisão.
+    O auto é recebido depois de lavrado; a ordem inversa indica erro de data. É sinal para revisão.
   exceptions:
     - "Autos sem data de recebimento ficam fora do escopo."
   examples:
