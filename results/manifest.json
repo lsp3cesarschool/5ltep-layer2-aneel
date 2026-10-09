@@ -1,11 +1,11 @@
 {
- "run_id": "37936437038",
+ "run_id": "37937369381",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/37936437038",
- "started_at": "2026-10-09T13:23:12+00:00",
- "finished_at": "2026-10-09T13:24:24+00:00",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/37937369381",
+ "started_at": "2026-10-09T13:31:04+00:00",
+ "finished_at": "2026-10-09T13:32:59+00:00",
  "engine": {
-  "commit": "8edfdf3aef2a0481117434eda35fe4cab7f6bd3c",
+  "commit": "aeff1856a0a95b555fcc2344a02f7f4125c4cd54",
   "uncommitted_changes": false,
   "python": "3.12.15",
   "duckdb": "1.5.6"
@@ -15,19 +15,19 @@
   "primary": {
    "resources": 5,
    "bytes": 120397363,
-   "seconds": 22.79,
-   "mb_per_s": 5.283
+   "seconds": 65.16,
+   "mb_per_s": 1.848
   },
   "secondary": {
    "resources": 1,
    "bytes": 139020,
-   "seconds": 0.21,
-   "mb_per_s": 0.662
+   "seconds": 0.23,
+   "mb_per_s": 0.604
   },
   "processing": {
    "bytes": 120536383,
-   "seconds": 40.13,
-   "mb_per_s": 3.004
+   "seconds": 39.97,
+   "mb_per_s": 3.016
   }
  },
  "rules": [

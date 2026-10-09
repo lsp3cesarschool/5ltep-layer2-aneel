@@ -1,8 +1,8 @@
 {
- "run_id": "37936437038",
+ "run_id": "37937369381",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/37936437038",
- "checked_at": "2026-10-09T13:24:24+00:00",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/37937369381",
+ "checked_at": "2026-10-09T13:32:59+00:00",
  "sources": [
   {
    "portal": "https://dadosabertos.aneel.gov.br",
@@ -18,7 +18,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 5.96
+    "seconds": 3.7
    },
    "dataset": {
     "title": "Resultado de leilões de geração e transmissão de energia elétrica",
@@ -44,8 +44,8 @@
     "served_by": "dadosabertos.aneel.gov.br",
     "bytes": 422878,
     "sha256": "547345ef69c8d7ca37f0ba143c5d12585e3dbd445906223ef537e1b71ef6c747",
-    "seconds": 2.88,
-    "mb_per_s": 0.147
+    "seconds": 2.37,
+    "mb_per_s": 0.178
    },
    "files": [
     {
@@ -71,7 +71,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 1.23
+    "seconds": 2.79
    },
    "dataset": {
     "title": "Resultado de leilões de geração e transmissão de energia elétrica",
@@ -97,8 +97,8 @@
     "served_by": "dadosabertos.aneel.gov.br",
     "bytes": 135242,
     "sha256": "a7165dbb5c148ba144b49ee8c807b52290215f77a83c113dfcf8bd3d3f971124",
-    "seconds": 1.81,
-    "mb_per_s": 0.075
+    "seconds": 2.5,
+    "mb_per_s": 0.054
    },
    "files": [
     {
@@ -126,7 +126,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.38
+    "seconds": 1.86
    },
    "dataset": {
     "title": "Relação de empreendimentos de Mini e Micro Geração Distribuída",
@@ -152,8 +152,8 @@
     "served_by": "dadosabertos.aneel.gov.br",
     "bytes": 110711016,
     "sha256": "ccb1a405a5eaada5cc687a9c9666de0c5f29f166185a9a815b352cbbf71f6fb7",
-    "seconds": 16.5,
-    "mb_per_s": 6.709
+    "seconds": 55.05,
+    "mb_per_s": 2.011
    },
    "files": [
     {
@@ -182,7 +182,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.38
+    "seconds": 0.81
    },
    "dataset": {
     "title": "SIGA - Sistema de Informações de Geração da ANEEL",
@@ -208,8 +208,8 @@
     "served_by": "dadosabertos.aneel.gov.br",
     "bytes": 8418652,
     "sha256": "60de2b32e25a67bc8708f649f3848b13ba602f6edc3823a5483405f07a0a5540",
-    "seconds": 1.23,
-    "mb_per_s": 6.867
+    "seconds": 4.75,
+    "mb_per_s": 1.774
    },
    "files": [
     {
@@ -238,7 +238,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.52
+    "seconds": 0.24
    },
    "dataset": {
     "title": "Auto de Infração",
@@ -264,8 +264,8 @@
     "served_by": "dadosabertos.aneel.gov.br",
     "bytes": 709575,
     "sha256": "a05192defd1399864639e899a5fbdc2ca6661e543a0aa1ff998edc7ce75b8d13",
-    "seconds": 0.37,
-    "mb_per_s": 1.943
+    "seconds": 0.49,
+    "mb_per_s": 1.459
    },
    "files": [
     {
@@ -291,7 +291,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.22
+    "seconds": 0.16
    },
    "dataset": {
     "title": "Códigos oficiais de UF e municípios segundo o TSE e o IBGE",
@@ -317,8 +317,8 @@
     "served_by": "cdn.tse.jus.br",
     "bytes": 139020,
     "sha256": "f55c9720d221a9956279f6cb225aafcae797e0cf8ac2289040c052ab4ea7c712",
-    "seconds": 0.21,
-    "mb_per_s": 0.664
+    "seconds": 0.23,
+    "mb_per_s": 0.604
    },
    "files": [
     {
