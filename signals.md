@@ -6,11 +6,11 @@ Generated automatically by the publish job from the checked results; do not edit
 shown here: the record numbers are on the dashboard and in [`docs/data/rules/`](docs/data/rules/),
 and no value read from the portals is published. Times are UTC.
 
-- **Run:** [37937369381](https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/37937369381), finished 2026-10-09 13:32 UTC (github-actions)
+- **Run:** [37938023560](https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/37938023560), finished 2026-10-09 13:38 UTC (github-actions)
 - **Rules:** 13 (13 evaluated, 0 not evaluated)
 - **Sources:** 6 CKAN resources (6 available)
 - **Records flagged:** 553
-- **L2 pass rate:** 100.0% (checks without a signal / 9,352,574 checks in scope; one check per record and rule)
+- **L2 pass rate:** 99.9% (checks without a signal / 9,352,574 checks in scope; one check per record and rule)
 
 Signal types: `mismatch` (the check failed), `key not found` (no matching record in the other
 source), `missing value`, `invalid value` (unreadable as the declared type), `ambiguous key` (more
@@ -38,9 +38,9 @@ than one match). Records outside a rule's scope (`where`) are not signals.
 
 | Resource | Role | Status | Size | Download | Used by |
 |---|---|---|---:|---:|---|
-| dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-geracao.csv | primary | available | 0.4 MB | 2.4 s | generation-price-above-ceiling |
-| dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-transmissao.csv | primary | available | 0.1 MB | 2.5 s | transmission-rap-above-edital |
-| dadosabertos.aneel.gov.br › relacao-de-empreendimentos-de-geracao-distribuida › empreendimento-geracao-distribuida.zip | primary | available | 110.7 MB | 55.0 s | microgeneration-above-75-kw, minigeneration-outside-range, municipality-state |
-| dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv | primary | available | 8.4 MB | 4.8 s | cgh-above-5000-kw, pch-outside-5000-30000-kw, physical-guarantee-above-granted-power, plant-coordinates-outside-brazil |
-| dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv | primary | available | 0.7 MB | 0.5 s | board-decision-before-appeal, fine-after-appeal-above-original, notice-received-before-issue, warning-with-fine-value |
+| dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-geracao.csv | primary | available | 0.4 MB | 1.4 s | generation-price-above-ceiling |
+| dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-transmissao.csv | primary | available | 0.1 MB | 0.4 s | transmission-rap-above-edital |
+| dadosabertos.aneel.gov.br › relacao-de-empreendimentos-de-geracao-distribuida › empreendimento-geracao-distribuida.zip | primary | available | 110.7 MB | 47.0 s | microgeneration-above-75-kw, minigeneration-outside-range, municipality-state |
+| dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv | primary | available | 8.4 MB | 4.3 s | cgh-above-5000-kw, pch-outside-5000-30000-kw, physical-guarantee-above-granted-power, plant-coordinates-outside-brazil |
+| dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv | primary | available | 0.7 MB | 3.1 s | board-decision-before-appeal, fine-after-appeal-above-original, notice-received-before-issue, warning-with-fine-value |
 | dadosabertos.tse.jus.br › codigos-oficiais-de-uf-e-municipios-segundo-o-tse-e-o-ibge › Códigos oficiais de UF e municípios segundo o TSE e o IBGE | secondary | available | 0.1 MB | 0.2 s | municipality-state |

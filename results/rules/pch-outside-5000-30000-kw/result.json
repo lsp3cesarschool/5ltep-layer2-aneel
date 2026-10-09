@@ -1,7 +1,7 @@
 {
- "run_id": "37937369381",
+ "run_id": "37938023560",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/37937369381",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/37938023560",
  "id": "pch-outside-5000-30000-kw",
  "rule_version": "0.1.0",
  "origin": "expert",
@@ -31,7 +31,7 @@
  "status": "evaluated",
  "reason_code": null,
  "reason": null,
- "evaluated_at": "2026-10-09T13:32:57+00:00",
+ "evaluated_at": "2026-10-09T13:38:06+00:00",
  "total": 25045,
  "counts": {
   "match": 460,

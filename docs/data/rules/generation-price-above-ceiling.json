@@ -1,10 +1,10 @@
 {
  "rule": "generation-price-above-ceiling",
  "rule_version": "0.1.0",
- "evaluated_at": "2026-10-09T13:32:19+00:00",
- "run_id": "37937369381",
+ "evaluated_at": "2026-10-09T13:37:29+00:00",
+ "run_id": "37938023560",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/37937369381",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/37938023560",
  "numbering": "registro por arquivo (o publicado, ou cada arquivo dentro do zip); 1 = primeira linha após o cabeçalho",
  "sources": {
   "aneel_leiloes_geracao": {

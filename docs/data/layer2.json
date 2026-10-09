@@ -1,10 +1,10 @@
 {
  "layer": 2,
- "run_id": "37937369381",
+ "run_id": "37938023560",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/37937369381",
- "generated_at": "2026-10-09T13:32:59+00:00",
- "started_at": "2026-10-09T13:31:04+00:00",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/37938023560",
+ "generated_at": "2026-10-09T13:38:09+00:00",
+ "started_at": "2026-10-09T13:36:27+00:00",
  "totals": {
   "rules": 13,
   "evaluated": 13,
@@ -13,7 +13,7 @@
   "sources_ok": 6,
   "signals": 553,
   "checks": 9352574,
-  "l2_rate": 0.9999
+  "l2_rate": 0.999941
  },
  "rules": [
   {
@@ -55,7 +55,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T13:32:19+00:00",
+   "evaluated_at": "2026-10-09T13:37:29+00:00",
    "total": 1552,
    "counts": {
     "match": 1552,
@@ -115,7 +115,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T13:32:19+00:00",
+   "evaluated_at": "2026-10-09T13:37:29+00:00",
    "total": 488,
    "counts": {
     "match": 488,
@@ -175,7 +175,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T13:32:55+00:00",
+   "evaluated_at": "2026-10-09T13:38:04+00:00",
    "total": 4647773,
    "counts": {
     "match": 4626337,
@@ -239,7 +239,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T13:32:56+00:00",
+   "evaluated_at": "2026-10-09T13:38:06+00:00",
    "total": 4647773,
    "counts": {
     "match": 21436,
@@ -300,7 +300,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T13:32:57+00:00",
+   "evaluated_at": "2026-10-09T13:38:06+00:00",
    "total": 25045,
    "counts": {
     "match": 718,
@@ -361,7 +361,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T13:32:57+00:00",
+   "evaluated_at": "2026-10-09T13:38:06+00:00",
    "total": 25045,
    "counts": {
     "match": 460,
@@ -421,7 +421,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T13:32:57+00:00",
+   "evaluated_at": "2026-10-09T13:38:06+00:00",
    "total": 25045,
    "counts": {
     "match": 25040,
@@ -485,7 +485,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T13:32:57+00:00",
+   "evaluated_at": "2026-10-09T13:38:07+00:00",
    "total": 25045,
    "counts": {
     "match": 24580,
@@ -546,7 +546,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T13:32:57+00:00",
+   "evaluated_at": "2026-10-09T13:38:07+00:00",
    "total": 1619,
    "counts": {
     "match": 207,
@@ -607,7 +607,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T13:32:57+00:00",
+   "evaluated_at": "2026-10-09T13:38:07+00:00",
    "total": 1619,
    "counts": {
     "match": 260,
@@ -667,7 +667,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T13:32:57+00:00",
+   "evaluated_at": "2026-10-09T13:38:07+00:00",
    "total": 1619,
    "counts": {
     "match": 1551,
@@ -727,7 +727,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T13:32:57+00:00",
+   "evaluated_at": "2026-10-09T13:38:07+00:00",
    "total": 1619,
    "counts": {
     "match": 1619,
@@ -792,7 +792,7 @@
    "status": "evaluated",
    "reason_code": null,
    "reason": null,
-   "evaluated_at": "2026-10-09T13:32:59+00:00",
+   "evaluated_at": "2026-10-09T13:38:09+00:00",
    "total": 4647773,
    "counts": {
     "match": 4647773,
@@ -829,7 +829,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 3.7
+    "seconds": 0.62
    },
    "dataset": {
     "title": "Resultado de leilões de geração e transmissão de energia elétrica",
@@ -855,8 +855,8 @@
     "served_by": "dadosabertos.aneel.gov.br",
     "bytes": 422878,
     "sha256": "547345ef69c8d7ca37f0ba143c5d12585e3dbd445906223ef537e1b71ef6c747",
-    "seconds": 2.37,
-    "mb_per_s": 0.178
+    "seconds": 1.45,
+    "mb_per_s": 0.292
    },
    "files": [
     {
@@ -882,7 +882,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 2.79
+    "seconds": 0.2
    },
    "dataset": {
     "title": "Resultado de leilões de geração e transmissão de energia elétrica",
@@ -908,8 +908,8 @@
     "served_by": "dadosabertos.aneel.gov.br",
     "bytes": 135242,
     "sha256": "a7165dbb5c148ba144b49ee8c807b52290215f77a83c113dfcf8bd3d3f971124",
-    "seconds": 2.5,
-    "mb_per_s": 0.054
+    "seconds": 0.44,
+    "mb_per_s": 0.304
    },
    "files": [
     {
@@ -937,7 +937,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 1.86
+    "seconds": 0.85
    },
    "dataset": {
     "title": "Relação de empreendimentos de Mini e Micro Geração Distribuída",
@@ -963,8 +963,8 @@
     "served_by": "dadosabertos.aneel.gov.br",
     "bytes": 110711016,
     "sha256": "ccb1a405a5eaada5cc687a9c9666de0c5f29f166185a9a815b352cbbf71f6fb7",
-    "seconds": 55.05,
-    "mb_per_s": 2.011
+    "seconds": 47.02,
+    "mb_per_s": 2.354
    },
    "files": [
     {
@@ -993,7 +993,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.81
+    "seconds": 0.92
    },
    "dataset": {
     "title": "SIGA - Sistema de Informações de Geração da ANEEL",
@@ -1019,8 +1019,8 @@
     "served_by": "dadosabertos.aneel.gov.br",
     "bytes": 8418652,
     "sha256": "60de2b32e25a67bc8708f649f3848b13ba602f6edc3823a5483405f07a0a5540",
-    "seconds": 4.75,
-    "mb_per_s": 1.774
+    "seconds": 4.26,
+    "mb_per_s": 1.976
    },
    "files": [
     {
@@ -1049,7 +1049,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.24
+    "seconds": 2.56
    },
    "dataset": {
     "title": "Auto de Infração",
@@ -1075,8 +1075,8 @@
     "served_by": "dadosabertos.aneel.gov.br",
     "bytes": 709575,
     "sha256": "a05192defd1399864639e899a5fbdc2ca6661e543a0aa1ff998edc7ce75b8d13",
-    "seconds": 0.49,
-    "mb_per_s": 1.459
+    "seconds": 3.1,
+    "mb_per_s": 0.229
    },
    "files": [
     {
@@ -1102,7 +1102,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.16
+    "seconds": 0.17
    },
    "dataset": {
     "title": "Códigos oficiais de UF e municípios segundo o TSE e o IBGE",
@@ -1128,8 +1128,8 @@
     "served_by": "cdn.tse.jus.br",
     "bytes": 139020,
     "sha256": "f55c9720d221a9956279f6cb225aafcae797e0cf8ac2289040c052ab4ea7c712",
-    "seconds": 0.23,
-    "mb_per_s": 0.604
+    "seconds": 0.22,
+    "mb_per_s": 0.639
    },
    "files": [
     {
@@ -1143,7 +1143,7 @@
   }
  ],
  "engine": {
-  "commit": "aeff1856a0a95b555fcc2344a02f7f4125c4cd54",
+  "commit": "9fe794138d46e1d9d5f0b8ba5857ef5e43a61988",
   "uncommitted_changes": false,
   "python": "3.12.15",
   "duckdb": "1.5.6"
@@ -1233,24 +1233,24 @@
   "primary": {
    "resources": 5,
    "bytes": 120397363,
-   "seconds": 65.16,
-   "mb_per_s": 1.848
+   "seconds": 56.27,
+   "mb_per_s": 2.14
   },
   "secondary": {
    "resources": 1,
    "bytes": 139020,
-   "seconds": 0.23,
-   "mb_per_s": 0.604
+   "seconds": 0.22,
+   "mb_per_s": 0.632
   },
   "processing": {
    "bytes": 120536383,
-   "seconds": 39.97,
-   "mb_per_s": 3.016
+   "seconds": 39.46,
+   "mb_per_s": 3.055
   }
  },
  "timings": {
-  "download_s": 74.95,
-  "processing_s": 39.97,
+  "download_s": 61.81,
+  "processing_s": 39.46,
   "bytes_processed": 120536383,
   "outputs_s": 0.02
  },
@@ -2145,6 +2145,228 @@
    "timings": {
     "download_s": 74.95,
     "processing_s": 39.97,
+    "bytes_processed": 120536383,
+    "outputs_s": 0.02
+   }
+  },
+  {
+   "run_id": "37938023560",
+   "environment": "github-actions",
+   "at": "2026-10-09T13:38:09+00:00",
+   "rules": {
+    "generation-price-above-ceiling": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 1552,
+     "counts": {
+      "match": 1552,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "transmission-rap-above-edital": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 488,
+     "counts": {
+      "match": 488,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "microgeneration-above-75-kw": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 4647773,
+     "counts": {
+      "match": 4626337,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 21436
+     }
+    },
+    "minigeneration-outside-range": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 4647773,
+     "counts": {
+      "match": 21436,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 4626337
+     }
+    },
+    "cgh-above-5000-kw": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 25045,
+     "counts": {
+      "match": 718,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 24327
+     }
+    },
+    "pch-outside-5000-30000-kw": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 25045,
+     "counts": {
+      "match": 460,
+      "mismatch": 77,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 24508
+     }
+    },
+    "physical-guarantee-above-granted-power": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 25045,
+     "counts": {
+      "match": 25040,
+      "mismatch": 5,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "plant-coordinates-outside-brazil": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 25045,
+     "counts": {
+      "match": 24580,
+      "mismatch": 465,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "board-decision-before-appeal": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 1619,
+     "counts": {
+      "match": 207,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 1412
+     }
+    },
+    "fine-after-appeal-above-original": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 1619,
+     "counts": {
+      "match": 260,
+      "mismatch": 1,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 1358
+     }
+    },
+    "notice-received-before-issue": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 1619,
+     "counts": {
+      "match": 1551,
+      "mismatch": 5,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 63
+     }
+    },
+    "warning-with-fine-value": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 1619,
+     "counts": {
+      "match": 1619,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "municipality-state": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 4647773,
+     "counts": {
+      "match": 4647773,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    }
+   },
+   "sources": {
+    "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-geracao.csv": "ok",
+    "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-transmissao.csv": "ok",
+    "dadosabertos.aneel.gov.br › relacao-de-empreendimentos-de-geracao-distribuida › empreendimento-geracao-distribuida.zip": "ok",
+    "dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv": "ok",
+    "dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv": "ok",
+    "dadosabertos.tse.jus.br › codigos-oficiais-de-uf-e-municipios-segundo-o-tse-e-o-ibge › Códigos oficiais de UF e municípios segundo o TSE e o IBGE": "ok"
+   },
+   "download_speed": {
+    "primary": {
+     "resources": 5,
+     "bytes": 120397363,
+     "seconds": 56.27,
+     "mb_per_s": 2.14
+    },
+    "secondary": {
+     "resources": 1,
+     "bytes": 139020,
+     "seconds": 0.22,
+     "mb_per_s": 0.632
+    },
+    "processing": {
+     "bytes": 120536383,
+     "seconds": 39.46,
+     "mb_per_s": 3.055
+    }
+   },
+   "timings": {
+    "download_s": 61.81,
+    "processing_s": 39.46,
     "bytes_processed": 120536383,
     "outputs_s": 0.02
    }
