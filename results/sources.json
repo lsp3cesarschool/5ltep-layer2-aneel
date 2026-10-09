@@ -1,8 +1,8 @@
 {
- "run_id": "37917105517",
+ "run_id": "37927530460",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/37917105517",
- "checked_at": "2026-10-09T10:22:47+00:00",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/37927530460",
+ "checked_at": "2026-10-09T12:04:14+00:00",
  "sources": [
   {
    "portal": "https://dadosabertos.aneel.gov.br",
@@ -18,12 +18,14 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.71
+    "seconds": 0.69
    },
    "dataset": {
     "title": "Resultado de leilões de geração e transmissão de energia elétrica",
     "organization": "Agência Nacional de Energia Elétrica",
     "license": "Open Data Commons Open Database License (ODbL)",
+    "license_id": "odc-odbl",
+    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
     "metadata_modified": "2026-10-01T05:00:54.703144"
    },
    "resource": {
@@ -42,8 +44,8 @@
     "served_by": "dadosabertos.aneel.gov.br",
     "bytes": 422878,
     "sha256": "547345ef69c8d7ca37f0ba143c5d12585e3dbd445906223ef537e1b71ef6c747",
-    "seconds": 1.04,
-    "mb_per_s": 0.406
+    "seconds": 0.99,
+    "mb_per_s": 0.426
    },
    "files": [
     {
@@ -69,12 +71,14 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.19
+    "seconds": 0.43
    },
    "dataset": {
     "title": "Resultado de leilões de geração e transmissão de energia elétrica",
     "organization": "Agência Nacional de Energia Elétrica",
     "license": "Open Data Commons Open Database License (ODbL)",
+    "license_id": "odc-odbl",
+    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
     "metadata_modified": "2026-10-01T05:00:54.703144"
    },
    "resource": {
@@ -93,8 +97,8 @@
     "served_by": "dadosabertos.aneel.gov.br",
     "bytes": 135242,
     "sha256": "a7165dbb5c148ba144b49ee8c807b52290215f77a83c113dfcf8bd3d3f971124",
-    "seconds": 0.22,
-    "mb_per_s": 0.614
+    "seconds": 0.55,
+    "mb_per_s": 0.245
    },
    "files": [
     {
@@ -122,12 +126,14 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.2
+    "seconds": 0.19
    },
    "dataset": {
     "title": "Relação de empreendimentos de Mini e Micro Geração Distribuída",
     "organization": "Agência Nacional de Energia Elétrica",
     "license": "Licença Aberta para Bases de Dados (ODbL) do Open Data Commons",
+    "license_id": "odc-odbl",
+    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
     "metadata_modified": "2026-10-08T06:31:41.813019"
    },
    "resource": {
@@ -146,8 +152,8 @@
     "served_by": "dadosabertos.aneel.gov.br",
     "bytes": 110711016,
     "sha256": "ccb1a405a5eaada5cc687a9c9666de0c5f29f166185a9a815b352cbbf71f6fb7",
-    "seconds": 11.51,
-    "mb_per_s": 9.622
+    "seconds": 12.01,
+    "mb_per_s": 9.221
    },
    "files": [
     {
@@ -176,13 +182,15 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.26
+    "seconds": 0.57
    },
    "dataset": {
     "title": "SIGA - Sistema de Informações de Geração da ANEEL",
     "organization": "Agência Nacional de Energia Elétrica",
     "license": "Open Data Commons Open Database License (ODbL)",
-    "metadata_modified": "2026-10-08T10:40:37.624196"
+    "license_id": "odc-odbl",
+    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
+    "metadata_modified": "2026-10-09T10:40:35.265307"
    },
    "resource": {
     "id": "11ec447d-698d-4ab8-977f-b424d5deee6a",
@@ -200,8 +208,8 @@
     "served_by": "dadosabertos.aneel.gov.br",
     "bytes": 8418652,
     "sha256": "60de2b32e25a67bc8708f649f3848b13ba602f6edc3823a5483405f07a0a5540",
-    "seconds": 0.87,
-    "mb_per_s": 9.659
+    "seconds": 1.18,
+    "mb_per_s": 7.117
    },
    "files": [
     {
@@ -230,12 +238,14 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.2
+    "seconds": 0.27
    },
    "dataset": {
     "title": "Auto de Infração",
     "organization": "Agência Nacional de Energia Elétrica",
     "license": "Open Data Commons Open Database License (ODbL)",
+    "license_id": "odc-odbl",
+    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
     "metadata_modified": "2026-10-05T08:01:04.928489"
    },
    "resource": {
@@ -254,8 +264,8 @@
     "served_by": "dadosabertos.aneel.gov.br",
     "bytes": 709575,
     "sha256": "a05192defd1399864639e899a5fbdc2ca6661e543a0aa1ff998edc7ce75b8d13",
-    "seconds": 0.23,
-    "mb_per_s": 3.037
+    "seconds": 0.43,
+    "mb_per_s": 1.64
    },
    "files": [
     {
@@ -281,12 +291,14 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.78
+    "seconds": 0.13
    },
    "dataset": {
     "title": "Códigos oficiais de UF e municípios segundo o TSE e o IBGE",
     "organization": "TSE/SMG",
     "license": "Creative Commons Attribution",
+    "license_id": "cc-by",
+    "license_url": "http://www.opendefinition.org/licenses/cc-by",
     "metadata_modified": "2025-06-24T18:08:19.929672"
    },
    "resource": {
@@ -305,8 +317,8 @@
     "served_by": "cdn.tse.jus.br",
     "bytes": 139020,
     "sha256": "f55c9720d221a9956279f6cb225aafcae797e0cf8ac2289040c052ab4ea7c712",
-    "seconds": 0.31,
-    "mb_per_s": 0.443
+    "seconds": 0.1,
+    "mb_per_s": 1.389
    },
    "files": [
     {

@@ -1,9 +1,9 @@
 {
- "run_id": "37917105517",
+ "run_id": "37927530460",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/37917105517",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/37927530460",
  "id": "notice-received-before-issue",
- "rule_version": "0.1.0",
+ "rule_version": "0.1.1",
  "origin": "expert",
  "file": "infraction/notice-received-before-issue.yaml",
  "folder": "infraction",
@@ -13,7 +13,7 @@
   "en": "Notice received before it was issued"
  },
  "text": "Confere se a data de recebimento do auto de infração não é anterior à data de lavratura.\n",
- "justification": "O auto é recebido depois de lavrado; a ordem inversa indica erro de data. Mesma família de IB-12 no IBAMA. É sinal para revisão.\n",
+ "justification": "O auto é recebido depois de lavrado; a ordem inversa indica erro de data. É sinal para revisão.\n",
  "exceptions": [
   "Autos sem data de recebimento ficam fora do escopo."
  ],
@@ -30,7 +30,7 @@
  "status": "evaluated",
  "reason_code": null,
  "reason": null,
- "evaluated_at": "2026-10-09T10:22:45+00:00",
+ "evaluated_at": "2026-10-09T12:04:12+00:00",
  "total": 1619,
  "counts": {
   "match": 1551,

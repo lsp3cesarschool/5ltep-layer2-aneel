@@ -1,11 +1,11 @@
 {
- "run_id": "37917105517",
+ "run_id": "37927530460",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/37917105517",
- "started_at": "2026-10-09T10:21:49+00:00",
- "finished_at": "2026-10-09T10:22:47+00:00",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/37927530460",
+ "started_at": "2026-10-09T12:03:16+00:00",
+ "finished_at": "2026-10-09T12:04:14+00:00",
  "engine": {
-  "commit": "cf2a6ade24c2af60e5de0a64d85141f69d2691d4",
+  "commit": "a5cc7b6c780fe79c9fd74fffc89043217713332b",
   "uncommitted_changes": false,
   "python": "3.12.15",
   "duckdb": "1.5.6"
@@ -15,19 +15,19 @@
   "primary": {
    "resources": 5,
    "bytes": 120397363,
-   "seconds": 13.87,
-   "mb_per_s": 8.68
+   "seconds": 15.16,
+   "mb_per_s": 7.942
   },
   "secondary": {
    "resources": 1,
    "bytes": 139020,
-   "seconds": 0.31,
-   "mb_per_s": 0.448
+   "seconds": 0.1,
+   "mb_per_s": 1.39
   },
   "processing": {
    "bytes": 120536383,
-   "seconds": 40.48,
-   "mb_per_s": 2.978
+   "seconds": 40.29,
+   "mb_per_s": 2.992
   }
  },
  "rules": [
@@ -93,9 +93,9 @@
   },
   {
    "id": "notice-received-before-issue",
-   "rule_version": "0.1.0",
+   "rule_version": "0.1.1",
    "file": "infraction/notice-received-before-issue.yaml",
-   "sha256": "4fc87d725a6fdbacb68960b667fe8ef7f217743914b6a6ab9e9cce454163c8ec"
+   "sha256": "aa40ddb37d59fec8870e075a79f08d3b40ec83b546cca28a4ef88e849b9a6b50"
   },
   {
    "id": "warning-with-fine-value",
@@ -105,9 +105,9 @@
   },
   {
    "id": "municipality-state",
-   "rule_version": "0.1.0",
+   "rule_version": "0.1.1",
    "file": "territory/municipality-state.yaml",
-   "sha256": "950228be8aa6e3fd85d44ba777920792e1db70a0978a298f02f30ab7218739ef"
+   "sha256": "0033abf304c907c38191ff881d49932910ad7ec205a4d772e7c8d250d2ad6a6f"
   }
  ],
  "sources": [
