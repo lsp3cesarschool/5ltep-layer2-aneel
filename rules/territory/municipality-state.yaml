@@ -1,0 +1,48 @@
+schema_version: "1.0"
+rule_version: "0.1.0"
+origin: cross_reference
+
+description:
+  language: pt-BR
+  title: "Código do município compatível com a UF do mesmo local"
+  title_translations:
+    en: "Municipality code consistent with the state of the same place"
+  text: >
+    Para cada empreendimento de micro e minigeração distribuída, procura o código IBGE do município na tabela oficial de municípios publicada pelo TSE e confere se a UF do empreendimento é a UF desse município.
+  justification: >
+    A mesma regra do IBAMA (municipality-state), reutilizada em outro portal com outras colunas:
+    município e UF do mesmo registro precisam descrever o mesmo lugar. Uma divergência pode indicar
+    erro de digitação, de codificação ou campos de contextos diferentes. É sinal para revisão.
+  exceptions:
+    - "Código de município extinto ou criado depois da tabela do TSE aparece como não encontrado, não como divergência."
+    - "Código ou UF vazio fica sem informação e não é contado como conforme."
+  examples:
+    - case: "CodMunicipioIbge 2611606 (Recife) com SigUF PE"
+      expected: "Conforme"
+    - case: "CodMunicipioIbge 2611606 (Recife) com SigUF AL"
+      expected: "Sinalizar: a tabela do TSE indica PE"
+
+sources:
+  aneel_gd:
+    portal: https://dadosabertos.aneel.gov.br
+    dataset: relacao-de-empreendimentos-de-geracao-distribuida
+    resource: {name: "empreendimento-geracao-distribuida.zip", format: ZIP}
+    archive: {type: zip, members: "empreendimento-geracao-distribuida.csv"}
+    file: {format: csv, encoding: utf-8, delimiter: ";"}
+    columns:
+      CodMunicipioIbge: "Código IBGE do município do empreendimento (7 dígitos)"
+      SigUF: "Sigla da UF do empreendimento"
+  tse_municipios:
+    portal: https://dadosabertos.tse.jus.br
+    dataset: codigos-oficiais-de-uf-e-municipios-segundo-o-tse-e-o-ibge
+    resource: {name: "Códigos oficiais de UF e municípios segundo o TSE e o IBGE", format: CSV}
+    archive: {type: zip, members: "municipio_tse_ibge.csv"}
+    file: {format: csv, encoding: latin-1, delimiter: ";"}
+    columns:
+      CD_MUNICIPIO_IBGE: "Código IBGE do município (7 dígitos)"
+      SG_UF: "Sigla da UF do município"
+
+check:
+  template: lookup-equals
+  key:     {from: aneel_gd.CodMunicipioIbge, to: tse_municipios.CD_MUNICIPIO_IBGE}
+  compare: {from: aneel_gd.SigUF,            to: tse_municipios.SG_UF}

@@ -1,0 +1,40 @@
+schema_version: "1.0"
+rule_version: "0.1.0"
+origin: expert
+
+description:
+  language: pt-BR
+  title: "Microgeração acima de 75 kW"
+  title_translations:
+    en: "Microgeneration above 75 kW"
+  text: >
+    Sinaliza empreendimentos declarados como microgeração com potência instalada acima de 75 kW.
+  justification: >
+    A Lei 14.300/2022, art. 1º, define microgeração distribuída como potência instalada até 75 kW.
+    Microgeração acima disso indica porte declarado incorreto ou erro de unidade. Potência com vírgula
+    decimal. É sinal para revisão.
+  exceptions:
+    - "Regras de transição podem manter o enquadramento de pedidos anteriores à lei."
+  examples:
+    - case: "Microgeração de 5,00 kW"
+      expected: "Conforme"
+    - case: "Microgeração de 120,00 kW"
+      expected: "Sinalizar"
+
+sources:
+  aneel_gd:
+    portal: https://dadosabertos.aneel.gov.br
+    dataset: relacao-de-empreendimentos-de-geracao-distribuida
+    resource: {name: "empreendimento-geracao-distribuida.zip", format: ZIP}
+    archive: {type: zip, members: "empreendimento-geracao-distribuida.csv"}
+    file: {format: csv, encoding: utf-8, delimiter: ";"}
+    columns:
+      MdaPotenciaInstaladaKW: {meaning: "Potência instalada, em kW", type: number, decimal: ","}
+      DscPorte: "Porte declarado (Microgeracao ou Minigeracao)"
+
+check:
+  template: flag-when
+  any:
+    - {column: aneel_gd.MdaPotenciaInstaladaKW, above: 75}
+  where:
+    - {column: aneel_gd.DscPorte, equals: "Microgeracao"}

@@ -1,0 +1,40 @@
+schema_version: "1.0"
+rule_version: "0.1.0"
+origin: expert
+
+description:
+  language: pt-BR
+  title: "Preço do leilão de geração acima do preço-teto"
+  title_translations:
+    en: "Generation auction price above the ceiling price"
+  text: >
+    Confere, em cada empreendimento vendido em leilão de geração, se o preço não passa do preço-teto.
+  justification: >
+    O edital fixa o preço-teto; um lance vencedor acima dele não deveria existir (Lei 10.848/2004 e
+    editais). Diferença indica erro de registro, de unidade ou de base monetária. Valores com vírgula
+    decimal. É sinal para revisão.
+  exceptions:
+    - "Leilões com preços em bases diferentes (data-base, moeda) não são comparáveis."
+  examples:
+    - case: "Teto 250,00 e preço 198,50"
+      expected: "Conforme"
+    - case: "Teto 250,00 e preço 260,00"
+      expected: "Sinalizar"
+
+sources:
+  aneel_leiloes_geracao:
+    portal: https://dadosabertos.aneel.gov.br
+    dataset: resultado-de-leiloes
+    resource: {name: "resultado-leiloes-geracao.csv", format: CSV}
+    file: {format: csv, encoding: latin-1, delimiter: ";"}
+    columns:
+      VlrPrecoTeto: {meaning: "Preço-teto do produto no edital", type: number, decimal: ","}
+      VlrPrecoLeilao: {meaning: "Preço vencedor do empreendimento", type: number, decimal: ","}
+      DatLeilao: {meaning: "Data do leilão", type: date, format: "%Y-%m-%d"}
+
+check:
+  template: field-comparison
+  timeline: aneel_leiloes_geracao.DatLeilao
+  left: aneel_leiloes_geracao.VlrPrecoLeilao
+  op: "<="
+  right: aneel_leiloes_geracao.VlrPrecoTeto

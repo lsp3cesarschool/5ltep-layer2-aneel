@@ -1,0 +1,39 @@
+schema_version: "1.0"
+rule_version: "0.1.0"
+origin: expert
+
+description:
+  language: pt-BR
+  title: "Decisão da diretoria anterior ao recebimento do recurso"
+  title_translations:
+    en: "Board decision dated before the appeal was received"
+  text: >
+    Confere se a data da decisão da diretoria não é anterior à data de recebimento do recurso.
+  justification: >
+    A diretoria decide sobre um recurso já recebido; a ordem inversa indica erro de data ou de encadeamento. É sinal para revisão.
+  exceptions:
+    - "Autos sem recurso ou sem decisão da diretoria ficam fora do escopo."
+    - "Recurso e decisão podem pertencer a etapas diferentes do processo."
+  examples:
+    - case: "Recurso 2023-05-02, decisão 2024-01-15"
+      expected: "Conforme"
+    - case: "Recurso 2023-05-02, decisão 2023-03-01"
+      expected: "Sinalizar"
+
+sources:
+  aneel_autos:
+    portal: https://dadosabertos.aneel.gov.br
+    dataset: auto-de-infracao
+    resource: {name: "auto-infracao.csv", format: CSV}
+    file: {format: csv, encoding: utf-8, delimiter: ";"}
+    columns:
+      DtRecebimentoRecurso: {meaning: "Data de recebimento do recurso", type: date, format: "%Y-%m-%d"}
+      DatDecisaoDiretoria: {meaning: "Data da decisão da diretoria", type: date, format: "%Y-%m-%d"}
+
+check:
+  template: temporal-order
+  timeline: aneel_autos.DtRecebimentoRecurso
+  sequence: [aneel_autos.DtRecebimentoRecurso, aneel_autos.DatDecisaoDiretoria]
+  where:
+    - {column: aneel_autos.DtRecebimentoRecurso, empty: false}
+    - {column: aneel_autos.DatDecisaoDiretoria, empty: false}

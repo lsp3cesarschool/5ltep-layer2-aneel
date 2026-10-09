@@ -1,0 +1,47 @@
+schema_version: "1.0"
+rule_version: "0.1.0"
+origin: expert
+
+description:
+  language: pt-BR
+  title: "Coordenada da usina ausente ou fora do Brasil"
+  title_translations:
+    en: "Plant coordinates missing or outside Brazil"
+  text: >
+    Sinaliza usinas do SIGA sem coordenada ou com coordenada fora do retângulo que contém o território brasileiro (latitude de -34,0 a 5,5; longitude de -74,2 a -28,6).
+  justification: >
+    Usinas outorgadas pela ANEEL ficam no Brasil; coordenada fora do retângulo do território (que inclui
+    as ilhas oceânicas) indica erro de sinal, de eixo trocado, de projeção ou o ponto (0,0). O retângulo é
+    uma aproximação: um ponto dentro dele ainda pode estar fora do Brasil. Coordenadas em graus
+    decimais, com vírgula. É sinal para revisão.
+  exceptions:
+    - "Usinas no mar territorial fora do retângulo, se existirem, precisam de domínio próprio."
+  examples:
+    - case: "Latitude -8,05, longitude -34,9"
+      expected: "Conforme"
+    - case: "Latitude 0, longitude 0"
+      expected: "Sinalizar"
+    - case: "Latitude -34,9, longitude -8,05 (eixos trocados)"
+      expected: "Sinalizar"
+
+sources:
+  aneel_siga:
+    portal: https://dadosabertos.aneel.gov.br
+    dataset: siga-sistema-de-informacoes-de-geracao-da-aneel
+    resource: {name: "siga-empreendimentos-geracao.csv", format: CSV}
+    file: {format: csv, encoding: utf-8, delimiter: ";"}
+    columns:
+      NumCoordNEmpreendimento: {meaning: "Latitude do empreendimento, em graus decimais", type: number, decimal: ","}
+      NumCoordEEmpreendimento: {meaning: "Longitude do empreendimento, em graus decimais", type: number, decimal: ","}
+      DatEntradaOperacao: {meaning: "Data de entrada em operação", type: date, format: "%Y-%m-%d"}
+
+check:
+  template: flag-when
+  timeline: aneel_siga.DatEntradaOperacao
+  any:
+    - {column: aneel_siga.NumCoordNEmpreendimento, empty: true}
+    - {column: aneel_siga.NumCoordEEmpreendimento, empty: true}
+    - {column: aneel_siga.NumCoordNEmpreendimento, below: -34.0}
+    - {column: aneel_siga.NumCoordNEmpreendimento, above: 5.5}
+    - {column: aneel_siga.NumCoordEEmpreendimento, below: -74.2}
+    - {column: aneel_siga.NumCoordEEmpreendimento, above: -28.6}

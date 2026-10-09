@@ -1,0 +1,43 @@
+schema_version: "1.0"
+rule_version: "0.1.0"
+origin: expert
+
+description:
+  language: pt-BR
+  title: "Multa após recurso maior que a original"
+  title_translations:
+    en: "Fine after appeal higher than the original"
+  text: >
+    Sinaliza autos em que a multa após o juízo do recurso é maior que o valor original da penalidade.
+  justification: >
+    O agravamento da multa em recurso é admitido com ciência prévia do interessado (Lei 9.784/1999,
+    art. 64, parágrafo único); a comparação é informativa, para conferir o processo. Valores com vírgula
+    decimal.
+  exceptions:
+    - "Agravamento é possível na hipótese normativa indicada."
+    - "Autos sem multa após o juízo ficam fora do escopo."
+  examples:
+    - case: "Original 100000,00 e após recurso 80000,00"
+      expected: "Conforme"
+    - case: "Original 100000,00 e após recurso 120000,00"
+      expected: "Sinalizar"
+
+sources:
+  aneel_autos:
+    portal: https://dadosabertos.aneel.gov.br
+    dataset: auto-de-infracao
+    resource: {name: "auto-infracao.csv", format: CSV}
+    file: {format: csv, encoding: utf-8, delimiter: ";"}
+    columns:
+      VlrPenalidade: {meaning: "Valor original da penalidade", type: number, decimal: ","}
+      VlrMultaAposJuizo: {meaning: "Valor da multa após o juízo do recurso", type: number, decimal: ","}
+      DatLavraturaAutoInfracao: {meaning: "Data de lavratura do auto", type: date, format: "%Y-%m-%d"}
+
+check:
+  template: field-comparison
+  timeline: aneel_autos.DatLavraturaAutoInfracao
+  left: aneel_autos.VlrMultaAposJuizo
+  op: "<="
+  right: aneel_autos.VlrPenalidade
+  where:
+    - {column: aneel_autos.VlrMultaAposJuizo, empty: false}

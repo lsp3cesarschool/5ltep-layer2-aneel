@@ -1,0 +1,41 @@
+schema_version: "1.0"
+rule_version: "0.1.0"
+origin: expert
+
+description:
+  language: pt-BR
+  title: "Advertência com valor de penalidade"
+  title_translations:
+    en: "Warning with a penalty amount"
+  text: >
+    Sinaliza autos cuja penalidade é só advertência e que trazem valor de penalidade maior que zero.
+  justification: >
+    Advertência não tem valor monetário (REN ANEEL 846/2019); valor positivo junto de advertência pede
+    conferir se o valor é de outra sanção, de outra etapa ou erro de registro. Autos "Advertência /
+    Multa" ficam de fora. Valores com vírgula decimal. É sinal para revisão.
+  exceptions:
+    - "O valor pode se referir a outra penalidade do mesmo processo."
+  examples:
+    - case: "Advertência com valor vazio ou zero"
+      expected: "Conforme"
+    - case: "Advertência com valor 150000,00"
+      expected: "Sinalizar"
+
+sources:
+  aneel_autos:
+    portal: https://dadosabertos.aneel.gov.br
+    dataset: auto-de-infracao
+    resource: {name: "auto-infracao.csv", format: CSV}
+    file: {format: csv, encoding: utf-8, delimiter: ";"}
+    columns:
+      DscTipoPenalidade: "Tipo de penalidade (Multa, Advertência...)"
+      VlrPenalidade: {meaning: "Valor da penalidade", type: number, decimal: ","}
+      DatLavraturaAutoInfracao: {meaning: "Data de lavratura do auto", type: date, format: "%Y-%m-%d"}
+
+check:
+  template: flag-when
+  timeline: aneel_autos.DatLavraturaAutoInfracao
+  any:
+    - all:
+        - {column: aneel_autos.DscTipoPenalidade, equals: "Advertência"}
+        - {column: aneel_autos.VlrPenalidade, above: 0}

@@ -1,0 +1,37 @@
+schema_version: "1.0"
+rule_version: "0.1.0"
+origin: expert
+
+description:
+  language: pt-BR
+  title: "Recebimento do auto anterior à lavratura"
+  title_translations:
+    en: "Notice received before it was issued"
+  text: >
+    Confere se a data de recebimento do auto de infração não é anterior à data de lavratura.
+  justification: >
+    O auto é recebido depois de lavrado; a ordem inversa indica erro de data. Mesma família de IB-12 no IBAMA. É sinal para revisão.
+  exceptions:
+    - "Autos sem data de recebimento ficam fora do escopo."
+  examples:
+    - case: "Lavratura 2024-03-01, recebimento 2024-03-08"
+      expected: "Conforme"
+    - case: "Lavratura 2024-03-01, recebimento 2024-02-20"
+      expected: "Sinalizar"
+
+sources:
+  aneel_autos:
+    portal: https://dadosabertos.aneel.gov.br
+    dataset: auto-de-infracao
+    resource: {name: "auto-infracao.csv", format: CSV}
+    file: {format: csv, encoding: utf-8, delimiter: ";"}
+    columns:
+      DatLavraturaAutoInfracao: {meaning: "Data de lavratura do auto", type: date, format: "%Y-%m-%d"}
+      DatRecebimentoAutoInfracao: {meaning: "Data de recebimento do auto pelo agente", type: date, format: "%Y-%m-%d"}
+
+check:
+  template: temporal-order
+  timeline: aneel_autos.DatLavraturaAutoInfracao
+  sequence: [aneel_autos.DatLavraturaAutoInfracao, aneel_autos.DatRecebimentoAutoInfracao]
+  where:
+    - {column: aneel_autos.DatRecebimentoAutoInfracao, empty: false}

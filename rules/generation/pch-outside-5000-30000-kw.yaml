@@ -1,0 +1,44 @@
+schema_version: "1.0"
+rule_version: "0.1.0"
+origin: expert
+
+description:
+  language: pt-BR
+  title: "Pequena central hidrelétrica (PCH) fora da faixa de 5.000 a 30.000 kW"
+  title_translations:
+    en: "Small hydropower plant (PCH) outside 5,000-30,000 kW"
+  text: >
+    Sinaliza PCH com potência outorgada até 5.000 kW ou acima de 30.000 kW.
+  justification: >
+    O porte define o enquadramento da hidrelétrica: CGH até 5.000 kW (Lei 13.360/2016) e PCH acima de
+    5.000 até 30.000 kW (REN ANEEL 875/2020). Antes de 2016 o limite da CGH era 3.000 kW, e ampliações
+    posteriores não desfazem um enquadramento histórico: a regra é hipótese de triagem. Potência em kW,
+    com vírgula decimal.
+  exceptions:
+    - "Enquadramentos anteriores a 2016 seguiam o limite de 3.000 kW para CGH."
+    - "Ampliações de potência depois do enquadramento não o invalidam automaticamente."
+  examples:
+    - case: "PCH com 15000,00 kW"
+      expected: "Conforme"
+    - case: "PCH com 45000,00 kW"
+      expected: "Sinalizar"
+
+sources:
+  aneel_siga:
+    portal: https://dadosabertos.aneel.gov.br
+    dataset: siga-sistema-de-informacoes-de-geracao-da-aneel
+    resource: {name: "siga-empreendimentos-geracao.csv", format: CSV}
+    file: {format: csv, encoding: utf-8, delimiter: ";"}
+    columns:
+      MdaPotenciaOutorgadaKw: {meaning: "Potência outorgada, em kW", type: number, decimal: ","}
+      SigTipoGeracao: "Tipo de geração (CGH, PCH, UHE, UFV...)"
+      DatEntradaOperacao: {meaning: "Data de entrada em operação", type: date, format: "%Y-%m-%d"}
+
+check:
+  template: flag-when
+  timeline: aneel_siga.DatEntradaOperacao
+  any:
+    - {column: aneel_siga.MdaPotenciaOutorgadaKw, at_most: 5000}
+    - {column: aneel_siga.MdaPotenciaOutorgadaKw, above: 30000}
+  where:
+    - {column: aneel_siga.SigTipoGeracao, equals: "PCH"}

@@ -1,0 +1,41 @@
+schema_version: "1.0"
+rule_version: "0.1.0"
+origin: expert
+
+description:
+  language: pt-BR
+  title: "Garantia física maior que a potência outorgada"
+  title_translations:
+    en: "Physical guarantee above the granted power"
+  text: >
+    Confere, em cada usina do SIGA, se a garantia física não passa da potência outorgada.
+  justification: >
+    A garantia física é a energia média que a usina pode comprometer; ela não pode exceder a capacidade
+    máxima correspondente nas mesmas condições (Decreto 5.163/2004, art. 2º). Garantia acima da potência
+    outorgada indica erro de unidade ou de registro, ou grandezas não comparáveis. Valores em kW, com
+    vírgula decimal. É sinal para revisão.
+  exceptions:
+    - "Usinas sem garantia física (a maioria das solares) têm valor zero e são conformes."
+  examples:
+    - case: "Potência outorgada 30000,00 kW e garantia física 15000,00 kW"
+      expected: "Conforme"
+    - case: "Potência outorgada 3000,00 kW e garantia física 30000,00 kW"
+      expected: "Sinalizar"
+
+sources:
+  aneel_siga:
+    portal: https://dadosabertos.aneel.gov.br
+    dataset: siga-sistema-de-informacoes-de-geracao-da-aneel
+    resource: {name: "siga-empreendimentos-geracao.csv", format: CSV}
+    file: {format: csv, encoding: utf-8, delimiter: ";"}
+    columns:
+      MdaPotenciaOutorgadaKw: {meaning: "Potência outorgada, em kW", type: number, decimal: ","}
+      MdaGarantiaFisicaKw: {meaning: "Garantia física, em kW médios", type: number, decimal: ","}
+      DatEntradaOperacao: {meaning: "Data de entrada em operação", type: date, format: "%Y-%m-%d"}
+
+check:
+  template: field-comparison
+  timeline: aneel_siga.DatEntradaOperacao
+  left: aneel_siga.MdaGarantiaFisicaKw
+  op: "<="
+  right: aneel_siga.MdaPotenciaOutorgadaKw

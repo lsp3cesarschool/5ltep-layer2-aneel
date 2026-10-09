@@ -1,0 +1,44 @@
+schema_version: "1.0"
+rule_version: "0.1.0"
+origin: expert
+
+description:
+  language: pt-BR
+  title: "Minigeração fora da faixa de 75 a 5.000 kW"
+  title_translations:
+    en: "Minigeneration outside 75-5,000 kW"
+  text: >
+    Sinaliza empreendimentos declarados como minigeração com potência instalada até 75 kW ou acima de 5.000 kW.
+  justification: >
+    A Lei 14.300/2022, art. 1º, define minigeração como potência acima de 75 kW e até 5.000 kW para fontes
+    despacháveis (3.000 kW para as não despacháveis, com transição). Fora da faixa, o porte declarado ou
+    a unidade estão incorretos. O limite de 3.000 kW das não despacháveis não é aplicado aqui por depender
+    da transição. Potência com vírgula decimal. É sinal para revisão.
+  exceptions:
+    - "Fontes não despacháveis têm limite de 3.000 kW a partir das regras de transição; esta regra usa 5.000 kW."
+  examples:
+    - case: "Minigeração de 300,00 kW"
+      expected: "Conforme"
+    - case: "Minigeração de 50,00 kW"
+      expected: "Sinalizar"
+    - case: "Minigeração de 8000,00 kW"
+      expected: "Sinalizar"
+
+sources:
+  aneel_gd:
+    portal: https://dadosabertos.aneel.gov.br
+    dataset: relacao-de-empreendimentos-de-geracao-distribuida
+    resource: {name: "empreendimento-geracao-distribuida.zip", format: ZIP}
+    archive: {type: zip, members: "empreendimento-geracao-distribuida.csv"}
+    file: {format: csv, encoding: utf-8, delimiter: ";"}
+    columns:
+      MdaPotenciaInstaladaKW: {meaning: "Potência instalada, em kW", type: number, decimal: ","}
+      DscPorte: "Porte declarado (Microgeracao ou Minigeracao)"
+
+check:
+  template: flag-when
+  any:
+    - {column: aneel_gd.MdaPotenciaInstaladaKW, at_most: 75}
+    - {column: aneel_gd.MdaPotenciaInstaladaKW, above: 5000}
+  where:
+    - {column: aneel_gd.DscPorte, equals: "Minigeracao"}
