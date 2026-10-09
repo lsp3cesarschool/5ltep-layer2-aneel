@@ -1,0 +1,163 @@
+{
+ "run_id": "37917105517",
+ "environment": "github-actions",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/37917105517",
+ "started_at": "2026-10-09T10:21:49+00:00",
+ "finished_at": "2026-10-09T10:22:47+00:00",
+ "engine": {
+  "commit": "cf2a6ade24c2af60e5de0a64d85141f69d2691d4",
+  "uncommitted_changes": false,
+  "python": "3.12.15",
+  "duckdb": "1.5.6"
+ },
+ "primary_portal": "https://dadosabertos.aneel.gov.br",
+ "download_speed": {
+  "primary": {
+   "resources": 5,
+   "bytes": 120397363,
+   "seconds": 13.87,
+   "mb_per_s": 8.68
+  },
+  "secondary": {
+   "resources": 1,
+   "bytes": 139020,
+   "seconds": 0.31,
+   "mb_per_s": 0.448
+  },
+  "processing": {
+   "bytes": 120536383,
+   "seconds": 40.48,
+   "mb_per_s": 2.978
+  }
+ },
+ "rules": [
+  {
+   "id": "generation-price-above-ceiling",
+   "rule_version": "0.1.0",
+   "file": "auctions/generation-price-above-ceiling.yaml",
+   "sha256": "a4eb0263b76faf58ce784a5495523c0f5cb0ff2bf6abab47768dc5d871078c4e"
+  },
+  {
+   "id": "transmission-rap-above-edital",
+   "rule_version": "0.1.0",
+   "file": "auctions/transmission-rap-above-edital.yaml",
+   "sha256": "1445079cad5b74ff40eceb07fc159ece42c55a08b8674d8fb137f8fe7f5ea196"
+  },
+  {
+   "id": "microgeneration-above-75-kw",
+   "rule_version": "0.1.0",
+   "file": "distributed-generation/microgeneration-above-75-kw.yaml",
+   "sha256": "8473e3ee6c9e9f1ab16a7f9aa728fc3ab24ad8d355d76a97addff26ccf0af7f4"
+  },
+  {
+   "id": "minigeneration-outside-range",
+   "rule_version": "0.1.0",
+   "file": "distributed-generation/minigeneration-outside-range.yaml",
+   "sha256": "6ad988d17eb6bf11d52776bcfb29cd6189e2957342c3eaa6e07c0f96f9b1028c"
+  },
+  {
+   "id": "cgh-above-5000-kw",
+   "rule_version": "0.1.0",
+   "file": "generation/cgh-above-5000-kw.yaml",
+   "sha256": "8545cdf8de95d7475fb5e8dc00590e0d87a07b8848372a1ed0fb05ceba4928b9"
+  },
+  {
+   "id": "pch-outside-5000-30000-kw",
+   "rule_version": "0.1.0",
+   "file": "generation/pch-outside-5000-30000-kw.yaml",
+   "sha256": "b5c5c868ee5a6ef68563188b17a27e1e76100ec9694c27c594e8a65ec8568bc2"
+  },
+  {
+   "id": "physical-guarantee-above-granted-power",
+   "rule_version": "0.1.0",
+   "file": "generation/physical-guarantee-above-granted-power.yaml",
+   "sha256": "c5adf3eb73acbcb5cdec5caf61a410c1c775132624106b8872007687246102d5"
+  },
+  {
+   "id": "plant-coordinates-outside-brazil",
+   "rule_version": "0.1.0",
+   "file": "generation/plant-coordinates-outside-brazil.yaml",
+   "sha256": "50f709a89af0fd0eaefd10b6f366c4b9a6cca4db322c68e1437e0569b837dd6b"
+  },
+  {
+   "id": "board-decision-before-appeal",
+   "rule_version": "0.1.0",
+   "file": "infraction/board-decision-before-appeal.yaml",
+   "sha256": "0abdc180db5e40c80b9c0d29d2187a835a97a1f582ee39e5a1df3c6f7815aaec"
+  },
+  {
+   "id": "fine-after-appeal-above-original",
+   "rule_version": "0.1.0",
+   "file": "infraction/fine-after-appeal-above-original.yaml",
+   "sha256": "cb9d7e97a47d25734d49289edbb8a90c1424ae2dd5a2d1d855e500d073b9b9aa"
+  },
+  {
+   "id": "notice-received-before-issue",
+   "rule_version": "0.1.0",
+   "file": "infraction/notice-received-before-issue.yaml",
+   "sha256": "4fc87d725a6fdbacb68960b667fe8ef7f217743914b6a6ab9e9cce454163c8ec"
+  },
+  {
+   "id": "warning-with-fine-value",
+   "rule_version": "0.1.0",
+   "file": "infraction/warning-with-fine-value.yaml",
+   "sha256": "73fda09f0803469bd3a7a0d3f1d5ac1595cb5ff39835156f3f118fb7dcdcb5c5"
+  },
+  {
+   "id": "municipality-state",
+   "rule_version": "0.1.0",
+   "file": "territory/municipality-state.yaml",
+   "sha256": "950228be8aa6e3fd85d44ba777920792e1db70a0978a298f02f30ab7218739ef"
+  }
+ ],
+ "sources": [
+  {
+   "label": "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-geracao.csv",
+   "status": "ok",
+   "resource_id": "a1328fc1-f06b-437d-8893-57ac2c8103df",
+   "metadata_modified": "2026-10-01T05:00:54.692117",
+   "bytes": 422878,
+   "sha256": "547345ef69c8d7ca37f0ba143c5d12585e3dbd445906223ef537e1b71ef6c747"
+  },
+  {
+   "label": "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-transmissao.csv",
+   "status": "ok",
+   "resource_id": "453cb742-8089-4c16-aaf2-42088b5553dc",
+   "metadata_modified": "2026-10-01T05:00:50.200616",
+   "bytes": 135242,
+   "sha256": "a7165dbb5c148ba144b49ee8c807b52290215f77a83c113dfcf8bd3d3f971124"
+  },
+  {
+   "label": "dadosabertos.aneel.gov.br › relacao-de-empreendimentos-de-geracao-distribuida › empreendimento-geracao-distribuida.zip",
+   "status": "ok",
+   "resource_id": "b1bd71e7-d0ad-4214-9053-cbd58e9564a7",
+   "metadata_modified": "2026-10-08T05:41:34.395100",
+   "bytes": 110711016,
+   "sha256": "ccb1a405a5eaada5cc687a9c9666de0c5f29f166185a9a815b352cbbf71f6fb7"
+  },
+  {
+   "label": "dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv",
+   "status": "ok",
+   "resource_id": "11ec447d-698d-4ab8-977f-b424d5deee6a",
+   "metadata_modified": "2026-10-01T05:03:39.706150",
+   "bytes": 8418652,
+   "sha256": "60de2b32e25a67bc8708f649f3848b13ba602f6edc3823a5483405f07a0a5540"
+  },
+  {
+   "label": "dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv",
+   "status": "ok",
+   "resource_id": "f221158a-93a3-423f-b794-4312b6985a24",
+   "metadata_modified": "2026-10-05T08:01:04.909003",
+   "bytes": 709575,
+   "sha256": "a05192defd1399864639e899a5fbdc2ca6661e543a0aa1ff998edc7ce75b8d13"
+  },
+  {
+   "label": "dadosabertos.tse.jus.br › codigos-oficiais-de-uf-e-municipios-segundo-o-tse-e-o-ibge › Códigos oficiais de UF e municípios segundo o TSE e o IBGE",
+   "status": "ok",
+   "resource_id": "c6c767d7-f341-4256-8dff-010683a9c796",
+   "metadata_modified": "2025-06-24T18:07:38.590296",
+   "bytes": 139020,
+   "sha256": "f55c9720d221a9956279f6cb225aafcae797e0cf8ac2289040c052ab4ea7c712"
+  }
+ ]
+}

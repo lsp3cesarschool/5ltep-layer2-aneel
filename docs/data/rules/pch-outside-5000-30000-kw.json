@@ -1,0 +1,590 @@
+{
+ "rule": "pch-outside-5000-30000-kw",
+ "rule_version": "0.1.0",
+ "evaluated_at": "2026-10-09T10:22:44+00:00",
+ "run_id": "37917105517",
+ "environment": "github-actions",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/37917105517",
+ "numbering": "registro por arquivo (o publicado, ou cada arquivo dentro do zip); 1 = primeira linha após o cabeçalho",
+ "sources": {
+  "aneel_siga": {
+   "label": "dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv",
+   "file": "siga-empreendimentos-geracao.csv",
+   "files": null,
+   "url": "https://dadosabertos.aneel.gov.br/dataset/6d90b77c-c5f5-4d81-bdec-7bc619494bb9/resource/11ec447d-698d-4ab8-977f-b424d5deee6a/download/siga-empreendimentos-geracao.csv",
+   "archive_members": null,
+   "sha256": "60de2b32e25a67bc8708f649f3848b13ba602f6edc3823a5483405f07a0a5540",
+   "records": 25045
+  }
+ },
+ "counts": {
+  "match": 460,
+  "mismatch": 77,
+  "key_not_found": 0,
+  "missing_value": 0,
+  "invalid_value": 0,
+  "ambiguous_key": 0,
+  "out_of_scope": 24508
+ },
+ "total": 25045,
+ "records": {
+  "mismatch": {
+   "siga-empreendimentos-geracao.csv": [
+    1,
+    2,
+    3,
+    15,
+    18,
+    24,
+    30,
+    59,
+    112,
+    127,
+    141,
+    165,
+    196,
+    230,
+    234,
+    251,
+    255,
+    311,
+    320,
+    329,
+    349,
+    371,
+    417,
+    443,
+    460,
+    461,
+    512,
+    535,
+    548,
+    549,
+    569,
+    574,
+    595,
+    618,
+    622,
+    646,
+    665,
+    708,
+    747,
+    749,
+    771,
+    779,
+    861,
+    862,
+    877,
+    974,
+    1067,
+    1131,
+    1150,
+    1152,
+    1169,
+    1215,
+    1234,
+    1246,
+    1313,
+    1435,
+    1633,
+    1665,
+    1773,
+    1795,
+    1830,
+    2072,
+    2147,
+    2173,
+    2229,
+    2307,
+    2582,
+    2688,
+    3117,
+    3437,
+    3549,
+    3550,
+    3825,
+    4063,
+    4819,
+    4918,
+    4929
+   ]
+  }
+ },
+ "members": [
+  {
+   "name": "siga-empreendimentos-geracao.csv",
+   "records": 25045
+  }
+ ],
+ "by_member": {
+  "siga-empreendimentos-geracao.csv": {
+   "match": 460,
+   "mismatch": 77,
+   "out_of_scope": 24508
+  }
+ },
+ "by_period": {
+  "1900": {
+   "match": 99,
+   "mismatch": 3,
+   "out_of_scope": 2297
+  },
+  "1901": {
+   "out_of_scope": 1
+  },
+  "1905": {
+   "out_of_scope": 2
+  },
+  "1908": {
+   "match": 1,
+   "out_of_scope": 2
+  },
+  "1909": {
+   "mismatch": 1,
+   "out_of_scope": 4
+  },
+  "1910": {
+   "match": 1,
+   "out_of_scope": 2
+  },
+  "1911": {
+   "out_of_scope": 6
+  },
+  "1912": {
+   "match": 2,
+   "mismatch": 2,
+   "out_of_scope": 4
+  },
+  "1913": {
+   "out_of_scope": 1
+  },
+  "1914": {
+   "match": 1,
+   "mismatch": 1,
+   "out_of_scope": 3
+  },
+  "1915": {
+   "out_of_scope": 2
+  },
+  "1916": {
+   "out_of_scope": 1
+  },
+  "1917": {
+   "out_of_scope": 1
+  },
+  "1918": {
+   "out_of_scope": 2
+  },
+  "1919": {
+   "match": 1
+  },
+  "1920": {
+   "mismatch": 1,
+   "out_of_scope": 1
+  },
+  "1922": {
+   "out_of_scope": 1
+  },
+  "1923": {
+   "out_of_scope": 1
+  },
+  "1924": {
+   "out_of_scope": 4
+  },
+  "1925": {
+   "out_of_scope": 10
+  },
+  "1926": {
+   "out_of_scope": 1
+  },
+  "1927": {
+   "match": 1,
+   "out_of_scope": 1
+  },
+  "1928": {
+   "match": 1,
+   "mismatch": 1,
+   "out_of_scope": 4
+  },
+  "1929": {
+   "out_of_scope": 4
+  },
+  "1930": {
+   "match": 1,
+   "out_of_scope": 4
+  },
+  "1931": {
+   "out_of_scope": 3
+  },
+  "1932": {
+   "mismatch": 1
+  },
+  "1934": {
+   "out_of_scope": 2
+  },
+  "1935": {
+   "mismatch": 1
+  },
+  "1936": {
+   "mismatch": 1,
+   "out_of_scope": 2
+  },
+  "1937": {
+   "mismatch": 3,
+   "out_of_scope": 2
+  },
+  "1938": {
+   "mismatch": 1,
+   "out_of_scope": 1
+  },
+  "1939": {
+   "match": 1,
+   "mismatch": 1,
+   "out_of_scope": 1
+  },
+  "1940": {
+   "match": 1,
+   "out_of_scope": 6
+  },
+  "1941": {
+   "out_of_scope": 3
+  },
+  "1942": {
+   "out_of_scope": 2
+  },
+  "1943": {
+   "out_of_scope": 1
+  },
+  "1944": {
+   "out_of_scope": 4
+  },
+  "1945": {
+   "mismatch": 1,
+   "out_of_scope": 1
+  },
+  "1946": {
+   "out_of_scope": 5
+  },
+  "1947": {
+   "out_of_scope": 3
+  },
+  "1948": {
+   "match": 1,
+   "mismatch": 1,
+   "out_of_scope": 7
+  },
+  "1949": {
+   "match": 4,
+   "mismatch": 1,
+   "out_of_scope": 4
+  },
+  "1950": {
+   "match": 1,
+   "mismatch": 1,
+   "out_of_scope": 13
+  },
+  "1951": {
+   "out_of_scope": 8
+  },
+  "1952": {
+   "match": 1,
+   "mismatch": 1,
+   "out_of_scope": 11
+  },
+  "1953": {
+   "match": 1,
+   "mismatch": 4,
+   "out_of_scope": 6
+  },
+  "1954": {
+   "match": 1,
+   "mismatch": 1,
+   "out_of_scope": 12
+  },
+  "1955": {
+   "mismatch": 1,
+   "out_of_scope": 8
+  },
+  "1956": {
+   "match": 1,
+   "out_of_scope": 2
+  },
+  "1957": {
+   "out_of_scope": 7
+  },
+  "1958": {
+   "out_of_scope": 8
+  },
+  "1959": {
+   "match": 3,
+   "mismatch": 1,
+   "out_of_scope": 8
+  },
+  "1960": {
+   "out_of_scope": 3
+  },
+  "1961": {
+   "mismatch": 1,
+   "out_of_scope": 9
+  },
+  "1962": {
+   "out_of_scope": 6
+  },
+  "1963": {
+   "match": 2,
+   "out_of_scope": 7
+  },
+  "1964": {
+   "out_of_scope": 9
+  },
+  "1965": {
+   "out_of_scope": 5
+  },
+  "1966": {
+   "out_of_scope": 4
+  },
+  "1967": {
+   "out_of_scope": 3
+  },
+  "1968": {
+   "mismatch": 1,
+   "out_of_scope": 1
+  },
+  "1969": {
+   "out_of_scope": 11
+  },
+  "1970": {
+   "match": 1,
+   "mismatch": 1,
+   "out_of_scope": 11
+  },
+  "1971": {
+   "out_of_scope": 20
+  },
+  "1972": {
+   "out_of_scope": 5
+  },
+  "1973": {
+   "out_of_scope": 16
+  },
+  "1974": {
+   "out_of_scope": 11
+  },
+  "1975": {
+   "out_of_scope": 17
+  },
+  "1976": {
+   "mismatch": 1,
+   "out_of_scope": 19
+  },
+  "1977": {
+   "out_of_scope": 11
+  },
+  "1978": {
+   "out_of_scope": 17
+  },
+  "1979": {
+   "out_of_scope": 8
+  },
+  "1980": {
+   "out_of_scope": 19
+  },
+  "1981": {
+   "out_of_scope": 30
+  },
+  "1982": {
+   "match": 1,
+   "out_of_scope": 17
+  },
+  "1983": {
+   "mismatch": 2,
+   "out_of_scope": 13
+  },
+  "1984": {
+   "out_of_scope": 13
+  },
+  "1985": {
+   "mismatch": 2,
+   "out_of_scope": 15
+  },
+  "1986": {
+   "match": 1,
+   "out_of_scope": 20
+  },
+  "1987": {
+   "out_of_scope": 16
+  },
+  "1988": {
+   "match": 1,
+   "out_of_scope": 18
+  },
+  "1989": {
+   "out_of_scope": 16
+  },
+  "1990": {
+   "out_of_scope": 16
+  },
+  "1991": {
+   "out_of_scope": 8
+  },
+  "1992": {
+   "match": 2,
+   "mismatch": 1,
+   "out_of_scope": 14
+  },
+  "1993": {
+   "match": 1,
+   "out_of_scope": 13
+  },
+  "1994": {
+   "match": 1,
+   "mismatch": 3,
+   "out_of_scope": 27
+  },
+  "1995": {
+   "match": 1,
+   "out_of_scope": 23
+  },
+  "1996": {
+   "out_of_scope": 27
+  },
+  "1997": {
+   "match": 4,
+   "out_of_scope": 33
+  },
+  "1998": {
+   "match": 1,
+   "mismatch": 1,
+   "out_of_scope": 46
+  },
+  "1999": {
+   "match": 2,
+   "out_of_scope": 52
+  },
+  "2000": {
+   "out_of_scope": 63
+  },
+  "2001": {
+   "match": 3,
+   "mismatch": 6,
+   "out_of_scope": 140
+  },
+  "2002": {
+   "match": 5,
+   "mismatch": 1,
+   "out_of_scope": 120
+  },
+  "2003": {
+   "match": 18,
+   "out_of_scope": 97
+  },
+  "2004": {
+   "match": 3,
+   "mismatch": 2,
+   "out_of_scope": 84
+  },
+  "2005": {
+   "match": 5,
+   "out_of_scope": 101
+  },
+  "2006": {
+   "match": 12,
+   "out_of_scope": 93
+  },
+  "2007": {
+   "match": 13,
+   "mismatch": 1,
+   "out_of_scope": 92
+  },
+  "2008": {
+   "match": 31,
+   "mismatch": 1,
+   "out_of_scope": 293
+  },
+  "2009": {
+   "match": 21,
+   "mismatch": 1,
+   "out_of_scope": 188
+  },
+  "2010": {
+   "match": 23,
+   "mismatch": 2,
+   "out_of_scope": 212
+  },
+  "2011": {
+   "match": 25,
+   "mismatch": 5,
+   "out_of_scope": 250
+  },
+  "2012": {
+   "match": 20,
+   "mismatch": 4,
+   "out_of_scope": 267
+  },
+  "2013": {
+   "match": 15,
+   "out_of_scope": 248
+  },
+  "2014": {
+   "match": 9,
+   "out_of_scope": 282
+  },
+  "2015": {
+   "match": 6,
+   "mismatch": 1,
+   "out_of_scope": 331
+  },
+  "2016": {
+   "match": 12,
+   "mismatch": 1,
+   "out_of_scope": 184
+  },
+  "2017": {
+   "match": 12,
+   "mismatch": 2,
+   "out_of_scope": 1023
+  },
+  "2018": {
+   "match": 11,
+   "mismatch": 2,
+   "out_of_scope": 1682
+  },
+  "2019": {
+   "match": 13,
+   "mismatch": 2,
+   "out_of_scope": 1542
+  },
+  "2020": {
+   "match": 13,
+   "mismatch": 2,
+   "out_of_scope": 356
+  },
+  "2021": {
+   "match": 9,
+   "mismatch": 1,
+   "out_of_scope": 4374
+  },
+  "2022": {
+   "match": 11,
+   "out_of_scope": 8308
+  },
+  "2023": {
+   "match": 9,
+   "out_of_scope": 391
+  },
+  "2024": {
+   "match": 6,
+   "mismatch": 1,
+   "out_of_scope": 328
+  },
+  "2025": {
+   "match": 9,
+   "out_of_scope": 200
+  },
+  "2026": {
+   "match": 5,
+   "out_of_scope": 141
+  }
+ },
+ "timeline": "aneel_siga.DatEntradaOperacao"
+}

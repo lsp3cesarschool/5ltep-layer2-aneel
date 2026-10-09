@@ -1,0 +1,45 @@
+{
+ "rule": "microgeneration-above-75-kw",
+ "rule_version": "0.1.0",
+ "evaluated_at": "2026-10-09T10:22:42+00:00",
+ "run_id": "37917105517",
+ "environment": "github-actions",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/37917105517",
+ "numbering": "registro por arquivo (o publicado, ou cada arquivo dentro do zip); 1 = primeira linha após o cabeçalho",
+ "sources": {
+  "aneel_gd": {
+   "label": "dadosabertos.aneel.gov.br › relacao-de-empreendimentos-de-geracao-distribuida › empreendimento-geracao-distribuida.zip",
+   "file": "empreendimento-geracao-distribuida.zip",
+   "files": null,
+   "url": "https://dadosabertos.aneel.gov.br/dataset/5e0fafd2-21b9-4d5b-b622-40438d40aba2/resource/b1bd71e7-d0ad-4214-9053-cbd58e9564a7/download/empreendimento-geracao-distribuida.zip",
+   "archive_members": "empreendimento-geracao-distribuida.csv",
+   "sha256": "ccb1a405a5eaada5cc687a9c9666de0c5f29f166185a9a815b352cbbf71f6fb7",
+   "records": 4647773
+  }
+ },
+ "counts": {
+  "match": 4626337,
+  "mismatch": 0,
+  "key_not_found": 0,
+  "missing_value": 0,
+  "invalid_value": 0,
+  "ambiguous_key": 0,
+  "out_of_scope": 21436
+ },
+ "total": 4647773,
+ "records": {},
+ "members": [
+  {
+   "name": "empreendimento-geracao-distribuida.csv",
+   "records": 4647773
+  }
+ ],
+ "by_member": {
+  "empreendimento-geracao-distribuida.csv": {
+   "match": 4626337,
+   "out_of_scope": 21436
+  }
+ },
+ "by_period": {},
+ "timeline": null
+}

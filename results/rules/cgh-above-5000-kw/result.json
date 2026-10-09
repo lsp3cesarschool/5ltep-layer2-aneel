@@ -1,0 +1,72 @@
+{
+ "run_id": "37917105517",
+ "environment": "github-actions",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/37917105517",
+ "id": "cgh-above-5000-kw",
+ "rule_version": "0.1.0",
+ "origin": "expert",
+ "file": "generation/cgh-above-5000-kw.yaml",
+ "folder": "generation",
+ "language": "pt-BR",
+ "title": "Central geradora hidrelétrica (CGH) acima de 5.000 kW",
+ "title_translations": {
+  "en": "Small hydro generating station (CGH) above 5,000 kW"
+ },
+ "text": "Sinaliza CGH com potência outorgada acima de 5.000 kW.\n",
+ "justification": "O porte define o enquadramento da hidrelétrica: CGH até 5.000 kW (Lei 13.360/2016) e PCH acima de 5.000 até 30.000 kW (REN ANEEL 875/2020). Antes de 2016 o limite da CGH era 3.000 kW, e ampliações posteriores não desfazem um enquadramento histórico: a regra é hipótese de triagem. Potência em kW, com vírgula decimal.\n",
+ "exceptions": [
+  "Enquadramentos anteriores a 2016 seguiam o limite de 3.000 kW para CGH.",
+  "Ampliações de potência depois do enquadramento não o invalidam automaticamente."
+ ],
+ "template": "flag-when",
+ "evaluated_source": "aneel_siga",
+ "timeline": "aneel_siga.DatEntradaOperacao",
+ "exposure": "records",
+ "datasets": [
+  {
+   "source": "aneel_siga",
+   "label": "dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv"
+  }
+ ],
+ "status": "evaluated",
+ "reason_code": null,
+ "reason": null,
+ "evaluated_at": "2026-10-09T10:22:44+00:00",
+ "total": 25045,
+ "counts": {
+  "match": 718,
+  "mismatch": 0,
+  "key_not_found": 0,
+  "missing_value": 0,
+  "invalid_value": 0,
+  "ambiguous_key": 0,
+  "out_of_scope": 24327
+ },
+ "signals": 0,
+ "signals_by_outcome": {
+  "mismatch": 0,
+  "key_not_found": 0,
+  "missing_value": 0,
+  "invalid_value": 0,
+  "ambiguous_key": 0
+ },
+ "list": "rules/cgh-above-5000-kw.json",
+ "sources": {
+  "aneel_siga": {
+   "resource": "dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv",
+   "fetch_status": "ok",
+   "sha256": "60de2b32e25a67bc8708f649f3848b13ba602f6edc3823a5483405f07a0a5540",
+   "url": "https://dadosabertos.aneel.gov.br/dataset/6d90b77c-c5f5-4d81-bdec-7bc619494bb9/resource/11ec447d-698d-4ab8-977f-b424d5deee6a/download/siga-empreendimentos-geracao.csv",
+   "file": "siga-empreendimentos-geracao.csv",
+   "files": null,
+   "archive_members": null,
+   "records": 25045,
+   "members": [
+    {
+     "name": "siga-empreendimentos-geracao.csv",
+     "records": 25045
+    }
+   ]
+  }
+ }
+}

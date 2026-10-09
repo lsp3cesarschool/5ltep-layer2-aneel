@@ -1,0 +1,1473 @@
+{
+ "layer": 2,
+ "run_id": "37917105517",
+ "environment": "github-actions",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/37917105517",
+ "generated_at": "2026-10-09T10:22:47+00:00",
+ "started_at": "2026-10-09T10:21:49+00:00",
+ "totals": {
+  "rules": 13,
+  "evaluated": 13,
+  "not_evaluated": 0,
+  "sources": 6,
+  "sources_ok": 6,
+  "signals": 553
+ },
+ "rules": [
+  {
+   "id": "generation-price-above-ceiling",
+   "rule_version": "0.1.0",
+   "origin": "expert",
+   "file": "auctions/generation-price-above-ceiling.yaml",
+   "folder": "auctions",
+   "language": "pt-BR",
+   "title": "Preço do leilão de geração acima do preço-teto",
+   "title_translations": {
+    "en": "Generation auction price above the ceiling price"
+   },
+   "text": "Confere, em cada empreendimento vendido em leilão de geração, se o preço não passa do preço-teto.\n",
+   "justification": "O edital fixa o preço-teto; um lance vencedor acima dele não deveria existir (Lei 10.848/2004 e editais). Diferença indica erro de registro, de unidade ou de base monetária. Valores com vírgula decimal. É sinal para revisão.\n",
+   "exceptions": [
+    "Leilões com preços em bases diferentes (data-base, moeda) não são comparáveis."
+   ],
+   "examples": [
+    {
+     "case": "Teto 250,00 e preço 198,50",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Teto 250,00 e preço 260,00",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "field-comparison",
+   "evaluated_source": "aneel_leiloes_geracao",
+   "timeline": "aneel_leiloes_geracao.DatLeilao",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "aneel_leiloes_geracao",
+     "label": "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-geracao.csv"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T10:22:06+00:00",
+   "total": 1552,
+   "counts": {
+    "match": 1552,
+    "mismatch": 0,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 0
+   },
+   "signals": 0,
+   "signals_by_outcome": {
+    "mismatch": 0,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/generation-price-above-ceiling.json"
+  },
+  {
+   "id": "transmission-rap-above-edital",
+   "rule_version": "0.1.0",
+   "origin": "expert",
+   "file": "auctions/transmission-rap-above-edital.yaml",
+   "folder": "auctions",
+   "language": "pt-BR",
+   "title": "RAP vencedora do leilão de transmissão acima da RAP do edital",
+   "title_translations": {
+    "en": "Winning annual revenue (RAP) above the auction's ceiling"
+   },
+   "text": "Confere, em cada lote de leilão de transmissão, se a receita anual permitida (RAP) vencedora não passa da RAP do edital.\n",
+   "justification": "A RAP do edital é o teto do leilão de transmissão; a vencedora deve ser igual ou menor. Valor maior indica erro de registro ou de base. Valores com vírgula decimal. É sinal para revisão.\n",
+   "exceptions": [
+    "Lotes com RAP em bases de data diferentes não são comparáveis."
+   ],
+   "examples": [
+    {
+     "case": "RAP do edital 50000000,00 e vencedora 38000000,00",
+     "expected": "Conforme"
+    },
+    {
+     "case": "RAP do edital 50000000,00 e vencedora 52000000,00",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "field-comparison",
+   "evaluated_source": "aneel_leiloes_transmissao",
+   "timeline": "aneel_leiloes_transmissao.DatLeilao",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "aneel_leiloes_transmissao",
+     "label": "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-transmissao.csv"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T10:22:06+00:00",
+   "total": 488,
+   "counts": {
+    "match": 488,
+    "mismatch": 0,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 0
+   },
+   "signals": 0,
+   "signals_by_outcome": {
+    "mismatch": 0,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/transmission-rap-above-edital.json"
+  },
+  {
+   "id": "microgeneration-above-75-kw",
+   "rule_version": "0.1.0",
+   "origin": "expert",
+   "file": "distributed-generation/microgeneration-above-75-kw.yaml",
+   "folder": "distributed-generation",
+   "language": "pt-BR",
+   "title": "Microgeração acima de 75 kW",
+   "title_translations": {
+    "en": "Microgeneration above 75 kW"
+   },
+   "text": "Sinaliza empreendimentos declarados como microgeração com potência instalada acima de 75 kW.\n",
+   "justification": "A Lei 14.300/2022, art. 1º, define microgeração distribuída como potência instalada até 75 kW. Microgeração acima disso indica porte declarado incorreto ou erro de unidade. Potência com vírgula decimal. É sinal para revisão.\n",
+   "exceptions": [
+    "Regras de transição podem manter o enquadramento de pedidos anteriores à lei."
+   ],
+   "examples": [
+    {
+     "case": "Microgeração de 5,00 kW",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Microgeração de 120,00 kW",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "flag-when",
+   "evaluated_source": "aneel_gd",
+   "timeline": null,
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "aneel_gd",
+     "label": "dadosabertos.aneel.gov.br › relacao-de-empreendimentos-de-geracao-distribuida › empreendimento-geracao-distribuida.zip"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T10:22:42+00:00",
+   "total": 4647773,
+   "counts": {
+    "match": 4626337,
+    "mismatch": 0,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 21436
+   },
+   "signals": 0,
+   "signals_by_outcome": {
+    "mismatch": 0,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/microgeneration-above-75-kw.json"
+  },
+  {
+   "id": "minigeneration-outside-range",
+   "rule_version": "0.1.0",
+   "origin": "expert",
+   "file": "distributed-generation/minigeneration-outside-range.yaml",
+   "folder": "distributed-generation",
+   "language": "pt-BR",
+   "title": "Minigeração fora da faixa de 75 a 5.000 kW",
+   "title_translations": {
+    "en": "Minigeneration outside 75-5,000 kW"
+   },
+   "text": "Sinaliza empreendimentos declarados como minigeração com potência instalada até 75 kW ou acima de 5.000 kW.\n",
+   "justification": "A Lei 14.300/2022, art. 1º, define minigeração como potência acima de 75 kW e até 5.000 kW para fontes despacháveis (3.000 kW para as não despacháveis, com transição). Fora da faixa, o porte declarado ou a unidade estão incorretos. O limite de 3.000 kW das não despacháveis não é aplicado aqui por depender da transição. Potência com vírgula decimal. É sinal para revisão.\n",
+   "exceptions": [
+    "Fontes não despacháveis têm limite de 3.000 kW a partir das regras de transição; esta regra usa 5.000 kW."
+   ],
+   "examples": [
+    {
+     "case": "Minigeração de 300,00 kW",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Minigeração de 50,00 kW",
+     "expected": "Sinalizar"
+    },
+    {
+     "case": "Minigeração de 8000,00 kW",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "flag-when",
+   "evaluated_source": "aneel_gd",
+   "timeline": null,
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "aneel_gd",
+     "label": "dadosabertos.aneel.gov.br › relacao-de-empreendimentos-de-geracao-distribuida › empreendimento-geracao-distribuida.zip"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T10:22:44+00:00",
+   "total": 4647773,
+   "counts": {
+    "match": 21436,
+    "mismatch": 0,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 4626337
+   },
+   "signals": 0,
+   "signals_by_outcome": {
+    "mismatch": 0,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/minigeneration-outside-range.json"
+  },
+  {
+   "id": "cgh-above-5000-kw",
+   "rule_version": "0.1.0",
+   "origin": "expert",
+   "file": "generation/cgh-above-5000-kw.yaml",
+   "folder": "generation",
+   "language": "pt-BR",
+   "title": "Central geradora hidrelétrica (CGH) acima de 5.000 kW",
+   "title_translations": {
+    "en": "Small hydro generating station (CGH) above 5,000 kW"
+   },
+   "text": "Sinaliza CGH com potência outorgada acima de 5.000 kW.\n",
+   "justification": "O porte define o enquadramento da hidrelétrica: CGH até 5.000 kW (Lei 13.360/2016) e PCH acima de 5.000 até 30.000 kW (REN ANEEL 875/2020). Antes de 2016 o limite da CGH era 3.000 kW, e ampliações posteriores não desfazem um enquadramento histórico: a regra é hipótese de triagem. Potência em kW, com vírgula decimal.\n",
+   "exceptions": [
+    "Enquadramentos anteriores a 2016 seguiam o limite de 3.000 kW para CGH.",
+    "Ampliações de potência depois do enquadramento não o invalidam automaticamente."
+   ],
+   "examples": [
+    {
+     "case": "CGH com 1000,00 kW",
+     "expected": "Conforme"
+    },
+    {
+     "case": "CGH com 8000,00 kW",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "flag-when",
+   "evaluated_source": "aneel_siga",
+   "timeline": "aneel_siga.DatEntradaOperacao",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "aneel_siga",
+     "label": "dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T10:22:44+00:00",
+   "total": 25045,
+   "counts": {
+    "match": 718,
+    "mismatch": 0,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 24327
+   },
+   "signals": 0,
+   "signals_by_outcome": {
+    "mismatch": 0,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/cgh-above-5000-kw.json"
+  },
+  {
+   "id": "pch-outside-5000-30000-kw",
+   "rule_version": "0.1.0",
+   "origin": "expert",
+   "file": "generation/pch-outside-5000-30000-kw.yaml",
+   "folder": "generation",
+   "language": "pt-BR",
+   "title": "Pequena central hidrelétrica (PCH) fora da faixa de 5.000 a 30.000 kW",
+   "title_translations": {
+    "en": "Small hydropower plant (PCH) outside 5,000-30,000 kW"
+   },
+   "text": "Sinaliza PCH com potência outorgada até 5.000 kW ou acima de 30.000 kW.\n",
+   "justification": "O porte define o enquadramento da hidrelétrica: CGH até 5.000 kW (Lei 13.360/2016) e PCH acima de 5.000 até 30.000 kW (REN ANEEL 875/2020). Antes de 2016 o limite da CGH era 3.000 kW, e ampliações posteriores não desfazem um enquadramento histórico: a regra é hipótese de triagem. Potência em kW, com vírgula decimal.\n",
+   "exceptions": [
+    "Enquadramentos anteriores a 2016 seguiam o limite de 3.000 kW para CGH.",
+    "Ampliações de potência depois do enquadramento não o invalidam automaticamente."
+   ],
+   "examples": [
+    {
+     "case": "PCH com 15000,00 kW",
+     "expected": "Conforme"
+    },
+    {
+     "case": "PCH com 45000,00 kW",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "flag-when",
+   "evaluated_source": "aneel_siga",
+   "timeline": "aneel_siga.DatEntradaOperacao",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "aneel_siga",
+     "label": "dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T10:22:44+00:00",
+   "total": 25045,
+   "counts": {
+    "match": 460,
+    "mismatch": 77,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 24508
+   },
+   "signals": 77,
+   "signals_by_outcome": {
+    "mismatch": 77,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/pch-outside-5000-30000-kw.json"
+  },
+  {
+   "id": "physical-guarantee-above-granted-power",
+   "rule_version": "0.1.0",
+   "origin": "expert",
+   "file": "generation/physical-guarantee-above-granted-power.yaml",
+   "folder": "generation",
+   "language": "pt-BR",
+   "title": "Garantia física maior que a potência outorgada",
+   "title_translations": {
+    "en": "Physical guarantee above the granted power"
+   },
+   "text": "Confere, em cada usina do SIGA, se a garantia física não passa da potência outorgada.\n",
+   "justification": "A garantia física é a energia média que a usina pode comprometer; ela não pode exceder a capacidade máxima correspondente nas mesmas condições (Decreto 5.163/2004, art. 2º). Garantia acima da potência outorgada indica erro de unidade ou de registro, ou grandezas não comparáveis. Valores em kW, com vírgula decimal. É sinal para revisão.\n",
+   "exceptions": [
+    "Usinas sem garantia física (a maioria das solares) têm valor zero e são conformes."
+   ],
+   "examples": [
+    {
+     "case": "Potência outorgada 30000,00 kW e garantia física 15000,00 kW",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Potência outorgada 3000,00 kW e garantia física 30000,00 kW",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "field-comparison",
+   "evaluated_source": "aneel_siga",
+   "timeline": "aneel_siga.DatEntradaOperacao",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "aneel_siga",
+     "label": "dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T10:22:44+00:00",
+   "total": 25045,
+   "counts": {
+    "match": 25040,
+    "mismatch": 5,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 0
+   },
+   "signals": 5,
+   "signals_by_outcome": {
+    "mismatch": 5,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/physical-guarantee-above-granted-power.json"
+  },
+  {
+   "id": "plant-coordinates-outside-brazil",
+   "rule_version": "0.1.0",
+   "origin": "expert",
+   "file": "generation/plant-coordinates-outside-brazil.yaml",
+   "folder": "generation",
+   "language": "pt-BR",
+   "title": "Coordenada da usina ausente ou fora do Brasil",
+   "title_translations": {
+    "en": "Plant coordinates missing or outside Brazil"
+   },
+   "text": "Sinaliza usinas do SIGA sem coordenada ou com coordenada fora do retângulo que contém o território brasileiro (latitude de -34,0 a 5,5; longitude de -74,2 a -28,6).\n",
+   "justification": "Usinas outorgadas pela ANEEL ficam no Brasil; coordenada fora do retângulo do território (que inclui as ilhas oceânicas) indica erro de sinal, de eixo trocado, de projeção ou o ponto (0,0). O retângulo é uma aproximação: um ponto dentro dele ainda pode estar fora do Brasil. Coordenadas em graus decimais, com vírgula. É sinal para revisão.\n",
+   "exceptions": [
+    "Usinas no mar territorial fora do retângulo, se existirem, precisam de domínio próprio."
+   ],
+   "examples": [
+    {
+     "case": "Latitude -8,05, longitude -34,9",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Latitude 0, longitude 0",
+     "expected": "Sinalizar"
+    },
+    {
+     "case": "Latitude -34,9, longitude -8,05 (eixos trocados)",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "flag-when",
+   "evaluated_source": "aneel_siga",
+   "timeline": "aneel_siga.DatEntradaOperacao",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "aneel_siga",
+     "label": "dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T10:22:45+00:00",
+   "total": 25045,
+   "counts": {
+    "match": 24580,
+    "mismatch": 465,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 0
+   },
+   "signals": 465,
+   "signals_by_outcome": {
+    "mismatch": 465,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/plant-coordinates-outside-brazil.json"
+  },
+  {
+   "id": "board-decision-before-appeal",
+   "rule_version": "0.1.0",
+   "origin": "expert",
+   "file": "infraction/board-decision-before-appeal.yaml",
+   "folder": "infraction",
+   "language": "pt-BR",
+   "title": "Decisão da diretoria anterior ao recebimento do recurso",
+   "title_translations": {
+    "en": "Board decision dated before the appeal was received"
+   },
+   "text": "Confere se a data da decisão da diretoria não é anterior à data de recebimento do recurso.\n",
+   "justification": "A diretoria decide sobre um recurso já recebido; a ordem inversa indica erro de data ou de encadeamento. É sinal para revisão.\n",
+   "exceptions": [
+    "Autos sem recurso ou sem decisão da diretoria ficam fora do escopo.",
+    "Recurso e decisão podem pertencer a etapas diferentes do processo."
+   ],
+   "examples": [
+    {
+     "case": "Recurso 2023-05-02, decisão 2024-01-15",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Recurso 2023-05-02, decisão 2023-03-01",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "temporal-order",
+   "evaluated_source": "aneel_autos",
+   "timeline": "aneel_autos.DtRecebimentoRecurso",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "aneel_autos",
+     "label": "dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T10:22:45+00:00",
+   "total": 1619,
+   "counts": {
+    "match": 207,
+    "mismatch": 0,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 1412
+   },
+   "signals": 0,
+   "signals_by_outcome": {
+    "mismatch": 0,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/board-decision-before-appeal.json"
+  },
+  {
+   "id": "fine-after-appeal-above-original",
+   "rule_version": "0.1.0",
+   "origin": "expert",
+   "file": "infraction/fine-after-appeal-above-original.yaml",
+   "folder": "infraction",
+   "language": "pt-BR",
+   "title": "Multa após recurso maior que a original",
+   "title_translations": {
+    "en": "Fine after appeal higher than the original"
+   },
+   "text": "Sinaliza autos em que a multa após o juízo do recurso é maior que o valor original da penalidade.\n",
+   "justification": "O agravamento da multa em recurso é admitido com ciência prévia do interessado (Lei 9.784/1999, art. 64, parágrafo único); a comparação é informativa, para conferir o processo. Valores com vírgula decimal.\n",
+   "exceptions": [
+    "Agravamento é possível na hipótese normativa indicada.",
+    "Autos sem multa após o juízo ficam fora do escopo."
+   ],
+   "examples": [
+    {
+     "case": "Original 100000,00 e após recurso 80000,00",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Original 100000,00 e após recurso 120000,00",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "field-comparison",
+   "evaluated_source": "aneel_autos",
+   "timeline": "aneel_autos.DatLavraturaAutoInfracao",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "aneel_autos",
+     "label": "dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T10:22:45+00:00",
+   "total": 1619,
+   "counts": {
+    "match": 260,
+    "mismatch": 1,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 1358
+   },
+   "signals": 1,
+   "signals_by_outcome": {
+    "mismatch": 1,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/fine-after-appeal-above-original.json"
+  },
+  {
+   "id": "notice-received-before-issue",
+   "rule_version": "0.1.0",
+   "origin": "expert",
+   "file": "infraction/notice-received-before-issue.yaml",
+   "folder": "infraction",
+   "language": "pt-BR",
+   "title": "Recebimento do auto anterior à lavratura",
+   "title_translations": {
+    "en": "Notice received before it was issued"
+   },
+   "text": "Confere se a data de recebimento do auto de infração não é anterior à data de lavratura.\n",
+   "justification": "O auto é recebido depois de lavrado; a ordem inversa indica erro de data. Mesma família de IB-12 no IBAMA. É sinal para revisão.\n",
+   "exceptions": [
+    "Autos sem data de recebimento ficam fora do escopo."
+   ],
+   "examples": [
+    {
+     "case": "Lavratura 2024-03-01, recebimento 2024-03-08",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Lavratura 2024-03-01, recebimento 2024-02-20",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "temporal-order",
+   "evaluated_source": "aneel_autos",
+   "timeline": "aneel_autos.DatLavraturaAutoInfracao",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "aneel_autos",
+     "label": "dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T10:22:45+00:00",
+   "total": 1619,
+   "counts": {
+    "match": 1551,
+    "mismatch": 5,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 63
+   },
+   "signals": 5,
+   "signals_by_outcome": {
+    "mismatch": 5,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/notice-received-before-issue.json"
+  },
+  {
+   "id": "warning-with-fine-value",
+   "rule_version": "0.1.0",
+   "origin": "expert",
+   "file": "infraction/warning-with-fine-value.yaml",
+   "folder": "infraction",
+   "language": "pt-BR",
+   "title": "Advertência com valor de penalidade",
+   "title_translations": {
+    "en": "Warning with a penalty amount"
+   },
+   "text": "Sinaliza autos cuja penalidade é só advertência e que trazem valor de penalidade maior que zero.\n",
+   "justification": "Advertência não tem valor monetário (REN ANEEL 846/2019); valor positivo junto de advertência pede conferir se o valor é de outra sanção, de outra etapa ou erro de registro. Autos \"Advertência / Multa\" ficam de fora. Valores com vírgula decimal. É sinal para revisão.\n",
+   "exceptions": [
+    "O valor pode se referir a outra penalidade do mesmo processo."
+   ],
+   "examples": [
+    {
+     "case": "Advertência com valor vazio ou zero",
+     "expected": "Conforme"
+    },
+    {
+     "case": "Advertência com valor 150000,00",
+     "expected": "Sinalizar"
+    }
+   ],
+   "template": "flag-when",
+   "evaluated_source": "aneel_autos",
+   "timeline": "aneel_autos.DatLavraturaAutoInfracao",
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "aneel_autos",
+     "label": "dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T10:22:45+00:00",
+   "total": 1619,
+   "counts": {
+    "match": 1619,
+    "mismatch": 0,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 0
+   },
+   "signals": 0,
+   "signals_by_outcome": {
+    "mismatch": 0,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/warning-with-fine-value.json"
+  },
+  {
+   "id": "municipality-state",
+   "rule_version": "0.1.0",
+   "origin": "cross_reference",
+   "file": "territory/municipality-state.yaml",
+   "folder": "territory",
+   "language": "pt-BR",
+   "title": "Código do município compatível com a UF do mesmo local",
+   "title_translations": {
+    "en": "Municipality code consistent with the state of the same place"
+   },
+   "text": "Para cada empreendimento de micro e minigeração distribuída, procura o código IBGE do município na tabela oficial de municípios publicada pelo TSE e confere se a UF do empreendimento é a UF desse município.\n",
+   "justification": "A mesma regra do IBAMA (municipality-state), reutilizada em outro portal com outras colunas: município e UF do mesmo registro precisam descrever o mesmo lugar. Uma divergência pode indicar erro de digitação, de codificação ou campos de contextos diferentes. É sinal para revisão.\n",
+   "exceptions": [
+    "Código de município extinto ou criado depois da tabela do TSE aparece como não encontrado, não como divergência.",
+    "Código ou UF vazio fica sem informação e não é contado como conforme."
+   ],
+   "examples": [
+    {
+     "case": "CodMunicipioIbge 2611606 (Recife) com SigUF PE",
+     "expected": "Conforme"
+    },
+    {
+     "case": "CodMunicipioIbge 2611606 (Recife) com SigUF AL",
+     "expected": "Sinalizar: a tabela do TSE indica PE"
+    }
+   ],
+   "template": "lookup-equals",
+   "evaluated_source": "aneel_gd",
+   "timeline": null,
+   "exposure": "records",
+   "datasets": [
+    {
+     "source": "aneel_gd",
+     "label": "dadosabertos.aneel.gov.br › relacao-de-empreendimentos-de-geracao-distribuida › empreendimento-geracao-distribuida.zip"
+    },
+    {
+     "source": "tse_municipios",
+     "label": "dadosabertos.tse.jus.br › codigos-oficiais-de-uf-e-municipios-segundo-o-tse-e-o-ibge › Códigos oficiais de UF e municípios segundo o TSE e o IBGE"
+    }
+   ],
+   "status": "evaluated",
+   "reason_code": null,
+   "reason": null,
+   "evaluated_at": "2026-10-09T10:22:47+00:00",
+   "total": 4647773,
+   "counts": {
+    "match": 4647773,
+    "mismatch": 0,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0,
+    "out_of_scope": 0
+   },
+   "signals": 0,
+   "signals_by_outcome": {
+    "mismatch": 0,
+    "key_not_found": 0,
+    "missing_value": 0,
+    "invalid_value": 0,
+    "ambiguous_key": 0
+   },
+   "list": "rules/municipality-state.json"
+  }
+ ],
+ "sources": [
+  {
+   "portal": "https://dadosabertos.aneel.gov.br",
+   "dataset_name": "resultado-de-leiloes",
+   "resource_name": "resultado-leiloes-geracao.csv",
+   "resource_format": "CSV",
+   "label": "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-geracao.csv",
+   "role": "primary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "generation-price-above-ceiling"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 0.71
+   },
+   "dataset": {
+    "title": "Resultado de leilões de geração e transmissão de energia elétrica",
+    "organization": "Agência Nacional de Energia Elétrica",
+    "license": "Open Data Commons Open Database License (ODbL)",
+    "metadata_modified": "2026-10-01T05:00:54.703144"
+   },
+   "resource": {
+    "id": "a1328fc1-f06b-437d-8893-57ac2c8103df",
+    "url": "https://dadosabertos.aneel.gov.br/dataset/593537c6-9e0e-4ed9-817a-2c5d5de05147/resource/a1328fc1-f06b-437d-8893-57ac2c8103df/download/resultado-leiloes-geracao.csv",
+    "name": "resultado-leiloes-geracao.csv",
+    "metadata_modified": "2026-10-01T05:00:54.692117",
+    "last_modified": "2026-10-01T05:00:46.298607",
+    "size_declared": 422878
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "\"1790830846.3464944-422878-1986007686\"",
+    "last_modified": "Thu, 01 Oct 2026 05:00:46 GMT",
+    "content_type": "text/csv",
+    "served_by": "dadosabertos.aneel.gov.br",
+    "bytes": 422878,
+    "sha256": "547345ef69c8d7ca37f0ba143c5d12585e3dbd445906223ef537e1b71ef6c747",
+    "seconds": 1.04,
+    "mb_per_s": 0.406
+   },
+   "files": [
+    {
+     "file": "resultado-leiloes-geracao.csv",
+     "url": "https://dadosabertos.aneel.gov.br/dataset/593537c6-9e0e-4ed9-817a-2c5d5de05147/resource/a1328fc1-f06b-437d-8893-57ac2c8103df/download/resultado-leiloes-geracao.csv",
+     "resource_id": "a1328fc1-f06b-437d-8893-57ac2c8103df",
+     "bytes": 422878,
+     "sha256": "547345ef69c8d7ca37f0ba143c5d12585e3dbd445906223ef537e1b71ef6c747"
+    }
+   ]
+  },
+  {
+   "portal": "https://dadosabertos.aneel.gov.br",
+   "dataset_name": "resultado-de-leiloes",
+   "resource_name": "resultado-leiloes-transmissao.csv",
+   "resource_format": "CSV",
+   "label": "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-transmissao.csv",
+   "role": "primary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "transmission-rap-above-edital"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 0.19
+   },
+   "dataset": {
+    "title": "Resultado de leilões de geração e transmissão de energia elétrica",
+    "organization": "Agência Nacional de Energia Elétrica",
+    "license": "Open Data Commons Open Database License (ODbL)",
+    "metadata_modified": "2026-10-01T05:00:54.703144"
+   },
+   "resource": {
+    "id": "453cb742-8089-4c16-aaf2-42088b5553dc",
+    "url": "https://dadosabertos.aneel.gov.br/dataset/593537c6-9e0e-4ed9-817a-2c5d5de05147/resource/453cb742-8089-4c16-aaf2-42088b5553dc/download/resultado-leiloes-transmissao.csv",
+    "name": "resultado-leiloes-transmissao.csv",
+    "metadata_modified": "2026-10-01T05:00:50.200616",
+    "last_modified": "2026-10-01T05:00:45.400830",
+    "size_declared": 135242
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "\"1790830845.4455132-135242-1826951718\"",
+    "last_modified": "Thu, 01 Oct 2026 05:00:45 GMT",
+    "content_type": "text/csv",
+    "served_by": "dadosabertos.aneel.gov.br",
+    "bytes": 135242,
+    "sha256": "a7165dbb5c148ba144b49ee8c807b52290215f77a83c113dfcf8bd3d3f971124",
+    "seconds": 0.22,
+    "mb_per_s": 0.614
+   },
+   "files": [
+    {
+     "file": "resultado-leiloes-transmissao.csv",
+     "url": "https://dadosabertos.aneel.gov.br/dataset/593537c6-9e0e-4ed9-817a-2c5d5de05147/resource/453cb742-8089-4c16-aaf2-42088b5553dc/download/resultado-leiloes-transmissao.csv",
+     "resource_id": "453cb742-8089-4c16-aaf2-42088b5553dc",
+     "bytes": 135242,
+     "sha256": "a7165dbb5c148ba144b49ee8c807b52290215f77a83c113dfcf8bd3d3f971124"
+    }
+   ]
+  },
+  {
+   "portal": "https://dadosabertos.aneel.gov.br",
+   "dataset_name": "relacao-de-empreendimentos-de-geracao-distribuida",
+   "resource_name": "empreendimento-geracao-distribuida.zip",
+   "resource_format": "ZIP",
+   "label": "dadosabertos.aneel.gov.br › relacao-de-empreendimentos-de-geracao-distribuida › empreendimento-geracao-distribuida.zip",
+   "role": "primary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "microgeneration-above-75-kw",
+    "minigeneration-outside-range",
+    "municipality-state"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 0.2
+   },
+   "dataset": {
+    "title": "Relação de empreendimentos de Mini e Micro Geração Distribuída",
+    "organization": "Agência Nacional de Energia Elétrica",
+    "license": "Licença Aberta para Bases de Dados (ODbL) do Open Data Commons",
+    "metadata_modified": "2026-10-08T06:31:41.813019"
+   },
+   "resource": {
+    "id": "b1bd71e7-d0ad-4214-9053-cbd58e9564a7",
+    "url": "https://dadosabertos.aneel.gov.br/dataset/5e0fafd2-21b9-4d5b-b622-40438d40aba2/resource/b1bd71e7-d0ad-4214-9053-cbd58e9564a7/download/empreendimento-geracao-distribuida.zip",
+    "name": "empreendimento-geracao-distribuida.zip",
+    "metadata_modified": "2026-10-08T05:41:34.395100",
+    "last_modified": "2026-10-08T05:41:34.384560",
+    "size_declared": 110711016
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "\"1791438094.4768991-110711016-2148733619\"",
+    "last_modified": "Thu, 08 Oct 2026 05:41:34 GMT",
+    "content_type": "application/zip",
+    "served_by": "dadosabertos.aneel.gov.br",
+    "bytes": 110711016,
+    "sha256": "ccb1a405a5eaada5cc687a9c9666de0c5f29f166185a9a815b352cbbf71f6fb7",
+    "seconds": 11.51,
+    "mb_per_s": 9.622
+   },
+   "files": [
+    {
+     "file": "empreendimento-geracao-distribuida.zip",
+     "url": "https://dadosabertos.aneel.gov.br/dataset/5e0fafd2-21b9-4d5b-b622-40438d40aba2/resource/b1bd71e7-d0ad-4214-9053-cbd58e9564a7/download/empreendimento-geracao-distribuida.zip",
+     "resource_id": "b1bd71e7-d0ad-4214-9053-cbd58e9564a7",
+     "bytes": 110711016,
+     "sha256": "ccb1a405a5eaada5cc687a9c9666de0c5f29f166185a9a815b352cbbf71f6fb7"
+    }
+   ]
+  },
+  {
+   "portal": "https://dadosabertos.aneel.gov.br",
+   "dataset_name": "siga-sistema-de-informacoes-de-geracao-da-aneel",
+   "resource_name": "siga-empreendimentos-geracao.csv",
+   "resource_format": "CSV",
+   "label": "dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv",
+   "role": "primary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "cgh-above-5000-kw",
+    "pch-outside-5000-30000-kw",
+    "physical-guarantee-above-granted-power",
+    "plant-coordinates-outside-brazil"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 0.26
+   },
+   "dataset": {
+    "title": "SIGA - Sistema de Informações de Geração da ANEEL",
+    "organization": "Agência Nacional de Energia Elétrica",
+    "license": "Open Data Commons Open Database License (ODbL)",
+    "metadata_modified": "2026-10-08T10:40:37.624196"
+   },
+   "resource": {
+    "id": "11ec447d-698d-4ab8-977f-b424d5deee6a",
+    "url": "https://dadosabertos.aneel.gov.br/dataset/6d90b77c-c5f5-4d81-bdec-7bc619494bb9/resource/11ec447d-698d-4ab8-977f-b424d5deee6a/download/siga-empreendimentos-geracao.csv",
+    "name": "siga-empreendimentos-geracao.csv",
+    "metadata_modified": "2026-10-01T05:03:39.706150",
+    "last_modified": "2026-10-01T05:01:27.190371",
+    "size_declared": 8418652
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "\"1790830887.2366378-8418652-2068648745\"",
+    "last_modified": "Thu, 01 Oct 2026 05:01:27 GMT",
+    "content_type": "text/csv",
+    "served_by": "dadosabertos.aneel.gov.br",
+    "bytes": 8418652,
+    "sha256": "60de2b32e25a67bc8708f649f3848b13ba602f6edc3823a5483405f07a0a5540",
+    "seconds": 0.87,
+    "mb_per_s": 9.659
+   },
+   "files": [
+    {
+     "file": "siga-empreendimentos-geracao.csv",
+     "url": "https://dadosabertos.aneel.gov.br/dataset/6d90b77c-c5f5-4d81-bdec-7bc619494bb9/resource/11ec447d-698d-4ab8-977f-b424d5deee6a/download/siga-empreendimentos-geracao.csv",
+     "resource_id": "11ec447d-698d-4ab8-977f-b424d5deee6a",
+     "bytes": 8418652,
+     "sha256": "60de2b32e25a67bc8708f649f3848b13ba602f6edc3823a5483405f07a0a5540"
+    }
+   ]
+  },
+  {
+   "portal": "https://dadosabertos.aneel.gov.br",
+   "dataset_name": "auto-de-infracao",
+   "resource_name": "auto-infracao.csv",
+   "resource_format": "CSV",
+   "label": "dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv",
+   "role": "primary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "board-decision-before-appeal",
+    "fine-after-appeal-above-original",
+    "notice-received-before-issue",
+    "warning-with-fine-value"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 0.2
+   },
+   "dataset": {
+    "title": "Auto de Infração",
+    "organization": "Agência Nacional de Energia Elétrica",
+    "license": "Open Data Commons Open Database License (ODbL)",
+    "metadata_modified": "2026-10-05T08:01:04.928489"
+   },
+   "resource": {
+    "id": "f221158a-93a3-423f-b794-4312b6985a24",
+    "url": "https://dadosabertos.aneel.gov.br/dataset/4d690c9d-8158-4b04-ae44-7d3de8616271/resource/f221158a-93a3-423f-b794-4312b6985a24/download/auto-infracao.csv",
+    "name": "auto-infracao.csv",
+    "metadata_modified": "2026-10-05T08:01:04.909003",
+    "last_modified": "2026-10-05T08:00:41.077938",
+    "size_declared": 709575
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "\"1791187241.1106503-709575-1793331652\"",
+    "last_modified": "Mon, 05 Oct 2026 08:00:41 GMT",
+    "content_type": "text/csv",
+    "served_by": "dadosabertos.aneel.gov.br",
+    "bytes": 709575,
+    "sha256": "a05192defd1399864639e899a5fbdc2ca6661e543a0aa1ff998edc7ce75b8d13",
+    "seconds": 0.23,
+    "mb_per_s": 3.037
+   },
+   "files": [
+    {
+     "file": "auto-infracao.csv",
+     "url": "https://dadosabertos.aneel.gov.br/dataset/4d690c9d-8158-4b04-ae44-7d3de8616271/resource/f221158a-93a3-423f-b794-4312b6985a24/download/auto-infracao.csv",
+     "resource_id": "f221158a-93a3-423f-b794-4312b6985a24",
+     "bytes": 709575,
+     "sha256": "a05192defd1399864639e899a5fbdc2ca6661e543a0aa1ff998edc7ce75b8d13"
+    }
+   ]
+  },
+  {
+   "portal": "https://dadosabertos.tse.jus.br",
+   "dataset_name": "codigos-oficiais-de-uf-e-municipios-segundo-o-tse-e-o-ibge",
+   "resource_name": "Códigos oficiais de UF e municípios segundo o TSE e o IBGE",
+   "resource_format": "CSV",
+   "label": "dadosabertos.tse.jus.br › codigos-oficiais-de-uf-e-municipios-segundo-o-tse-e-o-ibge › Códigos oficiais de UF e municípios segundo o TSE e o IBGE",
+   "role": "secondary",
+   "status": "ok",
+   "reason": null,
+   "used_by": [
+    "municipality-state"
+   ],
+   "package_show": {
+    "http_status": 200,
+    "seconds": 0.78
+   },
+   "dataset": {
+    "title": "Códigos oficiais de UF e municípios segundo o TSE e o IBGE",
+    "organization": "TSE/SMG",
+    "license": "Creative Commons Attribution",
+    "metadata_modified": "2025-06-24T18:08:19.929672"
+   },
+   "resource": {
+    "id": "c6c767d7-f341-4256-8dff-010683a9c796",
+    "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/municipio_tse_ibge/municipio_tse_ibge.zip",
+    "name": "Códigos oficiais de UF e municípios segundo o TSE e o IBGE",
+    "metadata_modified": "2025-06-24T18:07:38.590296",
+    "last_modified": null,
+    "size_declared": null
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "\"21f0c-65d0283c5f821\"",
+    "last_modified": "Sun, 04 Oct 2026 12:00:42 GMT",
+    "content_type": "application/zip",
+    "served_by": "cdn.tse.jus.br",
+    "bytes": 139020,
+    "sha256": "f55c9720d221a9956279f6cb225aafcae797e0cf8ac2289040c052ab4ea7c712",
+    "seconds": 0.31,
+    "mb_per_s": 0.443
+   },
+   "files": [
+    {
+     "file": "municipio_tse_ibge.zip",
+     "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/municipio_tse_ibge/municipio_tse_ibge.zip",
+     "resource_id": "c6c767d7-f341-4256-8dff-010683a9c796",
+     "bytes": 139020,
+     "sha256": "f55c9720d221a9956279f6cb225aafcae797e0cf8ac2289040c052ab4ea7c712"
+    }
+   ]
+  }
+ ],
+ "engine": {
+  "commit": "cf2a6ade24c2af60e5de0a64d85141f69d2691d4",
+  "uncommitted_changes": false,
+  "python": "3.12.15",
+  "duckdb": "1.5.6"
+ },
+ "rule_files": [
+  {
+   "id": "generation-price-above-ceiling",
+   "rule_version": "0.1.0",
+   "file": "auctions/generation-price-above-ceiling.yaml",
+   "sha256": "a4eb0263b76faf58ce784a5495523c0f5cb0ff2bf6abab47768dc5d871078c4e"
+  },
+  {
+   "id": "transmission-rap-above-edital",
+   "rule_version": "0.1.0",
+   "file": "auctions/transmission-rap-above-edital.yaml",
+   "sha256": "1445079cad5b74ff40eceb07fc159ece42c55a08b8674d8fb137f8fe7f5ea196"
+  },
+  {
+   "id": "microgeneration-above-75-kw",
+   "rule_version": "0.1.0",
+   "file": "distributed-generation/microgeneration-above-75-kw.yaml",
+   "sha256": "8473e3ee6c9e9f1ab16a7f9aa728fc3ab24ad8d355d76a97addff26ccf0af7f4"
+  },
+  {
+   "id": "minigeneration-outside-range",
+   "rule_version": "0.1.0",
+   "file": "distributed-generation/minigeneration-outside-range.yaml",
+   "sha256": "6ad988d17eb6bf11d52776bcfb29cd6189e2957342c3eaa6e07c0f96f9b1028c"
+  },
+  {
+   "id": "cgh-above-5000-kw",
+   "rule_version": "0.1.0",
+   "file": "generation/cgh-above-5000-kw.yaml",
+   "sha256": "8545cdf8de95d7475fb5e8dc00590e0d87a07b8848372a1ed0fb05ceba4928b9"
+  },
+  {
+   "id": "pch-outside-5000-30000-kw",
+   "rule_version": "0.1.0",
+   "file": "generation/pch-outside-5000-30000-kw.yaml",
+   "sha256": "b5c5c868ee5a6ef68563188b17a27e1e76100ec9694c27c594e8a65ec8568bc2"
+  },
+  {
+   "id": "physical-guarantee-above-granted-power",
+   "rule_version": "0.1.0",
+   "file": "generation/physical-guarantee-above-granted-power.yaml",
+   "sha256": "c5adf3eb73acbcb5cdec5caf61a410c1c775132624106b8872007687246102d5"
+  },
+  {
+   "id": "plant-coordinates-outside-brazil",
+   "rule_version": "0.1.0",
+   "file": "generation/plant-coordinates-outside-brazil.yaml",
+   "sha256": "50f709a89af0fd0eaefd10b6f366c4b9a6cca4db322c68e1437e0569b837dd6b"
+  },
+  {
+   "id": "board-decision-before-appeal",
+   "rule_version": "0.1.0",
+   "file": "infraction/board-decision-before-appeal.yaml",
+   "sha256": "0abdc180db5e40c80b9c0d29d2187a835a97a1f582ee39e5a1df3c6f7815aaec"
+  },
+  {
+   "id": "fine-after-appeal-above-original",
+   "rule_version": "0.1.0",
+   "file": "infraction/fine-after-appeal-above-original.yaml",
+   "sha256": "cb9d7e97a47d25734d49289edbb8a90c1424ae2dd5a2d1d855e500d073b9b9aa"
+  },
+  {
+   "id": "notice-received-before-issue",
+   "rule_version": "0.1.0",
+   "file": "infraction/notice-received-before-issue.yaml",
+   "sha256": "4fc87d725a6fdbacb68960b667fe8ef7f217743914b6a6ab9e9cce454163c8ec"
+  },
+  {
+   "id": "warning-with-fine-value",
+   "rule_version": "0.1.0",
+   "file": "infraction/warning-with-fine-value.yaml",
+   "sha256": "73fda09f0803469bd3a7a0d3f1d5ac1595cb5ff39835156f3f118fb7dcdcb5c5"
+  },
+  {
+   "id": "municipality-state",
+   "rule_version": "0.1.0",
+   "file": "territory/municipality-state.yaml",
+   "sha256": "950228be8aa6e3fd85d44ba777920792e1db70a0978a298f02f30ab7218739ef"
+  }
+ ],
+ "primary_portal": "https://dadosabertos.aneel.gov.br",
+ "download_speed": {
+  "primary": {
+   "resources": 5,
+   "bytes": 120397363,
+   "seconds": 13.87,
+   "mb_per_s": 8.68
+  },
+  "secondary": {
+   "resources": 1,
+   "bytes": 139020,
+   "seconds": 0.31,
+   "mb_per_s": 0.448
+  },
+  "processing": {
+   "bytes": 120536383,
+   "seconds": 40.48,
+   "mb_per_s": 2.978
+  }
+ },
+ "timings": {
+  "download_s": 16.52,
+  "processing_s": 40.48,
+  "bytes_processed": 120536383,
+  "outputs_s": 0.02
+ },
+ "portal": {
+  "portal_url": "https://dadosabertos.aneel.gov.br",
+  "name": "ANEEL",
+  "title": "ANEEL open data portal (Dados Abertos ANEEL)",
+  "repository": "lsp3cesarschool/5ltep-layer2-aneel"
+ },
+ "history": [
+  {
+   "run_id": "37917105517",
+   "environment": "github-actions",
+   "at": "2026-10-09T10:22:47+00:00",
+   "rules": {
+    "generation-price-above-ceiling": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 1552,
+     "counts": {
+      "match": 1552,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "transmission-rap-above-edital": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 488,
+     "counts": {
+      "match": 488,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "microgeneration-above-75-kw": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 4647773,
+     "counts": {
+      "match": 4626337,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 21436
+     }
+    },
+    "minigeneration-outside-range": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 4647773,
+     "counts": {
+      "match": 21436,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 4626337
+     }
+    },
+    "cgh-above-5000-kw": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 25045,
+     "counts": {
+      "match": 718,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 24327
+     }
+    },
+    "pch-outside-5000-30000-kw": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 25045,
+     "counts": {
+      "match": 460,
+      "mismatch": 77,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 24508
+     }
+    },
+    "physical-guarantee-above-granted-power": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 25045,
+     "counts": {
+      "match": 25040,
+      "mismatch": 5,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "plant-coordinates-outside-brazil": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 25045,
+     "counts": {
+      "match": 24580,
+      "mismatch": 465,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "board-decision-before-appeal": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 1619,
+     "counts": {
+      "match": 207,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 1412
+     }
+    },
+    "fine-after-appeal-above-original": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 1619,
+     "counts": {
+      "match": 260,
+      "mismatch": 1,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 1358
+     }
+    },
+    "notice-received-before-issue": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 1619,
+     "counts": {
+      "match": 1551,
+      "mismatch": 5,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 63
+     }
+    },
+    "warning-with-fine-value": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 1619,
+     "counts": {
+      "match": 1619,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    },
+    "municipality-state": {
+     "status": "evaluated",
+     "reason_code": null,
+     "total": 4647773,
+     "counts": {
+      "match": 4647773,
+      "mismatch": 0,
+      "key_not_found": 0,
+      "missing_value": 0,
+      "invalid_value": 0,
+      "ambiguous_key": 0,
+      "out_of_scope": 0
+     }
+    }
+   },
+   "sources": {
+    "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-geracao.csv": "ok",
+    "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-transmissao.csv": "ok",
+    "dadosabertos.aneel.gov.br › relacao-de-empreendimentos-de-geracao-distribuida › empreendimento-geracao-distribuida.zip": "ok",
+    "dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv": "ok",
+    "dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv": "ok",
+    "dadosabertos.tse.jus.br › codigos-oficiais-de-uf-e-municipios-segundo-o-tse-e-o-ibge › Códigos oficiais de UF e municípios segundo o TSE e o IBGE": "ok"
+   },
+   "download_speed": {
+    "primary": {
+     "resources": 5,
+     "bytes": 120397363,
+     "seconds": 13.87,
+     "mb_per_s": 8.68
+    },
+    "secondary": {
+     "resources": 1,
+     "bytes": 139020,
+     "seconds": 0.31,
+     "mb_per_s": 0.448
+    },
+    "processing": {
+     "bytes": 120536383,
+     "seconds": 40.48,
+     "mb_per_s": 2.978
+    }
+   },
+   "timings": {
+    "download_s": 16.52,
+    "processing_s": 40.48,
+    "bytes_processed": 120536383,
+    "outputs_s": 0.02
+   }
+  }
+ ]
+}

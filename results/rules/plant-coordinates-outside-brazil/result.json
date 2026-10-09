@@ -1,0 +1,71 @@
+{
+ "run_id": "37917105517",
+ "environment": "github-actions",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/37917105517",
+ "id": "plant-coordinates-outside-brazil",
+ "rule_version": "0.1.0",
+ "origin": "expert",
+ "file": "generation/plant-coordinates-outside-brazil.yaml",
+ "folder": "generation",
+ "language": "pt-BR",
+ "title": "Coordenada da usina ausente ou fora do Brasil",
+ "title_translations": {
+  "en": "Plant coordinates missing or outside Brazil"
+ },
+ "text": "Sinaliza usinas do SIGA sem coordenada ou com coordenada fora do retângulo que contém o território brasileiro (latitude de -34,0 a 5,5; longitude de -74,2 a -28,6).\n",
+ "justification": "Usinas outorgadas pela ANEEL ficam no Brasil; coordenada fora do retângulo do território (que inclui as ilhas oceânicas) indica erro de sinal, de eixo trocado, de projeção ou o ponto (0,0). O retângulo é uma aproximação: um ponto dentro dele ainda pode estar fora do Brasil. Coordenadas em graus decimais, com vírgula. É sinal para revisão.\n",
+ "exceptions": [
+  "Usinas no mar territorial fora do retângulo, se existirem, precisam de domínio próprio."
+ ],
+ "template": "flag-when",
+ "evaluated_source": "aneel_siga",
+ "timeline": "aneel_siga.DatEntradaOperacao",
+ "exposure": "records",
+ "datasets": [
+  {
+   "source": "aneel_siga",
+   "label": "dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv"
+  }
+ ],
+ "status": "evaluated",
+ "reason_code": null,
+ "reason": null,
+ "evaluated_at": "2026-10-09T10:22:45+00:00",
+ "total": 25045,
+ "counts": {
+  "match": 24580,
+  "mismatch": 465,
+  "key_not_found": 0,
+  "missing_value": 0,
+  "invalid_value": 0,
+  "ambiguous_key": 0,
+  "out_of_scope": 0
+ },
+ "signals": 465,
+ "signals_by_outcome": {
+  "mismatch": 465,
+  "key_not_found": 0,
+  "missing_value": 0,
+  "invalid_value": 0,
+  "ambiguous_key": 0
+ },
+ "list": "rules/plant-coordinates-outside-brazil.json",
+ "sources": {
+  "aneel_siga": {
+   "resource": "dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv",
+   "fetch_status": "ok",
+   "sha256": "60de2b32e25a67bc8708f649f3848b13ba602f6edc3823a5483405f07a0a5540",
+   "url": "https://dadosabertos.aneel.gov.br/dataset/6d90b77c-c5f5-4d81-bdec-7bc619494bb9/resource/11ec447d-698d-4ab8-977f-b424d5deee6a/download/siga-empreendimentos-geracao.csv",
+   "file": "siga-empreendimentos-geracao.csv",
+   "files": null,
+   "archive_members": null,
+   "records": 25045,
+   "members": [
+    {
+     "name": "siga-empreendimentos-geracao.csv",
+     "records": 25045
+    }
+   ]
+  }
+ }
+}

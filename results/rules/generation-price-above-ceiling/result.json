@@ -1,0 +1,71 @@
+{
+ "run_id": "37917105517",
+ "environment": "github-actions",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/37917105517",
+ "id": "generation-price-above-ceiling",
+ "rule_version": "0.1.0",
+ "origin": "expert",
+ "file": "auctions/generation-price-above-ceiling.yaml",
+ "folder": "auctions",
+ "language": "pt-BR",
+ "title": "Preço do leilão de geração acima do preço-teto",
+ "title_translations": {
+  "en": "Generation auction price above the ceiling price"
+ },
+ "text": "Confere, em cada empreendimento vendido em leilão de geração, se o preço não passa do preço-teto.\n",
+ "justification": "O edital fixa o preço-teto; um lance vencedor acima dele não deveria existir (Lei 10.848/2004 e editais). Diferença indica erro de registro, de unidade ou de base monetária. Valores com vírgula decimal. É sinal para revisão.\n",
+ "exceptions": [
+  "Leilões com preços em bases diferentes (data-base, moeda) não são comparáveis."
+ ],
+ "template": "field-comparison",
+ "evaluated_source": "aneel_leiloes_geracao",
+ "timeline": "aneel_leiloes_geracao.DatLeilao",
+ "exposure": "records",
+ "datasets": [
+  {
+   "source": "aneel_leiloes_geracao",
+   "label": "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-geracao.csv"
+  }
+ ],
+ "status": "evaluated",
+ "reason_code": null,
+ "reason": null,
+ "evaluated_at": "2026-10-09T10:22:06+00:00",
+ "total": 1552,
+ "counts": {
+  "match": 1552,
+  "mismatch": 0,
+  "key_not_found": 0,
+  "missing_value": 0,
+  "invalid_value": 0,
+  "ambiguous_key": 0,
+  "out_of_scope": 0
+ },
+ "signals": 0,
+ "signals_by_outcome": {
+  "mismatch": 0,
+  "key_not_found": 0,
+  "missing_value": 0,
+  "invalid_value": 0,
+  "ambiguous_key": 0
+ },
+ "list": "rules/generation-price-above-ceiling.json",
+ "sources": {
+  "aneel_leiloes_geracao": {
+   "resource": "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-geracao.csv",
+   "fetch_status": "ok",
+   "sha256": "547345ef69c8d7ca37f0ba143c5d12585e3dbd445906223ef537e1b71ef6c747",
+   "url": "https://dadosabertos.aneel.gov.br/dataset/593537c6-9e0e-4ed9-817a-2c5d5de05147/resource/a1328fc1-f06b-437d-8893-57ac2c8103df/download/resultado-leiloes-geracao.csv",
+   "file": "resultado-leiloes-geracao.csv",
+   "files": null,
+   "archive_members": null,
+   "records": 1552,
+   "members": [
+    {
+     "name": "resultado-leiloes-geracao.csv",
+     "records": 1552
+    }
+   ]
+  }
+ }
+}

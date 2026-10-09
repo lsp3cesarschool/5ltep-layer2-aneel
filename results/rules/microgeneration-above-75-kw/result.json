@@ -1,0 +1,71 @@
+{
+ "run_id": "37917105517",
+ "environment": "github-actions",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/37917105517",
+ "id": "microgeneration-above-75-kw",
+ "rule_version": "0.1.0",
+ "origin": "expert",
+ "file": "distributed-generation/microgeneration-above-75-kw.yaml",
+ "folder": "distributed-generation",
+ "language": "pt-BR",
+ "title": "Microgeração acima de 75 kW",
+ "title_translations": {
+  "en": "Microgeneration above 75 kW"
+ },
+ "text": "Sinaliza empreendimentos declarados como microgeração com potência instalada acima de 75 kW.\n",
+ "justification": "A Lei 14.300/2022, art. 1º, define microgeração distribuída como potência instalada até 75 kW. Microgeração acima disso indica porte declarado incorreto ou erro de unidade. Potência com vírgula decimal. É sinal para revisão.\n",
+ "exceptions": [
+  "Regras de transição podem manter o enquadramento de pedidos anteriores à lei."
+ ],
+ "template": "flag-when",
+ "evaluated_source": "aneel_gd",
+ "timeline": null,
+ "exposure": "records",
+ "datasets": [
+  {
+   "source": "aneel_gd",
+   "label": "dadosabertos.aneel.gov.br › relacao-de-empreendimentos-de-geracao-distribuida › empreendimento-geracao-distribuida.zip"
+  }
+ ],
+ "status": "evaluated",
+ "reason_code": null,
+ "reason": null,
+ "evaluated_at": "2026-10-09T10:22:42+00:00",
+ "total": 4647773,
+ "counts": {
+  "match": 4626337,
+  "mismatch": 0,
+  "key_not_found": 0,
+  "missing_value": 0,
+  "invalid_value": 0,
+  "ambiguous_key": 0,
+  "out_of_scope": 21436
+ },
+ "signals": 0,
+ "signals_by_outcome": {
+  "mismatch": 0,
+  "key_not_found": 0,
+  "missing_value": 0,
+  "invalid_value": 0,
+  "ambiguous_key": 0
+ },
+ "list": "rules/microgeneration-above-75-kw.json",
+ "sources": {
+  "aneel_gd": {
+   "resource": "dadosabertos.aneel.gov.br › relacao-de-empreendimentos-de-geracao-distribuida › empreendimento-geracao-distribuida.zip",
+   "fetch_status": "ok",
+   "sha256": "ccb1a405a5eaada5cc687a9c9666de0c5f29f166185a9a815b352cbbf71f6fb7",
+   "url": "https://dadosabertos.aneel.gov.br/dataset/5e0fafd2-21b9-4d5b-b622-40438d40aba2/resource/b1bd71e7-d0ad-4214-9053-cbd58e9564a7/download/empreendimento-geracao-distribuida.zip",
+   "file": "empreendimento-geracao-distribuida.zip",
+   "files": null,
+   "archive_members": "empreendimento-geracao-distribuida.csv",
+   "records": 4647773,
+   "members": [
+    {
+     "name": "empreendimento-geracao-distribuida.csv",
+     "records": 4647773
+    }
+   ]
+  }
+ }
+}

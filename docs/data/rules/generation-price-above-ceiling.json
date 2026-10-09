@@ -1,0 +1,99 @@
+{
+ "rule": "generation-price-above-ceiling",
+ "rule_version": "0.1.0",
+ "evaluated_at": "2026-10-09T10:22:06+00:00",
+ "run_id": "37917105517",
+ "environment": "github-actions",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/37917105517",
+ "numbering": "registro por arquivo (o publicado, ou cada arquivo dentro do zip); 1 = primeira linha após o cabeçalho",
+ "sources": {
+  "aneel_leiloes_geracao": {
+   "label": "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-geracao.csv",
+   "file": "resultado-leiloes-geracao.csv",
+   "files": null,
+   "url": "https://dadosabertos.aneel.gov.br/dataset/593537c6-9e0e-4ed9-817a-2c5d5de05147/resource/a1328fc1-f06b-437d-8893-57ac2c8103df/download/resultado-leiloes-geracao.csv",
+   "archive_members": null,
+   "sha256": "547345ef69c8d7ca37f0ba143c5d12585e3dbd445906223ef537e1b71ef6c747",
+   "records": 1552
+  }
+ },
+ "counts": {
+  "match": 1552,
+  "mismatch": 0,
+  "key_not_found": 0,
+  "missing_value": 0,
+  "invalid_value": 0,
+  "ambiguous_key": 0,
+  "out_of_scope": 0
+ },
+ "total": 1552,
+ "records": {},
+ "members": [
+  {
+   "name": "resultado-leiloes-geracao.csv",
+   "records": 1552
+  }
+ ],
+ "by_member": {
+  "resultado-leiloes-geracao.csv": {
+   "match": 1552
+  }
+ },
+ "by_period": {
+  "2005": {
+   "match": 11
+  },
+  "2006": {
+   "match": 44
+  },
+  "2007": {
+   "match": 38
+  },
+  "2008": {
+   "match": 66
+  },
+  "2009": {
+   "match": 73
+  },
+  "2010": {
+   "match": 99
+  },
+  "2011": {
+   "match": 134
+  },
+  "2012": {
+   "match": 12
+  },
+  "2013": {
+   "match": 243
+  },
+  "2014": {
+   "match": 135
+  },
+  "2015": {
+   "match": 137
+  },
+  "2016": {
+   "match": 59
+  },
+  "2017": {
+   "match": 88
+  },
+  "2018": {
+   "match": 100
+  },
+  "2019": {
+   "match": 106
+  },
+  "2021": {
+   "match": 91
+  },
+  "2022": {
+   "match": 51
+  },
+  "2025": {
+   "match": 65
+  }
+ },
+ "timeline": "aneel_leiloes_geracao.DatLeilao"
+}

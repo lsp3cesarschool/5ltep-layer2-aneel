@@ -1,0 +1,71 @@
+{
+ "run_id": "37917105517",
+ "environment": "github-actions",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/37917105517",
+ "id": "physical-guarantee-above-granted-power",
+ "rule_version": "0.1.0",
+ "origin": "expert",
+ "file": "generation/physical-guarantee-above-granted-power.yaml",
+ "folder": "generation",
+ "language": "pt-BR",
+ "title": "Garantia física maior que a potência outorgada",
+ "title_translations": {
+  "en": "Physical guarantee above the granted power"
+ },
+ "text": "Confere, em cada usina do SIGA, se a garantia física não passa da potência outorgada.\n",
+ "justification": "A garantia física é a energia média que a usina pode comprometer; ela não pode exceder a capacidade máxima correspondente nas mesmas condições (Decreto 5.163/2004, art. 2º). Garantia acima da potência outorgada indica erro de unidade ou de registro, ou grandezas não comparáveis. Valores em kW, com vírgula decimal. É sinal para revisão.\n",
+ "exceptions": [
+  "Usinas sem garantia física (a maioria das solares) têm valor zero e são conformes."
+ ],
+ "template": "field-comparison",
+ "evaluated_source": "aneel_siga",
+ "timeline": "aneel_siga.DatEntradaOperacao",
+ "exposure": "records",
+ "datasets": [
+  {
+   "source": "aneel_siga",
+   "label": "dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv"
+  }
+ ],
+ "status": "evaluated",
+ "reason_code": null,
+ "reason": null,
+ "evaluated_at": "2026-10-09T10:22:44+00:00",
+ "total": 25045,
+ "counts": {
+  "match": 25040,
+  "mismatch": 5,
+  "key_not_found": 0,
+  "missing_value": 0,
+  "invalid_value": 0,
+  "ambiguous_key": 0,
+  "out_of_scope": 0
+ },
+ "signals": 5,
+ "signals_by_outcome": {
+  "mismatch": 5,
+  "key_not_found": 0,
+  "missing_value": 0,
+  "invalid_value": 0,
+  "ambiguous_key": 0
+ },
+ "list": "rules/physical-guarantee-above-granted-power.json",
+ "sources": {
+  "aneel_siga": {
+   "resource": "dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv",
+   "fetch_status": "ok",
+   "sha256": "60de2b32e25a67bc8708f649f3848b13ba602f6edc3823a5483405f07a0a5540",
+   "url": "https://dadosabertos.aneel.gov.br/dataset/6d90b77c-c5f5-4d81-bdec-7bc619494bb9/resource/11ec447d-698d-4ab8-977f-b424d5deee6a/download/siga-empreendimentos-geracao.csv",
+   "file": "siga-empreendimentos-geracao.csv",
+   "files": null,
+   "archive_members": null,
+   "records": 25045,
+   "members": [
+    {
+     "name": "siga-empreendimentos-geracao.csv",
+     "records": 25045
+    }
+   ]
+  }
+ }
+}
