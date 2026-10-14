@@ -1,11 +1,11 @@
 {
- "run_id": "37938023560",
+ "run_id": "38543687309",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/37938023560",
- "started_at": "2026-10-09T13:36:27+00:00",
- "finished_at": "2026-10-09T13:38:09+00:00",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/38543687309",
+ "started_at": "2026-10-14T09:37:27+00:00",
+ "finished_at": "2026-10-14T09:38:07+00:00",
  "engine": {
-  "commit": "9fe794138d46e1d9d5f0b8ba5857ef5e43a61988",
+  "commit": "5da7340a57cd182b89ffedc7ef8bbf8c2411d14f",
   "uncommitted_changes": false,
   "python": "3.12.15",
   "duckdb": "1.5.6"
@@ -14,20 +14,20 @@
  "download_speed": {
   "primary": {
    "resources": 5,
-   "bytes": 120397363,
-   "seconds": 56.27,
-   "mb_per_s": 2.14
+   "bytes": 120909977,
+   "seconds": 12.45,
+   "mb_per_s": 9.712
   },
   "secondary": {
    "resources": 1,
-   "bytes": 139020,
-   "seconds": 0.22,
-   "mb_per_s": 0.632
+   "bytes": 139031,
+   "seconds": 0.51,
+   "mb_per_s": 0.273
   },
   "processing": {
-   "bytes": 120536383,
-   "seconds": 39.46,
-   "mb_per_s": 3.055
+   "bytes": 121049008,
+   "seconds": 24.82,
+   "mb_per_s": 4.877
   }
  },
  "rules": [
@@ -131,9 +131,9 @@
    "label": "dadosabertos.aneel.gov.br › relacao-de-empreendimentos-de-geracao-distribuida › empreendimento-geracao-distribuida.zip",
    "status": "ok",
    "resource_id": "b1bd71e7-d0ad-4214-9053-cbd58e9564a7",
-   "metadata_modified": "2026-10-08T05:41:34.395100",
-   "bytes": 110711016,
-   "sha256": "ccb1a405a5eaada5cc687a9c9666de0c5f29f166185a9a815b352cbbf71f6fb7"
+   "metadata_modified": "2026-10-10T05:55:29.547161",
+   "bytes": 111223630,
+   "sha256": "12e80101ea00c5e52e61d9bc3811fbf29d7a3dbc9a23eca0a0bfa0baea71fe21"
   },
   {
    "label": "dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv",
@@ -156,8 +156,8 @@
    "status": "ok",
    "resource_id": "c6c767d7-f341-4256-8dff-010683a9c796",
    "metadata_modified": "2025-06-24T18:07:38.590296",
-   "bytes": 139020,
-   "sha256": "f55c9720d221a9956279f6cb225aafcae797e0cf8ac2289040c052ab4ea7c712"
+   "bytes": 139031,
+   "sha256": "68328ddc166806594a2aab5809ac9aa602153535d6b8a71e886c337f9f3631ca"
   }
  ]
 }
