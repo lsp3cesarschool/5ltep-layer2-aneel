@@ -1,10 +1,10 @@
 {
  "rule": "municipality-state",
  "rule_version": "0.1.1",
- "evaluated_at": "2026-10-14T09:38:07+00:00",
- "run_id": "38543687309",
+ "evaluated_at": "2026-10-21T09:29:07+00:00",
+ "run_id": "39577152774",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/38543687309",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/39577152774",
  "numbering": "registro por arquivo (o publicado, ou cada arquivo dentro do zip); 1 = primeira linha após o cabeçalho",
  "sources": {
   "aneel_gd": {
@@ -22,7 +22,7 @@
    "files": null,
    "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/municipio_tse_ibge/municipio_tse_ibge.zip",
    "archive_members": "municipio_tse_ibge.csv",
-   "sha256": "68328ddc166806594a2aab5809ac9aa602153535d6b8a71e886c337f9f3631ca",
+   "sha256": "6a5372b143f1ad74c99000f1023918f673df55dadd37c9f0ac8c15dcca57a15f",
    "records": 5571
   }
  },

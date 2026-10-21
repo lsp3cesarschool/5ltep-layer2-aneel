@@ -1,7 +1,7 @@
 {
- "run_id": "38543687309",
+ "run_id": "39577152774",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/38543687309",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/39577152774",
  "id": "board-decision-before-appeal",
  "rule_version": "0.1.0",
  "origin": "expert",
@@ -31,8 +31,8 @@
  "status": "evaluated",
  "reason_code": null,
  "reason": null,
- "evaluated_at": "2026-10-14T09:38:06+00:00",
- "total": 1619,
+ "evaluated_at": "2026-10-21T09:29:04+00:00",
+ "total": 1620,
  "counts": {
   "match": 207,
   "mismatch": 0,
@@ -40,7 +40,7 @@
   "missing_value": 0,
   "invalid_value": 0,
   "ambiguous_key": 0,
-  "out_of_scope": 1412
+  "out_of_scope": 1413
  },
  "signals": 0,
  "signals_by_outcome": {
@@ -55,16 +55,16 @@
   "aneel_autos": {
    "resource": "dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv",
    "fetch_status": "ok",
-   "sha256": "a05192defd1399864639e899a5fbdc2ca6661e543a0aa1ff998edc7ce75b8d13",
+   "sha256": "ce62fbc008a32e53be7dce5dac125538146e859761a62b7279a433761c8f9443",
    "url": "https://dadosabertos.aneel.gov.br/dataset/4d690c9d-8158-4b04-ae44-7d3de8616271/resource/f221158a-93a3-423f-b794-4312b6985a24/download/auto-infracao.csv",
    "file": "auto-infracao.csv",
    "files": null,
    "archive_members": null,
-   "records": 1619,
+   "records": 1620,
    "members": [
     {
      "name": "auto-infracao.csv",
-     "records": 1619
+     "records": 1620
     }
    ]
   }

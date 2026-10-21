@@ -1,10 +1,10 @@
 {
  "rule": "fine-after-appeal-above-original",
  "rule_version": "0.1.0",
- "evaluated_at": "2026-10-14T09:38:06+00:00",
- "run_id": "38543687309",
+ "evaluated_at": "2026-10-21T09:29:04+00:00",
+ "run_id": "39577152774",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/38543687309",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/39577152774",
  "numbering": "registro por arquivo (o publicado, ou cada arquivo dentro do zip); 1 = primeira linha após o cabeçalho",
  "sources": {
   "aneel_autos": {
@@ -13,8 +13,8 @@
    "files": null,
    "url": "https://dadosabertos.aneel.gov.br/dataset/4d690c9d-8158-4b04-ae44-7d3de8616271/resource/f221158a-93a3-423f-b794-4312b6985a24/download/auto-infracao.csv",
    "archive_members": null,
-   "sha256": "a05192defd1399864639e899a5fbdc2ca6661e543a0aa1ff998edc7ce75b8d13",
-   "records": 1619
+   "sha256": "ce62fbc008a32e53be7dce5dac125538146e859761a62b7279a433761c8f9443",
+   "records": 1620
   }
  },
  "counts": {
@@ -24,27 +24,27 @@
   "missing_value": 0,
   "invalid_value": 0,
   "ambiguous_key": 0,
-  "out_of_scope": 1358
+  "out_of_scope": 1359
  },
- "total": 1619,
+ "total": 1620,
  "records": {
   "mismatch": {
    "auto-infracao.csv": [
-    1573
+    1574
    ]
   }
  },
  "members": [
   {
    "name": "auto-infracao.csv",
-   "records": 1619
+   "records": 1620
   }
  ],
  "by_member": {
   "auto-infracao.csv": {
    "match": 260,
    "mismatch": 1,
-   "out_of_scope": 1358
+   "out_of_scope": 1359
   }
  },
  "by_period": {
@@ -82,7 +82,7 @@
    "out_of_scope": 109
   },
   "2026": {
-   "out_of_scope": 81
+   "out_of_scope": 82
   }
  },
  "timeline": "aneel_autos.DatLavraturaAutoInfracao"

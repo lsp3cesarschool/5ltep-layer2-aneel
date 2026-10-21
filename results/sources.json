@@ -1,8 +1,8 @@
 {
- "run_id": "38543687309",
+ "run_id": "39577152774",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/38543687309",
- "checked_at": "2026-10-14T09:38:07+00:00",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/39577152774",
+ "checked_at": "2026-10-21T09:29:07+00:00",
  "sources": [
   {
    "portal": "https://dadosabertos.aneel.gov.br",
@@ -18,7 +18,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.73
+    "seconds": 1.34
    },
    "dataset": {
     "title": "Resultado de leilões de geração e transmissão de energia elétrica",
@@ -44,8 +44,8 @@
     "served_by": "dadosabertos.aneel.gov.br",
     "bytes": 422878,
     "sha256": "547345ef69c8d7ca37f0ba143c5d12585e3dbd445906223ef537e1b71ef6c747",
-    "seconds": 1.03,
-    "mb_per_s": 0.412
+    "seconds": 1.57,
+    "mb_per_s": 0.27
    },
    "files": [
     {
@@ -71,7 +71,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.2
+    "seconds": 0.39
    },
    "dataset": {
     "title": "Resultado de leilões de geração e transmissão de energia elétrica",
@@ -97,8 +97,8 @@
     "served_by": "dadosabertos.aneel.gov.br",
     "bytes": 135242,
     "sha256": "a7165dbb5c148ba144b49ee8c807b52290215f77a83c113dfcf8bd3d3f971124",
-    "seconds": 0.22,
-    "mb_per_s": 0.604
+    "seconds": 0.41,
+    "mb_per_s": 0.326
    },
    "files": [
     {
@@ -126,7 +126,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.21
+    "seconds": 0.52
    },
    "dataset": {
     "title": "Relação de empreendimentos de Mini e Micro Geração Distribuída",
@@ -152,8 +152,8 @@
     "served_by": "dadosabertos.aneel.gov.br",
     "bytes": 111223630,
     "sha256": "12e80101ea00c5e52e61d9bc3811fbf29d7a3dbc9a23eca0a0bfa0baea71fe21",
-    "seconds": 10.2,
-    "mb_per_s": 10.905
+    "seconds": 10.8,
+    "mb_per_s": 10.3
    },
    "files": [
     {
@@ -182,15 +182,15 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.18
+    "seconds": 1.35
    },
    "dataset": {
     "title": "SIGA - Sistema de Informações de Geração da ANEEL",
     "organization": "Agência Nacional de Energia Elétrica",
-    "license": "Open Data Commons Open Database License (ODbL)",
+    "license": "Licença Aberta para Bases de Dados (ODbL) do Open Data Commons",
     "license_id": "odc-odbl",
     "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
-    "metadata_modified": "2026-10-12T10:40:29.925530"
+    "metadata_modified": "2026-10-20T10:45:47.784386"
    },
    "resource": {
     "id": "11ec447d-698d-4ab8-977f-b424d5deee6a",
@@ -208,8 +208,8 @@
     "served_by": "dadosabertos.aneel.gov.br",
     "bytes": 8418652,
     "sha256": "60de2b32e25a67bc8708f649f3848b13ba602f6edc3823a5483405f07a0a5540",
-    "seconds": 0.77,
-    "mb_per_s": 10.92
+    "seconds": 2.33,
+    "mb_per_s": 3.607
    },
    "files": [
     {
@@ -238,7 +238,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.2
+    "seconds": 0.5
    },
    "dataset": {
     "title": "Auto de Infração",
@@ -246,34 +246,34 @@
     "license": "Open Data Commons Open Database License (ODbL)",
     "license_id": "odc-odbl",
     "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
-    "metadata_modified": "2026-10-05T08:01:04.928489"
+    "metadata_modified": "2026-10-19T08:01:48.543095"
    },
    "resource": {
     "id": "f221158a-93a3-423f-b794-4312b6985a24",
     "url": "https://dadosabertos.aneel.gov.br/dataset/4d690c9d-8158-4b04-ae44-7d3de8616271/resource/f221158a-93a3-423f-b794-4312b6985a24/download/auto-infracao.csv",
     "name": "auto-infracao.csv",
-    "metadata_modified": "2026-10-05T08:01:04.909003",
-    "last_modified": "2026-10-05T08:00:41.077938",
-    "size_declared": 709575
+    "metadata_modified": "2026-10-19T08:01:48.531292",
+    "last_modified": "2026-10-19T08:01:20.005623",
+    "size_declared": 710093
    },
    "download": {
     "http_status": 200,
-    "etag": "\"1791187241.1106503-709575-1793331652\"",
-    "last_modified": "Mon, 05 Oct 2026 08:00:41 GMT",
+    "etag": "\"1792396880.0580218-710093-1793331652\"",
+    "last_modified": "Mon, 19 Oct 2026 08:01:20 GMT",
     "content_type": "text/csv",
     "served_by": "dadosabertos.aneel.gov.br",
-    "bytes": 709575,
-    "sha256": "a05192defd1399864639e899a5fbdc2ca6661e543a0aa1ff998edc7ce75b8d13",
-    "seconds": 0.23,
-    "mb_per_s": 3.083
+    "bytes": 710093,
+    "sha256": "ce62fbc008a32e53be7dce5dac125538146e859761a62b7279a433761c8f9443",
+    "seconds": 0.35,
+    "mb_per_s": 2.049
    },
    "files": [
     {
      "file": "auto-infracao.csv",
      "url": "https://dadosabertos.aneel.gov.br/dataset/4d690c9d-8158-4b04-ae44-7d3de8616271/resource/f221158a-93a3-423f-b794-4312b6985a24/download/auto-infracao.csv",
      "resource_id": "f221158a-93a3-423f-b794-4312b6985a24",
-     "bytes": 709575,
-     "sha256": "a05192defd1399864639e899a5fbdc2ca6661e543a0aa1ff998edc7ce75b8d13"
+     "bytes": 710093,
+     "sha256": "ce62fbc008a32e53be7dce5dac125538146e859761a62b7279a433761c8f9443"
     }
    ]
   },
@@ -291,7 +291,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.83
+    "seconds": 1.08
    },
    "dataset": {
     "title": "Códigos oficiais de UF e municípios segundo o TSE e o IBGE",
@@ -311,22 +311,22 @@
    },
    "download": {
     "http_status": 200,
-    "etag": "\"21f17-65d8f549a611b\"",
-    "last_modified": "Sun, 11 Oct 2026 12:00:41 GMT",
+    "etag": "\"21f81-65e1c253b1c24\"",
+    "last_modified": "Sun, 18 Oct 2026 12:00:36 GMT",
     "content_type": "application/zip",
     "served_by": "cdn.tse.jus.br",
-    "bytes": 139031,
-    "sha256": "68328ddc166806594a2aab5809ac9aa602153535d6b8a71e886c337f9f3631ca",
-    "seconds": 0.51,
-    "mb_per_s": 0.272
+    "bytes": 139137,
+    "sha256": "6a5372b143f1ad74c99000f1023918f673df55dadd37c9f0ac8c15dcca57a15f",
+    "seconds": 1.02,
+    "mb_per_s": 0.136
    },
    "files": [
     {
      "file": "municipio_tse_ibge.zip",
      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/municipio_tse_ibge/municipio_tse_ibge.zip",
      "resource_id": "c6c767d7-f341-4256-8dff-010683a9c796",
-     "bytes": 139031,
-     "sha256": "68328ddc166806594a2aab5809ac9aa602153535d6b8a71e886c337f9f3631ca"
+     "bytes": 139137,
+     "sha256": "6a5372b143f1ad74c99000f1023918f673df55dadd37c9f0ac8c15dcca57a15f"
     }
    ]
   }

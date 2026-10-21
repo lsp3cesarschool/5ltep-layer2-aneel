@@ -1,11 +1,11 @@
 {
- "run_id": "38543687309",
+ "run_id": "39577152774",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/38543687309",
- "started_at": "2026-10-14T09:37:27+00:00",
- "finished_at": "2026-10-14T09:38:07+00:00",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/39577152774",
+ "started_at": "2026-10-21T09:28:05+00:00",
+ "finished_at": "2026-10-21T09:29:07+00:00",
  "engine": {
-  "commit": "5da7340a57cd182b89ffedc7ef8bbf8c2411d14f",
+  "commit": "a6c957255a4b56d7b0a22966f62f067be2f133b8",
   "uncommitted_changes": false,
   "python": "3.12.15",
   "duckdb": "1.5.6"
@@ -14,20 +14,20 @@
  "download_speed": {
   "primary": {
    "resources": 5,
-   "bytes": 120909977,
-   "seconds": 12.45,
-   "mb_per_s": 9.712
+   "bytes": 120910495,
+   "seconds": 15.46,
+   "mb_per_s": 7.821
   },
   "secondary": {
    "resources": 1,
-   "bytes": 139031,
-   "seconds": 0.51,
-   "mb_per_s": 0.273
+   "bytes": 139137,
+   "seconds": 1.02,
+   "mb_per_s": 0.136
   },
   "processing": {
-   "bytes": 121049008,
-   "seconds": 24.82,
-   "mb_per_s": 4.877
+   "bytes": 121049632,
+   "seconds": 39.34,
+   "mb_per_s": 3.077
   }
  },
  "rules": [
@@ -147,17 +147,17 @@
    "label": "dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv",
    "status": "ok",
    "resource_id": "f221158a-93a3-423f-b794-4312b6985a24",
-   "metadata_modified": "2026-10-05T08:01:04.909003",
-   "bytes": 709575,
-   "sha256": "a05192defd1399864639e899a5fbdc2ca6661e543a0aa1ff998edc7ce75b8d13"
+   "metadata_modified": "2026-10-19T08:01:48.531292",
+   "bytes": 710093,
+   "sha256": "ce62fbc008a32e53be7dce5dac125538146e859761a62b7279a433761c8f9443"
   },
   {
    "label": "dadosabertos.tse.jus.br › codigos-oficiais-de-uf-e-municipios-segundo-o-tse-e-o-ibge › Códigos oficiais de UF e municípios segundo o TSE e o IBGE",
    "status": "ok",
    "resource_id": "c6c767d7-f341-4256-8dff-010683a9c796",
    "metadata_modified": "2025-06-24T18:07:38.590296",
-   "bytes": 139031,
-   "sha256": "68328ddc166806594a2aab5809ac9aa602153535d6b8a71e886c337f9f3631ca"
+   "bytes": 139137,
+   "sha256": "6a5372b143f1ad74c99000f1023918f673df55dadd37c9f0ac8c15dcca57a15f"
   }
  ]
 }
