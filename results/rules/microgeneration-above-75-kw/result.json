@@ -1,7 +1,7 @@
 {
- "run_id": "39577152774",
+ "run_id": "41828493177",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/39577152774",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/41828493177",
  "id": "microgeneration-above-75-kw",
  "rule_version": "0.1.0",
  "origin": "expert",
@@ -27,45 +27,18 @@
    "label": "dadosabertos.aneel.gov.br › relacao-de-empreendimentos-de-geracao-distribuida › empreendimento-geracao-distribuida.zip"
   }
  ],
- "status": "evaluated",
- "reason_code": null,
- "reason": null,
- "evaluated_at": "2026-10-21T09:29:02+00:00",
- "total": 4666785,
- "counts": {
-  "match": 4645294,
-  "mismatch": 0,
-  "key_not_found": 0,
-  "missing_value": 0,
-  "invalid_value": 0,
-  "ambiguous_key": 0,
-  "out_of_scope": 21491
- },
- "signals": 0,
- "signals_by_outcome": {
-  "mismatch": 0,
-  "key_not_found": 0,
-  "missing_value": 0,
-  "invalid_value": 0,
-  "ambiguous_key": 0
- },
- "list": "rules/microgeneration-above-75-kw.json",
+ "status": "not_evaluated",
+ "reason_code": "source_portal_unreachable",
+ "reason": "fonte \"aneel_gd\" (dadosabertos.aneel.gov.br › relacao-de-empreendimentos-de-geracao-distribuida › empreendimento-geracao-distribuida.zip): portal não respondeu: TLS: HTTPSConnectionPool(host='dadosabertos.aneel.gov.br', port=443): Max retries exceeded with url: /api/3/action/package_show?id=relacao-de-empreendimentos-de-geracao-distribuida (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1",
  "sources": {
   "aneel_gd": {
    "resource": "dadosabertos.aneel.gov.br › relacao-de-empreendimentos-de-geracao-distribuida › empreendimento-geracao-distribuida.zip",
-   "fetch_status": "ok",
-   "sha256": "12e80101ea00c5e52e61d9bc3811fbf29d7a3dbc9a23eca0a0bfa0baea71fe21",
-   "url": "https://dadosabertos.aneel.gov.br/dataset/5e0fafd2-21b9-4d5b-b622-40438d40aba2/resource/b1bd71e7-d0ad-4214-9053-cbd58e9564a7/download/empreendimento-geracao-distribuida.zip",
-   "file": "empreendimento-geracao-distribuida.zip",
+   "fetch_status": "portal_unreachable",
+   "sha256": null,
+   "url": null,
+   "file": null,
    "files": null,
-   "archive_members": "empreendimento-geracao-distribuida.csv",
-   "records": 4666785,
-   "members": [
-    {
-     "name": "empreendimento-geracao-distribuida.csv",
-     "records": 4666785
-    }
-   ]
+   "archive_members": "empreendimento-geracao-distribuida.csv"
   }
  }
 }

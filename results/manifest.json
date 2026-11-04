@@ -1,33 +1,28 @@
 {
- "run_id": "39577152774",
+ "run_id": "41828493177",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/39577152774",
- "started_at": "2026-10-21T09:28:05+00:00",
- "finished_at": "2026-10-21T09:29:07+00:00",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/41828493177",
+ "started_at": "2026-11-04T12:21:10+00:00",
+ "finished_at": "2026-11-04T12:24:19+00:00",
  "engine": {
-  "commit": "a6c957255a4b56d7b0a22966f62f067be2f133b8",
+  "commit": "370754fdcdd5fa1a47a5fb71576373c46f784d59",
   "uncommitted_changes": false,
   "python": "3.12.15",
-  "duckdb": "1.5.6"
+  "duckdb": "2.0.0"
  },
  "primary_portal": "https://dadosabertos.aneel.gov.br",
  "download_speed": {
   "primary": {
-   "resources": 5,
-   "bytes": 120910495,
-   "seconds": 15.46,
-   "mb_per_s": 7.821
+   "resources": 0,
+   "bytes": 0,
+   "seconds": 0,
+   "mb_per_s": null
   },
   "secondary": {
    "resources": 1,
-   "bytes": 139137,
-   "seconds": 1.02,
-   "mb_per_s": 0.136
-  },
-  "processing": {
-   "bytes": 121049632,
-   "seconds": 39.34,
-   "mb_per_s": 3.077
+   "bytes": 139066,
+   "seconds": 0.27,
+   "mb_per_s": 0.515
   }
  },
  "rules": [
@@ -113,51 +108,51 @@
  "sources": [
   {
    "label": "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-geracao.csv",
-   "status": "ok",
-   "resource_id": "a1328fc1-f06b-437d-8893-57ac2c8103df",
-   "metadata_modified": "2026-10-01T05:00:54.692117",
-   "bytes": 422878,
-   "sha256": "547345ef69c8d7ca37f0ba143c5d12585e3dbd445906223ef537e1b71ef6c747"
+   "status": "portal_unreachable",
+   "resource_id": null,
+   "metadata_modified": null,
+   "bytes": null,
+   "sha256": null
   },
   {
    "label": "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-transmissao.csv",
-   "status": "ok",
-   "resource_id": "453cb742-8089-4c16-aaf2-42088b5553dc",
-   "metadata_modified": "2026-10-01T05:00:50.200616",
-   "bytes": 135242,
-   "sha256": "a7165dbb5c148ba144b49ee8c807b52290215f77a83c113dfcf8bd3d3f971124"
+   "status": "portal_unreachable",
+   "resource_id": null,
+   "metadata_modified": null,
+   "bytes": null,
+   "sha256": null
   },
   {
    "label": "dadosabertos.aneel.gov.br › relacao-de-empreendimentos-de-geracao-distribuida › empreendimento-geracao-distribuida.zip",
-   "status": "ok",
-   "resource_id": "b1bd71e7-d0ad-4214-9053-cbd58e9564a7",
-   "metadata_modified": "2026-10-10T05:55:29.547161",
-   "bytes": 111223630,
-   "sha256": "12e80101ea00c5e52e61d9bc3811fbf29d7a3dbc9a23eca0a0bfa0baea71fe21"
+   "status": "portal_unreachable",
+   "resource_id": null,
+   "metadata_modified": null,
+   "bytes": null,
+   "sha256": null
   },
   {
    "label": "dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv",
-   "status": "ok",
-   "resource_id": "11ec447d-698d-4ab8-977f-b424d5deee6a",
-   "metadata_modified": "2026-10-01T05:03:39.706150",
-   "bytes": 8418652,
-   "sha256": "60de2b32e25a67bc8708f649f3848b13ba602f6edc3823a5483405f07a0a5540"
+   "status": "portal_unreachable",
+   "resource_id": null,
+   "metadata_modified": null,
+   "bytes": null,
+   "sha256": null
   },
   {
    "label": "dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv",
-   "status": "ok",
-   "resource_id": "f221158a-93a3-423f-b794-4312b6985a24",
-   "metadata_modified": "2026-10-19T08:01:48.531292",
-   "bytes": 710093,
-   "sha256": "ce62fbc008a32e53be7dce5dac125538146e859761a62b7279a433761c8f9443"
+   "status": "portal_unreachable",
+   "resource_id": null,
+   "metadata_modified": null,
+   "bytes": null,
+   "sha256": null
   },
   {
    "label": "dadosabertos.tse.jus.br › codigos-oficiais-de-uf-e-municipios-segundo-o-tse-e-o-ibge › Códigos oficiais de UF e municípios segundo o TSE e o IBGE",
    "status": "ok",
    "resource_id": "c6c767d7-f341-4256-8dff-010683a9c796",
    "metadata_modified": "2025-06-24T18:07:38.590296",
-   "bytes": 139137,
-   "sha256": "6a5372b143f1ad74c99000f1023918f673df55dadd37c9f0ac8c15dcca57a15f"
+   "bytes": 139066,
+   "sha256": "7b6cb684eef5494fea9c0db3d22cecea9aadb60f3013d7828b3b5f46f4ce3696"
   }
  ]
 }

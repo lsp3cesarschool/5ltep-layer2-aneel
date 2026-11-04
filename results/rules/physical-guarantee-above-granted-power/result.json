@@ -1,7 +1,7 @@
 {
- "run_id": "39577152774",
+ "run_id": "41828493177",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/39577152774",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/41828493177",
  "id": "physical-guarantee-above-granted-power",
  "rule_version": "0.1.0",
  "origin": "expert",
@@ -27,45 +27,18 @@
    "label": "dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv"
   }
  ],
- "status": "evaluated",
- "reason_code": null,
- "reason": null,
- "evaluated_at": "2026-10-21T09:29:04+00:00",
- "total": 25045,
- "counts": {
-  "match": 25040,
-  "mismatch": 5,
-  "key_not_found": 0,
-  "missing_value": 0,
-  "invalid_value": 0,
-  "ambiguous_key": 0,
-  "out_of_scope": 0
- },
- "signals": 5,
- "signals_by_outcome": {
-  "mismatch": 5,
-  "key_not_found": 0,
-  "missing_value": 0,
-  "invalid_value": 0,
-  "ambiguous_key": 0
- },
- "list": "rules/physical-guarantee-above-granted-power.json",
+ "status": "not_evaluated",
+ "reason_code": "source_portal_unreachable",
+ "reason": "fonte \"aneel_siga\" (dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv): portal não respondeu: TLS: HTTPSConnectionPool(host='dadosabertos.aneel.gov.br', port=443): Max retries exceeded with url: /api/3/action/package_show?id=siga-sistema-de-informacoes-de-geracao-da-aneel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:101",
  "sources": {
   "aneel_siga": {
    "resource": "dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv",
-   "fetch_status": "ok",
-   "sha256": "60de2b32e25a67bc8708f649f3848b13ba602f6edc3823a5483405f07a0a5540",
-   "url": "https://dadosabertos.aneel.gov.br/dataset/6d90b77c-c5f5-4d81-bdec-7bc619494bb9/resource/11ec447d-698d-4ab8-977f-b424d5deee6a/download/siga-empreendimentos-geracao.csv",
-   "file": "siga-empreendimentos-geracao.csv",
+   "fetch_status": "portal_unreachable",
+   "sha256": null,
+   "url": null,
+   "file": null,
    "files": null,
-   "archive_members": null,
-   "records": 25045,
-   "members": [
-    {
-     "name": "siga-empreendimentos-geracao.csv",
-     "records": 25045
-    }
-   ]
+   "archive_members": null
   }
  }
 }

@@ -1552,5 +1552,118 @@
    "bytes_processed": 121049632,
    "outputs_s": 0.02
   }
+ },
+ {
+  "run_id": "41828493177",
+  "environment": "github-actions",
+  "at": "2026-11-04T12:24:19+00:00",
+  "rules": {
+   "generation-price-above-ceiling": {
+    "status": "not_evaluated",
+    "reason_code": "source_portal_unreachable",
+    "total": null,
+    "counts": null
+   },
+   "transmission-rap-above-edital": {
+    "status": "not_evaluated",
+    "reason_code": "source_portal_unreachable",
+    "total": null,
+    "counts": null
+   },
+   "microgeneration-above-75-kw": {
+    "status": "not_evaluated",
+    "reason_code": "source_portal_unreachable",
+    "total": null,
+    "counts": null
+   },
+   "minigeneration-outside-range": {
+    "status": "not_evaluated",
+    "reason_code": "source_portal_unreachable",
+    "total": null,
+    "counts": null
+   },
+   "cgh-above-5000-kw": {
+    "status": "not_evaluated",
+    "reason_code": "source_portal_unreachable",
+    "total": null,
+    "counts": null
+   },
+   "pch-outside-5000-30000-kw": {
+    "status": "not_evaluated",
+    "reason_code": "source_portal_unreachable",
+    "total": null,
+    "counts": null
+   },
+   "physical-guarantee-above-granted-power": {
+    "status": "not_evaluated",
+    "reason_code": "source_portal_unreachable",
+    "total": null,
+    "counts": null
+   },
+   "plant-coordinates-outside-brazil": {
+    "status": "not_evaluated",
+    "reason_code": "source_portal_unreachable",
+    "total": null,
+    "counts": null
+   },
+   "board-decision-before-appeal": {
+    "status": "not_evaluated",
+    "reason_code": "source_portal_unreachable",
+    "total": null,
+    "counts": null
+   },
+   "fine-after-appeal-above-original": {
+    "status": "not_evaluated",
+    "reason_code": "source_portal_unreachable",
+    "total": null,
+    "counts": null
+   },
+   "notice-received-before-issue": {
+    "status": "not_evaluated",
+    "reason_code": "source_portal_unreachable",
+    "total": null,
+    "counts": null
+   },
+   "warning-with-fine-value": {
+    "status": "not_evaluated",
+    "reason_code": "source_portal_unreachable",
+    "total": null,
+    "counts": null
+   },
+   "municipality-state": {
+    "status": "not_evaluated",
+    "reason_code": "source_portal_unreachable",
+    "total": null,
+    "counts": null
+   }
+  },
+  "sources": {
+   "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-geracao.csv": "portal_unreachable",
+   "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-transmissao.csv": "portal_unreachable",
+   "dadosabertos.aneel.gov.br › relacao-de-empreendimentos-de-geracao-distribuida › empreendimento-geracao-distribuida.zip": "portal_unreachable",
+   "dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv": "portal_unreachable",
+   "dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv": "portal_unreachable",
+   "dadosabertos.tse.jus.br › codigos-oficiais-de-uf-e-municipios-segundo-o-tse-e-o-ibge › Códigos oficiais de UF e municípios segundo o TSE e o IBGE": "ok"
+  },
+  "download_speed": {
+   "primary": {
+    "resources": 0,
+    "bytes": 0,
+    "seconds": 0,
+    "mb_per_s": null
+   },
+   "secondary": {
+    "resources": 1,
+    "bytes": 139066,
+    "seconds": 0.27,
+    "mb_per_s": 0.515
+   }
+  },
+  "timings": {
+   "download_s": 188.13,
+   "processing_s": 0.0,
+   "bytes_processed": 139066,
+   "outputs_s": 0.05
+  }
  }
 ]
