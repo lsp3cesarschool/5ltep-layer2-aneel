@@ -1,7 +1,7 @@
 {
- "run_id": "41828493177",
+ "run_id": "42812005125",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/41828493177",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/42812005125",
  "id": "fine-after-appeal-above-original",
  "rule_version": "0.1.0",
  "origin": "expert",
@@ -30,7 +30,7 @@
  ],
  "status": "not_evaluated",
  "reason_code": "source_portal_unreachable",
- "reason": "fonte \"aneel_autos\" (dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv): portal não respondeu: TLS: HTTPSConnectionPool(host='dadosabertos.aneel.gov.br', port=443): Max retries exceeded with url: /api/3/action/package_show?id=auto-de-infracao (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))",
+ "reason": "fonte \"aneel_autos\" (dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv): portal não respondeu: TLS: HTTPSConnectionPool(host='dadosabertos.aneel.gov.br', port=443): Max retries exceeded with url: /api/3/action/package_show?id=auto-de-infracao (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)')))",
  "sources": {
   "aneel_autos": {
    "resource": "dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv",

@@ -1,8 +1,8 @@
 {
- "run_id": "41828493177",
+ "run_id": "42812005125",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/41828493177",
- "checked_at": "2026-11-04T12:24:19+00:00",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/42812005125",
+ "checked_at": "2026-11-10T12:03:11+00:00",
  "sources": [
   {
    "portal": "https://dadosabertos.aneel.gov.br",
@@ -12,13 +12,13 @@
    "label": "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-geracao.csv",
    "role": "primary",
    "status": "portal_unreachable",
-   "reason": "portal não respondeu: TLS: HTTPSConnectionPool(host='dadosabertos.aneel.gov.br', port=443): Max retries exceeded with url: /api/3/action/package_show?id=resultado-de-leiloes (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))",
+   "reason": "portal não respondeu: TLS: HTTPSConnectionPool(host='dadosabertos.aneel.gov.br', port=443): Max retries exceeded with url: /api/3/action/package_show?id=resultado-de-leiloes (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)')))",
    "used_by": [
     "generation-price-above-ceiling"
    ],
    "package_show": {
-    "seconds": 46.34,
-    "error": "TLS: HTTPSConnectionPool(host='dadosabertos.aneel.gov.br', port=443): Max retries exceeded with url: /api/3/action/package_show?id=resultado-de-leiloes (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))"
+    "seconds": 44.84,
+    "error": "TLS: HTTPSConnectionPool(host='dadosabertos.aneel.gov.br', port=443): Max retries exceeded with url: /api/3/action/package_show?id=resultado-de-leiloes (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)')))"
    },
    "dataset": {},
    "resource": {},
@@ -33,13 +33,13 @@
    "label": "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-transmissao.csv",
    "role": "primary",
    "status": "portal_unreachable",
-   "reason": "portal não respondeu: TLS: HTTPSConnectionPool(host='dadosabertos.aneel.gov.br', port=443): Max retries exceeded with url: /api/3/action/package_show?id=resultado-de-leiloes (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))",
+   "reason": "portal não respondeu: TLS: HTTPSConnectionPool(host='dadosabertos.aneel.gov.br', port=443): Max retries exceeded with url: /api/3/action/package_show?id=resultado-de-leiloes (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)')))",
    "used_by": [
     "transmission-rap-above-edital"
    ],
    "package_show": {
-    "seconds": 33.84,
-    "error": "TLS: HTTPSConnectionPool(host='dadosabertos.aneel.gov.br', port=443): Max retries exceeded with url: /api/3/action/package_show?id=resultado-de-leiloes (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))"
+    "seconds": 35.39,
+    "error": "TLS: HTTPSConnectionPool(host='dadosabertos.aneel.gov.br', port=443): Max retries exceeded with url: /api/3/action/package_show?id=resultado-de-leiloes (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)')))"
    },
    "dataset": {},
    "resource": {},
@@ -61,7 +61,7 @@
     "municipality-state"
    ],
    "package_show": {
-    "seconds": 35.66,
+    "seconds": 35.91,
     "error": "TLS: HTTPSConnectionPool(host='dadosabertos.aneel.gov.br', port=443): Max retries exceeded with url: /api/3/action/package_show?id=relacao-de-empreendimentos-de-geracao-distribuida (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1"
    },
    "dataset": {},
@@ -85,7 +85,7 @@
     "plant-coordinates-outside-brazil"
    ],
    "package_show": {
-    "seconds": 36.03,
+    "seconds": 32.78,
     "error": "TLS: HTTPSConnectionPool(host='dadosabertos.aneel.gov.br', port=443): Max retries exceeded with url: /api/3/action/package_show?id=siga-sistema-de-informacoes-de-geracao-da-aneel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:101"
    },
    "dataset": {},
@@ -101,7 +101,7 @@
    "label": "dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv",
    "role": "primary",
    "status": "portal_unreachable",
-   "reason": "portal não respondeu: TLS: HTTPSConnectionPool(host='dadosabertos.aneel.gov.br', port=443): Max retries exceeded with url: /api/3/action/package_show?id=auto-de-infracao (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))",
+   "reason": "portal não respondeu: TLS: HTTPSConnectionPool(host='dadosabertos.aneel.gov.br', port=443): Max retries exceeded with url: /api/3/action/package_show?id=auto-de-infracao (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)')))",
    "used_by": [
     "board-decision-before-appeal",
     "fine-after-appeal-above-original",
@@ -109,8 +109,8 @@
     "warning-with-fine-value"
    ],
    "package_show": {
-    "seconds": 35.1,
-    "error": "TLS: HTTPSConnectionPool(host='dadosabertos.aneel.gov.br', port=443): Max retries exceeded with url: /api/3/action/package_show?id=auto-de-infracao (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))"
+    "seconds": 31.95,
+    "error": "TLS: HTTPSConnectionPool(host='dadosabertos.aneel.gov.br', port=443): Max retries exceeded with url: /api/3/action/package_show?id=auto-de-infracao (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)')))"
    },
    "dataset": {},
    "resource": {},
@@ -131,7 +131,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.9
+    "seconds": 0.98
    },
    "dataset": {
     "title": "Códigos oficiais de UF e municípios segundo o TSE e o IBGE",
@@ -151,14 +151,14 @@
    },
    "download": {
     "http_status": 200,
-    "etag": "\"21f3a-65f35c5eb1259\"",
-    "last_modified": "Sun, 01 Nov 2026 12:00:18 GMT",
+    "etag": "\"21f3a-65fc296dbbfee\"",
+    "last_modified": "Sun, 08 Nov 2026 12:00:19 GMT",
     "content_type": "application/zip",
     "served_by": "cdn.tse.jus.br",
     "bytes": 139066,
-    "sha256": "7b6cb684eef5494fea9c0db3d22cecea9aadb60f3013d7828b3b5f46f4ce3696",
-    "seconds": 0.27,
-    "mb_per_s": 0.52
+    "sha256": "40d0a698d3d56c299e8afdbaa846453c230c8042c1b0b878010cc0e19f80c544",
+    "seconds": 0.53,
+    "mb_per_s": 0.26
    },
    "files": [
     {
@@ -166,7 +166,7 @@
      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/municipio_tse_ibge/municipio_tse_ibge.zip",
      "resource_id": "c6c767d7-f341-4256-8dff-010683a9c796",
      "bytes": 139066,
-     "sha256": "7b6cb684eef5494fea9c0db3d22cecea9aadb60f3013d7828b3b5f46f4ce3696"
+     "sha256": "40d0a698d3d56c299e8afdbaa846453c230c8042c1b0b878010cc0e19f80c544"
     }
    ]
   }
