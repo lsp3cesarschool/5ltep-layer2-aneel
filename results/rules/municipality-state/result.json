@@ -1,7 +1,7 @@
 {
- "run_id": "42812005125",
+ "run_id": "43016431266",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/42812005125",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/43016431266",
  "id": "municipality-state",
  "rule_version": "0.1.1",
  "origin": "cross_reference",
@@ -32,18 +32,45 @@
    "label": "dadosabertos.tse.jus.br › codigos-oficiais-de-uf-e-municipios-segundo-o-tse-e-o-ibge › Códigos oficiais de UF e municípios segundo o TSE e o IBGE"
   }
  ],
- "status": "not_evaluated",
- "reason_code": "source_portal_unreachable",
- "reason": "fonte \"aneel_gd\" (dadosabertos.aneel.gov.br › relacao-de-empreendimentos-de-geracao-distribuida › empreendimento-geracao-distribuida.zip): portal não respondeu: TLS: HTTPSConnectionPool(host='dadosabertos.aneel.gov.br', port=443): Max retries exceeded with url: /api/3/action/package_show?id=relacao-de-empreendimentos-de-geracao-distribuida (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1",
+ "status": "evaluated",
+ "reason_code": null,
+ "reason": null,
+ "evaluated_at": "2026-11-11T12:01:04+00:00",
+ "total": 4735908,
+ "counts": {
+  "match": 4735908,
+  "mismatch": 0,
+  "key_not_found": 0,
+  "missing_value": 0,
+  "invalid_value": 0,
+  "ambiguous_key": 0,
+  "out_of_scope": 0
+ },
+ "signals": 0,
+ "signals_by_outcome": {
+  "mismatch": 0,
+  "key_not_found": 0,
+  "missing_value": 0,
+  "invalid_value": 0,
+  "ambiguous_key": 0
+ },
+ "list": "rules/municipality-state.json",
  "sources": {
   "aneel_gd": {
    "resource": "dadosabertos.aneel.gov.br › relacao-de-empreendimentos-de-geracao-distribuida › empreendimento-geracao-distribuida.zip",
-   "fetch_status": "portal_unreachable",
-   "sha256": null,
-   "url": null,
-   "file": null,
+   "fetch_status": "ok",
+   "sha256": "eed5987b07e43ccbf204c76110a41329cd8388e430f302f9318b28585d217ead",
+   "url": "https://dadosabertos.aneel.gov.br/dataset/5e0fafd2-21b9-4d5b-b622-40438d40aba2/resource/b1bd71e7-d0ad-4214-9053-cbd58e9564a7/download/empreendimento-geracao-distribuida.zip",
+   "file": "empreendimento-geracao-distribuida.zip",
    "files": null,
-   "archive_members": "empreendimento-geracao-distribuida.csv"
+   "archive_members": "empreendimento-geracao-distribuida.csv",
+   "records": 4735908,
+   "members": [
+    {
+     "name": "empreendimento-geracao-distribuida.csv",
+     "records": 4735908
+    }
+   ]
   },
   "tse_municipios": {
    "resource": "dadosabertos.tse.jus.br › codigos-oficiais-de-uf-e-municipios-segundo-o-tse-e-o-ibge › Códigos oficiais de UF e municípios segundo o TSE e o IBGE",
@@ -52,7 +79,14 @@
    "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/municipio_tse_ibge/municipio_tse_ibge.zip",
    "file": "municipio_tse_ibge.zip",
    "files": null,
-   "archive_members": "municipio_tse_ibge.csv"
+   "archive_members": "municipio_tse_ibge.csv",
+   "records": 5571,
+   "members": [
+    {
+     "name": "municipio_tse_ibge.csv",
+     "records": 5571
+    }
+   ]
   }
  }
 }

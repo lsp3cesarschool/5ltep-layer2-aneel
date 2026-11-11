@@ -1,11 +1,11 @@
 {
- "run_id": "42812005125",
+ "run_id": "43016431266",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/42812005125",
- "started_at": "2026-11-10T12:00:08+00:00",
- "finished_at": "2026-11-10T12:03:11+00:00",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/43016431266",
+ "started_at": "2026-11-11T11:59:19+00:00",
+ "finished_at": "2026-11-11T12:01:04+00:00",
  "engine": {
-  "commit": "73f93accafc9b43926cf5f958ffad2fcab945325",
+  "commit": "d49c0877d2fed5a2a8577bc4e68cc3231c2dbe33",
   "uncommitted_changes": false,
   "python": "3.12.16",
   "duckdb": "2.0.0"
@@ -13,16 +13,21 @@
  "primary_portal": "https://dadosabertos.aneel.gov.br",
  "download_speed": {
   "primary": {
-   "resources": 0,
-   "bytes": 0,
-   "seconds": 0,
-   "mb_per_s": null
+   "resources": 5,
+   "bytes": 122175811,
+   "seconds": 56.59,
+   "mb_per_s": 2.159
   },
   "secondary": {
    "resources": 1,
    "bytes": 139066,
-   "seconds": 0.53,
-   "mb_per_s": 0.262
+   "seconds": 0.35,
+   "mb_per_s": 0.397
+  },
+  "processing": {
+   "bytes": 122314877,
+   "seconds": 37.68,
+   "mb_per_s": 3.246
   }
  },
  "rules": [
@@ -108,43 +113,43 @@
  "sources": [
   {
    "label": "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-geracao.csv",
-   "status": "portal_unreachable",
-   "resource_id": null,
-   "metadata_modified": null,
-   "bytes": null,
-   "sha256": null
+   "status": "ok",
+   "resource_id": "a1328fc1-f06b-437d-8893-57ac2c8103df",
+   "metadata_modified": "2026-11-01T05:03:22.082090",
+   "bytes": 422878,
+   "sha256": "16a6ad8eea98cce4e6cc0671a84e66dd6a2228abd95215d5b781433a877d8329"
   },
   {
    "label": "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-transmissao.csv",
-   "status": "portal_unreachable",
-   "resource_id": null,
-   "metadata_modified": null,
-   "bytes": null,
-   "sha256": null
+   "status": "ok",
+   "resource_id": "453cb742-8089-4c16-aaf2-42088b5553dc",
+   "metadata_modified": "2026-11-01T05:03:12.428487",
+   "bytes": 135242,
+   "sha256": "889c4bc817eb135d011eb43117b6ed8ba9e4c5b278a49ca91a89f41b04013e49"
   },
   {
    "label": "dadosabertos.aneel.gov.br › relacao-de-empreendimentos-de-geracao-distribuida › empreendimento-geracao-distribuida.zip",
-   "status": "portal_unreachable",
-   "resource_id": null,
-   "metadata_modified": null,
-   "bytes": null,
-   "sha256": null
+   "status": "ok",
+   "resource_id": "b1bd71e7-d0ad-4214-9053-cbd58e9564a7",
+   "metadata_modified": "2026-11-10T06:09:15.778136",
+   "bytes": 113020800,
+   "sha256": "eed5987b07e43ccbf204c76110a41329cd8388e430f302f9318b28585d217ead"
   },
   {
    "label": "dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv",
-   "status": "portal_unreachable",
-   "resource_id": null,
-   "metadata_modified": null,
-   "bytes": null,
-   "sha256": null
+   "status": "ok",
+   "resource_id": "11ec447d-698d-4ab8-977f-b424d5deee6a",
+   "metadata_modified": "2026-11-01T05:11:05.610469",
+   "bytes": 7883527,
+   "sha256": "9f21aa730a5ccde82b62bad64b40ba1ceb245c84e15f05d12df718ac303e72ef"
   },
   {
    "label": "dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv",
-   "status": "portal_unreachable",
-   "resource_id": null,
-   "metadata_modified": null,
-   "bytes": null,
-   "sha256": null
+   "status": "ok",
+   "resource_id": "f221158a-93a3-423f-b794-4312b6985a24",
+   "metadata_modified": "2026-11-02T08:03:11.131016",
+   "bytes": 713364,
+   "sha256": "f3ef9fe8b40f487877ee4181acbc57937671547ca82c445f7d86ef68892fd4d7"
   },
   {
    "label": "dadosabertos.tse.jus.br › codigos-oficiais-de-uf-e-municipios-segundo-o-tse-e-o-ibge › Códigos oficiais de UF e municípios segundo o TSE e o IBGE",

@@ -1,8 +1,8 @@
 {
- "run_id": "42812005125",
+ "run_id": "43016431266",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/42812005125",
- "checked_at": "2026-11-10T12:03:11+00:00",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/43016431266",
+ "checked_at": "2026-11-11T12:01:04+00:00",
  "sources": [
   {
    "portal": "https://dadosabertos.aneel.gov.br",
@@ -11,19 +11,51 @@
    "resource_format": "CSV",
    "label": "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-geracao.csv",
    "role": "primary",
-   "status": "portal_unreachable",
-   "reason": "portal não respondeu: TLS: HTTPSConnectionPool(host='dadosabertos.aneel.gov.br', port=443): Max retries exceeded with url: /api/3/action/package_show?id=resultado-de-leiloes (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)')))",
+   "status": "ok",
+   "reason": null,
    "used_by": [
     "generation-price-above-ceiling"
    ],
    "package_show": {
-    "seconds": 44.84,
-    "error": "TLS: HTTPSConnectionPool(host='dadosabertos.aneel.gov.br', port=443): Max retries exceeded with url: /api/3/action/package_show?id=resultado-de-leiloes (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)')))"
+    "http_status": 200,
+    "seconds": 7.63
    },
-   "dataset": {},
-   "resource": {},
-   "download": {},
-   "files": []
+   "dataset": {
+    "title": "Resultado de leilões de geração e transmissão de energia elétrica",
+    "organization": "Agência Nacional de Energia Elétrica",
+    "license": "Open Data Commons Open Database License (ODbL)",
+    "license_id": "odc-odbl",
+    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
+    "metadata_modified": "2026-11-01T05:03:22.092847"
+   },
+   "resource": {
+    "id": "a1328fc1-f06b-437d-8893-57ac2c8103df",
+    "url": "https://dadosabertos.aneel.gov.br/dataset/593537c6-9e0e-4ed9-817a-2c5d5de05147/resource/a1328fc1-f06b-437d-8893-57ac2c8103df/download/resultado-leiloes-geracao.csv",
+    "name": "resultado-leiloes-geracao.csv",
+    "metadata_modified": "2026-11-01T05:03:22.082090",
+    "last_modified": "2026-11-01T05:03:06.505966",
+    "size_declared": 422878
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "\"1793509386.5833344-422878-1986007686\"",
+    "last_modified": "Sun, 01 Nov 2026 05:03:06 GMT",
+    "content_type": "text/csv",
+    "served_by": "dadosabertos.aneel.gov.br",
+    "bytes": 422878,
+    "sha256": "16a6ad8eea98cce4e6cc0671a84e66dd6a2228abd95215d5b781433a877d8329",
+    "seconds": 4.94,
+    "mb_per_s": 0.086
+   },
+   "files": [
+    {
+     "file": "resultado-leiloes-geracao.csv",
+     "url": "https://dadosabertos.aneel.gov.br/dataset/593537c6-9e0e-4ed9-817a-2c5d5de05147/resource/a1328fc1-f06b-437d-8893-57ac2c8103df/download/resultado-leiloes-geracao.csv",
+     "resource_id": "a1328fc1-f06b-437d-8893-57ac2c8103df",
+     "bytes": 422878,
+     "sha256": "16a6ad8eea98cce4e6cc0671a84e66dd6a2228abd95215d5b781433a877d8329"
+    }
+   ]
   },
   {
    "portal": "https://dadosabertos.aneel.gov.br",
@@ -32,19 +64,51 @@
    "resource_format": "CSV",
    "label": "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-transmissao.csv",
    "role": "primary",
-   "status": "portal_unreachable",
-   "reason": "portal não respondeu: TLS: HTTPSConnectionPool(host='dadosabertos.aneel.gov.br', port=443): Max retries exceeded with url: /api/3/action/package_show?id=resultado-de-leiloes (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)')))",
+   "status": "ok",
+   "reason": null,
    "used_by": [
     "transmission-rap-above-edital"
    ],
    "package_show": {
-    "seconds": 35.39,
-    "error": "TLS: HTTPSConnectionPool(host='dadosabertos.aneel.gov.br', port=443): Max retries exceeded with url: /api/3/action/package_show?id=resultado-de-leiloes (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)')))"
+    "http_status": 200,
+    "seconds": 1.06
    },
-   "dataset": {},
-   "resource": {},
-   "download": {},
-   "files": []
+   "dataset": {
+    "title": "Resultado de leilões de geração e transmissão de energia elétrica",
+    "organization": "Agência Nacional de Energia Elétrica",
+    "license": "Open Data Commons Open Database License (ODbL)",
+    "license_id": "odc-odbl",
+    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
+    "metadata_modified": "2026-11-01T05:03:22.092847"
+   },
+   "resource": {
+    "id": "453cb742-8089-4c16-aaf2-42088b5553dc",
+    "url": "https://dadosabertos.aneel.gov.br/dataset/593537c6-9e0e-4ed9-817a-2c5d5de05147/resource/453cb742-8089-4c16-aaf2-42088b5553dc/download/resultado-leiloes-transmissao.csv",
+    "name": "resultado-leiloes-transmissao.csv",
+    "metadata_modified": "2026-11-01T05:03:12.428487",
+    "last_modified": "2026-11-01T05:03:04.161133",
+    "size_declared": 135242
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "\"1793509384.194384-135242-1826951718\"",
+    "last_modified": "Sun, 01 Nov 2026 05:03:04 GMT",
+    "content_type": "text/csv",
+    "served_by": "dadosabertos.aneel.gov.br",
+    "bytes": 135242,
+    "sha256": "889c4bc817eb135d011eb43117b6ed8ba9e4c5b278a49ca91a89f41b04013e49",
+    "seconds": 0.97,
+    "mb_per_s": 0.139
+   },
+   "files": [
+    {
+     "file": "resultado-leiloes-transmissao.csv",
+     "url": "https://dadosabertos.aneel.gov.br/dataset/593537c6-9e0e-4ed9-817a-2c5d5de05147/resource/453cb742-8089-4c16-aaf2-42088b5553dc/download/resultado-leiloes-transmissao.csv",
+     "resource_id": "453cb742-8089-4c16-aaf2-42088b5553dc",
+     "bytes": 135242,
+     "sha256": "889c4bc817eb135d011eb43117b6ed8ba9e4c5b278a49ca91a89f41b04013e49"
+    }
+   ]
   },
   {
    "portal": "https://dadosabertos.aneel.gov.br",
@@ -53,21 +117,53 @@
    "resource_format": "ZIP",
    "label": "dadosabertos.aneel.gov.br › relacao-de-empreendimentos-de-geracao-distribuida › empreendimento-geracao-distribuida.zip",
    "role": "primary",
-   "status": "portal_unreachable",
-   "reason": "portal não respondeu: TLS: HTTPSConnectionPool(host='dadosabertos.aneel.gov.br', port=443): Max retries exceeded with url: /api/3/action/package_show?id=relacao-de-empreendimentos-de-geracao-distribuida (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1",
+   "status": "ok",
+   "reason": null,
    "used_by": [
     "microgeneration-above-75-kw",
     "minigeneration-outside-range",
     "municipality-state"
    ],
    "package_show": {
-    "seconds": 35.91,
-    "error": "TLS: HTTPSConnectionPool(host='dadosabertos.aneel.gov.br', port=443): Max retries exceeded with url: /api/3/action/package_show?id=relacao-de-empreendimentos-de-geracao-distribuida (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1"
+    "http_status": 200,
+    "seconds": 0.39
    },
-   "dataset": {},
-   "resource": {},
-   "download": {},
-   "files": []
+   "dataset": {
+    "title": "Relação de empreendimentos de Mini e Micro Geração Distribuída",
+    "organization": "Agência Nacional de Energia Elétrica",
+    "license": "Open Data Commons Open Database License (ODbL)",
+    "license_id": "odc-odbl",
+    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
+    "metadata_modified": "2026-11-10T06:09:59.038528"
+   },
+   "resource": {
+    "id": "b1bd71e7-d0ad-4214-9053-cbd58e9564a7",
+    "url": "https://dadosabertos.aneel.gov.br/dataset/5e0fafd2-21b9-4d5b-b622-40438d40aba2/resource/b1bd71e7-d0ad-4214-9053-cbd58e9564a7/download/empreendimento-geracao-distribuida.zip",
+    "name": "empreendimento-geracao-distribuida.zip",
+    "metadata_modified": "2026-11-10T06:09:15.778136",
+    "last_modified": "2026-11-10T06:09:15.765344",
+    "size_declared": 113020800
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "\"1794290955.862757-113020800-2148733619\"",
+    "last_modified": "Tue, 10 Nov 2026 06:09:15 GMT",
+    "content_type": "application/zip",
+    "served_by": "dadosabertos.aneel.gov.br",
+    "bytes": 113020800,
+    "sha256": "eed5987b07e43ccbf204c76110a41329cd8388e430f302f9318b28585d217ead",
+    "seconds": 44.3,
+    "mb_per_s": 2.552
+   },
+   "files": [
+    {
+     "file": "empreendimento-geracao-distribuida.zip",
+     "url": "https://dadosabertos.aneel.gov.br/dataset/5e0fafd2-21b9-4d5b-b622-40438d40aba2/resource/b1bd71e7-d0ad-4214-9053-cbd58e9564a7/download/empreendimento-geracao-distribuida.zip",
+     "resource_id": "b1bd71e7-d0ad-4214-9053-cbd58e9564a7",
+     "bytes": 113020800,
+     "sha256": "eed5987b07e43ccbf204c76110a41329cd8388e430f302f9318b28585d217ead"
+    }
+   ]
   },
   {
    "portal": "https://dadosabertos.aneel.gov.br",
@@ -76,8 +172,8 @@
    "resource_format": "CSV",
    "label": "dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv",
    "role": "primary",
-   "status": "portal_unreachable",
-   "reason": "portal não respondeu: TLS: HTTPSConnectionPool(host='dadosabertos.aneel.gov.br', port=443): Max retries exceeded with url: /api/3/action/package_show?id=siga-sistema-de-informacoes-de-geracao-da-aneel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:101",
+   "status": "ok",
+   "reason": null,
    "used_by": [
     "cgh-above-5000-kw",
     "pch-outside-5000-30000-kw",
@@ -85,13 +181,45 @@
     "plant-coordinates-outside-brazil"
    ],
    "package_show": {
-    "seconds": 32.78,
-    "error": "TLS: HTTPSConnectionPool(host='dadosabertos.aneel.gov.br', port=443): Max retries exceeded with url: /api/3/action/package_show?id=siga-sistema-de-informacoes-de-geracao-da-aneel (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:101"
+    "http_status": 200,
+    "seconds": 0.65
    },
-   "dataset": {},
-   "resource": {},
-   "download": {},
-   "files": []
+   "dataset": {
+    "title": "SIGA - Sistema de Informações de Geração da ANEEL",
+    "organization": "Agência Nacional de Energia Elétrica",
+    "license": "Open Data Commons Open Database License (ODbL)",
+    "license_id": "odc-odbl",
+    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
+    "metadata_modified": "2026-11-11T10:58:19.105677"
+   },
+   "resource": {
+    "id": "11ec447d-698d-4ab8-977f-b424d5deee6a",
+    "url": "https://dadosabertos.aneel.gov.br/dataset/6d90b77c-c5f5-4d81-bdec-7bc619494bb9/resource/11ec447d-698d-4ab8-977f-b424d5deee6a/download/siga-empreendimentos-geracao.csv",
+    "name": "siga-empreendimentos-geracao.csv",
+    "metadata_modified": "2026-11-01T05:11:05.610469",
+    "last_modified": "2026-11-01T05:07:52.318843",
+    "size_declared": 7883527
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "\"1793509672.3443902-7883527-2068648745\"",
+    "last_modified": "Sun, 01 Nov 2026 05:07:52 GMT",
+    "content_type": "text/csv",
+    "served_by": "dadosabertos.aneel.gov.br",
+    "bytes": 7883527,
+    "sha256": "9f21aa730a5ccde82b62bad64b40ba1ceb245c84e15f05d12df718ac303e72ef",
+    "seconds": 3.87,
+    "mb_per_s": 2.037
+   },
+   "files": [
+    {
+     "file": "siga-empreendimentos-geracao.csv",
+     "url": "https://dadosabertos.aneel.gov.br/dataset/6d90b77c-c5f5-4d81-bdec-7bc619494bb9/resource/11ec447d-698d-4ab8-977f-b424d5deee6a/download/siga-empreendimentos-geracao.csv",
+     "resource_id": "11ec447d-698d-4ab8-977f-b424d5deee6a",
+     "bytes": 7883527,
+     "sha256": "9f21aa730a5ccde82b62bad64b40ba1ceb245c84e15f05d12df718ac303e72ef"
+    }
+   ]
   },
   {
    "portal": "https://dadosabertos.aneel.gov.br",
@@ -100,8 +228,8 @@
    "resource_format": "CSV",
    "label": "dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv",
    "role": "primary",
-   "status": "portal_unreachable",
-   "reason": "portal não respondeu: TLS: HTTPSConnectionPool(host='dadosabertos.aneel.gov.br', port=443): Max retries exceeded with url: /api/3/action/package_show?id=auto-de-infracao (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)')))",
+   "status": "ok",
+   "reason": null,
    "used_by": [
     "board-decision-before-appeal",
     "fine-after-appeal-above-original",
@@ -109,13 +237,45 @@
     "warning-with-fine-value"
    ],
    "package_show": {
-    "seconds": 31.95,
-    "error": "TLS: HTTPSConnectionPool(host='dadosabertos.aneel.gov.br', port=443): Max retries exceeded with url: /api/3/action/package_show?id=auto-de-infracao (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)')))"
+    "http_status": 200,
+    "seconds": 0.19
    },
-   "dataset": {},
-   "resource": {},
-   "download": {},
-   "files": []
+   "dataset": {
+    "title": "Auto de Infração",
+    "organization": "Agência Nacional de Energia Elétrica",
+    "license": "Open Data Commons Open Database License (ODbL)",
+    "license_id": "odc-odbl",
+    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
+    "metadata_modified": "2026-11-02T08:03:11.146119"
+   },
+   "resource": {
+    "id": "f221158a-93a3-423f-b794-4312b6985a24",
+    "url": "https://dadosabertos.aneel.gov.br/dataset/4d690c9d-8158-4b04-ae44-7d3de8616271/resource/f221158a-93a3-423f-b794-4312b6985a24/download/auto-infracao.csv",
+    "name": "auto-infracao.csv",
+    "metadata_modified": "2026-11-02T08:03:11.131016",
+    "last_modified": "2026-11-02T08:02:51.778895",
+    "size_declared": 713364
+   },
+   "download": {
+    "http_status": 200,
+    "etag": "\"1793606571.8075657-713364-1793331652\"",
+    "last_modified": "Mon, 02 Nov 2026 08:02:51 GMT",
+    "content_type": "text/csv",
+    "served_by": "dadosabertos.aneel.gov.br",
+    "bytes": 713364,
+    "sha256": "f3ef9fe8b40f487877ee4181acbc57937671547ca82c445f7d86ef68892fd4d7",
+    "seconds": 2.51,
+    "mb_per_s": 0.284
+   },
+   "files": [
+    {
+     "file": "auto-infracao.csv",
+     "url": "https://dadosabertos.aneel.gov.br/dataset/4d690c9d-8158-4b04-ae44-7d3de8616271/resource/f221158a-93a3-423f-b794-4312b6985a24/download/auto-infracao.csv",
+     "resource_id": "f221158a-93a3-423f-b794-4312b6985a24",
+     "bytes": 713364,
+     "sha256": "f3ef9fe8b40f487877ee4181acbc57937671547ca82c445f7d86ef68892fd4d7"
+    }
+   ]
   },
   {
    "portal": "https://dadosabertos.tse.jus.br",
@@ -131,7 +291,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.98
+    "seconds": 0.64
    },
    "dataset": {
     "title": "Códigos oficiais de UF e municípios segundo o TSE e o IBGE",
@@ -157,8 +317,8 @@
     "served_by": "cdn.tse.jus.br",
     "bytes": 139066,
     "sha256": "40d0a698d3d56c299e8afdbaa846453c230c8042c1b0b878010cc0e19f80c544",
-    "seconds": 0.53,
-    "mb_per_s": 0.26
+    "seconds": 0.35,
+    "mb_per_s": 0.393
    },
    "files": [
     {
