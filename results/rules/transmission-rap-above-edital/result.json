@@ -1,7 +1,7 @@
 {
- "run_id": "43016431266",
+ "run_id": "44311870487",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/43016431266",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/44311870487",
  "id": "transmission-rap-above-edital",
  "rule_version": "0.1.0",
  "origin": "expert",
@@ -27,45 +27,18 @@
    "label": "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-transmissao.csv"
   }
  ],
- "status": "evaluated",
- "reason_code": null,
- "reason": null,
- "evaluated_at": "2026-11-11T12:00:27+00:00",
- "total": 488,
- "counts": {
-  "match": 488,
-  "mismatch": 0,
-  "key_not_found": 0,
-  "missing_value": 0,
-  "invalid_value": 0,
-  "ambiguous_key": 0,
-  "out_of_scope": 0
- },
- "signals": 0,
- "signals_by_outcome": {
-  "mismatch": 0,
-  "key_not_found": 0,
-  "missing_value": 0,
-  "invalid_value": 0,
-  "ambiguous_key": 0
- },
- "list": "rules/transmission-rap-above-edital.json",
+ "status": "not_evaluated",
+ "reason_code": "source_portal_unreachable",
+ "reason": "fonte \"aneel_leiloes_transmissao\" (dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-transmissao.csv): portal não respondeu: tempo esgotado (60 s)",
  "sources": {
   "aneel_leiloes_transmissao": {
    "resource": "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-transmissao.csv",
-   "fetch_status": "ok",
-   "sha256": "889c4bc817eb135d011eb43117b6ed8ba9e4c5b278a49ca91a89f41b04013e49",
-   "url": "https://dadosabertos.aneel.gov.br/dataset/593537c6-9e0e-4ed9-817a-2c5d5de05147/resource/453cb742-8089-4c16-aaf2-42088b5553dc/download/resultado-leiloes-transmissao.csv",
-   "file": "resultado-leiloes-transmissao.csv",
+   "fetch_status": "portal_unreachable",
+   "sha256": null,
+   "url": null,
+   "file": null,
    "files": null,
-   "archive_members": null,
-   "records": 488,
-   "members": [
-    {
-     "name": "resultado-leiloes-transmissao.csv",
-     "records": 488
-    }
-   ]
+   "archive_members": null
   }
  }
 }

@@ -1,19 +1,19 @@
 {
  "layer": 2,
- "run_id": "43016431266",
+ "run_id": "44311870487",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/43016431266",
- "generated_at": "2026-11-11T12:01:04+00:00",
- "started_at": "2026-11-11T11:59:19+00:00",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/44311870487",
+ "generated_at": "2026-11-18T13:33:16+00:00",
+ "started_at": "2026-11-18T13:15:40+00:00",
  "totals": {
   "rules": 13,
-  "evaluated": 13,
-  "not_evaluated": 0,
+  "evaluated": 0,
+  "not_evaluated": 13,
   "sources": 6,
-  "sources_ok": 6,
-  "signals": 579,
-  "checks": 9528873,
-  "l2_rate": 0.999939
+  "sources_ok": 1,
+  "signals": 0,
+  "checks": 0,
+  "l2_rate": null
  },
  "rules": [
   {
@@ -52,29 +52,9 @@
      "label": "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-geracao.csv"
     }
    ],
-   "status": "evaluated",
-   "reason_code": null,
-   "reason": null,
-   "evaluated_at": "2026-11-11T12:00:27+00:00",
-   "total": 1552,
-   "counts": {
-    "match": 1552,
-    "mismatch": 0,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0,
-    "out_of_scope": 0
-   },
-   "signals": 0,
-   "signals_by_outcome": {
-    "mismatch": 0,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0
-   },
-   "list": "rules/generation-price-above-ceiling.json"
+   "status": "not_evaluated",
+   "reason_code": "source_portal_unreachable",
+   "reason": "fonte \"aneel_leiloes_geracao\" (dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-geracao.csv): portal não respondeu: tempo esgotado (60 s)"
   },
   {
    "id": "transmission-rap-above-edital",
@@ -112,29 +92,9 @@
      "label": "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-transmissao.csv"
     }
    ],
-   "status": "evaluated",
-   "reason_code": null,
-   "reason": null,
-   "evaluated_at": "2026-11-11T12:00:27+00:00",
-   "total": 488,
-   "counts": {
-    "match": 488,
-    "mismatch": 0,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0,
-    "out_of_scope": 0
-   },
-   "signals": 0,
-   "signals_by_outcome": {
-    "mismatch": 0,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0
-   },
-   "list": "rules/transmission-rap-above-edital.json"
+   "status": "not_evaluated",
+   "reason_code": "source_portal_unreachable",
+   "reason": "fonte \"aneel_leiloes_transmissao\" (dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-transmissao.csv): portal não respondeu: tempo esgotado (60 s)"
   },
   {
    "id": "microgeneration-above-75-kw",
@@ -172,29 +132,9 @@
      "label": "dadosabertos.aneel.gov.br › relacao-de-empreendimentos-de-geracao-distribuida › empreendimento-geracao-distribuida.zip"
     }
    ],
-   "status": "evaluated",
-   "reason_code": null,
-   "reason": null,
-   "evaluated_at": "2026-11-11T12:01:01+00:00",
-   "total": 4735908,
-   "counts": {
-    "match": 4714143,
-    "mismatch": 0,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0,
-    "out_of_scope": 21765
-   },
-   "signals": 0,
-   "signals_by_outcome": {
-    "mismatch": 0,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0
-   },
-   "list": "rules/microgeneration-above-75-kw.json"
+   "status": "not_evaluated",
+   "reason_code": "source_portal_unreachable",
+   "reason": "fonte \"aneel_gd\" (dadosabertos.aneel.gov.br › relacao-de-empreendimentos-de-geracao-distribuida › empreendimento-geracao-distribuida.zip): portal não respondeu: tempo esgotado (60 s)"
   },
   {
    "id": "minigeneration-outside-range",
@@ -236,29 +176,9 @@
      "label": "dadosabertos.aneel.gov.br › relacao-de-empreendimentos-de-geracao-distribuida › empreendimento-geracao-distribuida.zip"
     }
    ],
-   "status": "evaluated",
-   "reason_code": null,
-   "reason": null,
-   "evaluated_at": "2026-11-11T12:01:02+00:00",
-   "total": 4735908,
-   "counts": {
-    "match": 21765,
-    "mismatch": 0,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0,
-    "out_of_scope": 4714143
-   },
-   "signals": 0,
-   "signals_by_outcome": {
-    "mismatch": 0,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0
-   },
-   "list": "rules/minigeneration-outside-range.json"
+   "status": "not_evaluated",
+   "reason_code": "source_portal_unreachable",
+   "reason": "fonte \"aneel_gd\" (dadosabertos.aneel.gov.br › relacao-de-empreendimentos-de-geracao-distribuida › empreendimento-geracao-distribuida.zip): portal não respondeu: tempo esgotado (60 s)"
   },
   {
    "id": "cgh-above-5000-kw",
@@ -297,29 +217,9 @@
      "label": "dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv"
     }
    ],
-   "status": "evaluated",
-   "reason_code": null,
-   "reason": null,
-   "evaluated_at": "2026-11-11T12:01:02+00:00",
-   "total": 25046,
-   "counts": {
-    "match": 723,
-    "mismatch": 0,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0,
-    "out_of_scope": 24323
-   },
-   "signals": 0,
-   "signals_by_outcome": {
-    "mismatch": 0,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0
-   },
-   "list": "rules/cgh-above-5000-kw.json"
+   "status": "not_evaluated",
+   "reason_code": "source_portal_unreachable",
+   "reason": "fonte \"aneel_siga\" (dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv): portal não respondeu: tempo esgotado (60 s)"
   },
   {
    "id": "pch-outside-5000-30000-kw",
@@ -358,29 +258,9 @@
      "label": "dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv"
     }
    ],
-   "status": "evaluated",
-   "reason_code": null,
-   "reason": null,
-   "evaluated_at": "2026-11-11T12:01:02+00:00",
-   "total": 25046,
-   "counts": {
-    "match": 460,
-    "mismatch": 74,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0,
-    "out_of_scope": 24512
-   },
-   "signals": 74,
-   "signals_by_outcome": {
-    "mismatch": 74,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0
-   },
-   "list": "rules/pch-outside-5000-30000-kw.json"
+   "status": "not_evaluated",
+   "reason_code": "source_portal_unreachable",
+   "reason": "fonte \"aneel_siga\" (dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv): portal não respondeu: tempo esgotado (60 s)"
   },
   {
    "id": "physical-guarantee-above-granted-power",
@@ -418,29 +298,9 @@
      "label": "dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv"
     }
    ],
-   "status": "evaluated",
-   "reason_code": null,
-   "reason": null,
-   "evaluated_at": "2026-11-11T12:01:03+00:00",
-   "total": 25046,
-   "counts": {
-    "match": 25041,
-    "mismatch": 5,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0,
-    "out_of_scope": 0
-   },
-   "signals": 5,
-   "signals_by_outcome": {
-    "mismatch": 5,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0
-   },
-   "list": "rules/physical-guarantee-above-granted-power.json"
+   "status": "not_evaluated",
+   "reason_code": "source_portal_unreachable",
+   "reason": "fonte \"aneel_siga\" (dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv): portal não respondeu: tempo esgotado (60 s)"
   },
   {
    "id": "plant-coordinates-outside-brazil",
@@ -482,29 +342,9 @@
      "label": "dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv"
     }
    ],
-   "status": "evaluated",
-   "reason_code": null,
-   "reason": null,
-   "evaluated_at": "2026-11-11T12:01:03+00:00",
-   "total": 25046,
-   "counts": {
-    "match": 24552,
-    "mismatch": 494,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0,
-    "out_of_scope": 0
-   },
-   "signals": 494,
-   "signals_by_outcome": {
-    "mismatch": 494,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0
-   },
-   "list": "rules/plant-coordinates-outside-brazil.json"
+   "status": "not_evaluated",
+   "reason_code": "source_portal_unreachable",
+   "reason": "fonte \"aneel_siga\" (dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv): portal não respondeu: tempo esgotado (60 s)"
   },
   {
    "id": "board-decision-before-appeal",
@@ -543,29 +383,9 @@
      "label": "dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv"
     }
    ],
-   "status": "evaluated",
-   "reason_code": null,
-   "reason": null,
-   "evaluated_at": "2026-11-11T12:01:03+00:00",
-   "total": 1629,
-   "counts": {
-    "match": 207,
-    "mismatch": 0,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0,
-    "out_of_scope": 1422
-   },
-   "signals": 0,
-   "signals_by_outcome": {
-    "mismatch": 0,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0
-   },
-   "list": "rules/board-decision-before-appeal.json"
+   "status": "not_evaluated",
+   "reason_code": "source_portal_unreachable",
+   "reason": "fonte \"aneel_autos\" (dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv): portal não respondeu: tempo esgotado (60 s)"
   },
   {
    "id": "fine-after-appeal-above-original",
@@ -604,29 +424,9 @@
      "label": "dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv"
     }
    ],
-   "status": "evaluated",
-   "reason_code": null,
-   "reason": null,
-   "evaluated_at": "2026-11-11T12:01:03+00:00",
-   "total": 1629,
-   "counts": {
-    "match": 260,
-    "mismatch": 1,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0,
-    "out_of_scope": 1368
-   },
-   "signals": 1,
-   "signals_by_outcome": {
-    "mismatch": 1,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0
-   },
-   "list": "rules/fine-after-appeal-above-original.json"
+   "status": "not_evaluated",
+   "reason_code": "source_portal_unreachable",
+   "reason": "fonte \"aneel_autos\" (dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv): portal não respondeu: tempo esgotado (60 s)"
   },
   {
    "id": "notice-received-before-issue",
@@ -664,29 +464,9 @@
      "label": "dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv"
     }
    ],
-   "status": "evaluated",
-   "reason_code": null,
-   "reason": null,
-   "evaluated_at": "2026-11-11T12:01:03+00:00",
-   "total": 1629,
-   "counts": {
-    "match": 1566,
-    "mismatch": 5,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0,
-    "out_of_scope": 58
-   },
-   "signals": 5,
-   "signals_by_outcome": {
-    "mismatch": 5,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0
-   },
-   "list": "rules/notice-received-before-issue.json"
+   "status": "not_evaluated",
+   "reason_code": "source_portal_unreachable",
+   "reason": "fonte \"aneel_autos\" (dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv): portal não respondeu: tempo esgotado (60 s)"
   },
   {
    "id": "warning-with-fine-value",
@@ -724,29 +504,9 @@
      "label": "dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv"
     }
    ],
-   "status": "evaluated",
-   "reason_code": null,
-   "reason": null,
-   "evaluated_at": "2026-11-11T12:01:03+00:00",
-   "total": 1629,
-   "counts": {
-    "match": 1629,
-    "mismatch": 0,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0,
-    "out_of_scope": 0
-   },
-   "signals": 0,
-   "signals_by_outcome": {
-    "mismatch": 0,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0
-   },
-   "list": "rules/warning-with-fine-value.json"
+   "status": "not_evaluated",
+   "reason_code": "source_portal_unreachable",
+   "reason": "fonte \"aneel_autos\" (dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv): portal não respondeu: tempo esgotado (60 s)"
   },
   {
    "id": "municipality-state",
@@ -789,29 +549,9 @@
      "label": "dadosabertos.tse.jus.br › codigos-oficiais-de-uf-e-municipios-segundo-o-tse-e-o-ibge › Códigos oficiais de UF e municípios segundo o TSE e o IBGE"
     }
    ],
-   "status": "evaluated",
-   "reason_code": null,
-   "reason": null,
-   "evaluated_at": "2026-11-11T12:01:04+00:00",
-   "total": 4735908,
-   "counts": {
-    "match": 4735908,
-    "mismatch": 0,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0,
-    "out_of_scope": 0
-   },
-   "signals": 0,
-   "signals_by_outcome": {
-    "mismatch": 0,
-    "key_not_found": 0,
-    "missing_value": 0,
-    "invalid_value": 0,
-    "ambiguous_key": 0
-   },
-   "list": "rules/municipality-state.json"
+   "status": "not_evaluated",
+   "reason_code": "source_portal_unreachable",
+   "reason": "fonte \"aneel_gd\" (dadosabertos.aneel.gov.br › relacao-de-empreendimentos-de-geracao-distribuida › empreendimento-geracao-distribuida.zip): portal não respondeu: tempo esgotado (60 s)"
   }
  ],
  "sources": [
@@ -822,51 +562,19 @@
    "resource_format": "CSV",
    "label": "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-geracao.csv",
    "role": "primary",
-   "status": "ok",
-   "reason": null,
+   "status": "portal_unreachable",
+   "reason": "portal não respondeu: tempo esgotado (60 s)",
    "used_by": [
     "generation-price-above-ceiling"
    ],
    "package_show": {
-    "http_status": 200,
-    "seconds": 7.63
+    "seconds": 210.88,
+    "error": "tempo esgotado (60 s)"
    },
-   "dataset": {
-    "title": "Resultado de leilões de geração e transmissão de energia elétrica",
-    "organization": "Agência Nacional de Energia Elétrica",
-    "license": "Open Data Commons Open Database License (ODbL)",
-    "license_id": "odc-odbl",
-    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
-    "metadata_modified": "2026-11-01T05:03:22.092847"
-   },
-   "resource": {
-    "id": "a1328fc1-f06b-437d-8893-57ac2c8103df",
-    "url": "https://dadosabertos.aneel.gov.br/dataset/593537c6-9e0e-4ed9-817a-2c5d5de05147/resource/a1328fc1-f06b-437d-8893-57ac2c8103df/download/resultado-leiloes-geracao.csv",
-    "name": "resultado-leiloes-geracao.csv",
-    "metadata_modified": "2026-11-01T05:03:22.082090",
-    "last_modified": "2026-11-01T05:03:06.505966",
-    "size_declared": 422878
-   },
-   "download": {
-    "http_status": 200,
-    "etag": "\"1793509386.5833344-422878-1986007686\"",
-    "last_modified": "Sun, 01 Nov 2026 05:03:06 GMT",
-    "content_type": "text/csv",
-    "served_by": "dadosabertos.aneel.gov.br",
-    "bytes": 422878,
-    "sha256": "16a6ad8eea98cce4e6cc0671a84e66dd6a2228abd95215d5b781433a877d8329",
-    "seconds": 4.94,
-    "mb_per_s": 0.086
-   },
-   "files": [
-    {
-     "file": "resultado-leiloes-geracao.csv",
-     "url": "https://dadosabertos.aneel.gov.br/dataset/593537c6-9e0e-4ed9-817a-2c5d5de05147/resource/a1328fc1-f06b-437d-8893-57ac2c8103df/download/resultado-leiloes-geracao.csv",
-     "resource_id": "a1328fc1-f06b-437d-8893-57ac2c8103df",
-     "bytes": 422878,
-     "sha256": "16a6ad8eea98cce4e6cc0671a84e66dd6a2228abd95215d5b781433a877d8329"
-    }
-   ]
+   "dataset": {},
+   "resource": {},
+   "download": {},
+   "files": []
   },
   {
    "portal": "https://dadosabertos.aneel.gov.br",
@@ -875,51 +583,19 @@
    "resource_format": "CSV",
    "label": "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-transmissao.csv",
    "role": "primary",
-   "status": "ok",
-   "reason": null,
+   "status": "portal_unreachable",
+   "reason": "portal não respondeu: tempo esgotado (60 s)",
    "used_by": [
     "transmission-rap-above-edital"
    ],
    "package_show": {
-    "http_status": 200,
-    "seconds": 1.06
+    "seconds": 210.93,
+    "error": "tempo esgotado (60 s)"
    },
-   "dataset": {
-    "title": "Resultado de leilões de geração e transmissão de energia elétrica",
-    "organization": "Agência Nacional de Energia Elétrica",
-    "license": "Open Data Commons Open Database License (ODbL)",
-    "license_id": "odc-odbl",
-    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
-    "metadata_modified": "2026-11-01T05:03:22.092847"
-   },
-   "resource": {
-    "id": "453cb742-8089-4c16-aaf2-42088b5553dc",
-    "url": "https://dadosabertos.aneel.gov.br/dataset/593537c6-9e0e-4ed9-817a-2c5d5de05147/resource/453cb742-8089-4c16-aaf2-42088b5553dc/download/resultado-leiloes-transmissao.csv",
-    "name": "resultado-leiloes-transmissao.csv",
-    "metadata_modified": "2026-11-01T05:03:12.428487",
-    "last_modified": "2026-11-01T05:03:04.161133",
-    "size_declared": 135242
-   },
-   "download": {
-    "http_status": 200,
-    "etag": "\"1793509384.194384-135242-1826951718\"",
-    "last_modified": "Sun, 01 Nov 2026 05:03:04 GMT",
-    "content_type": "text/csv",
-    "served_by": "dadosabertos.aneel.gov.br",
-    "bytes": 135242,
-    "sha256": "889c4bc817eb135d011eb43117b6ed8ba9e4c5b278a49ca91a89f41b04013e49",
-    "seconds": 0.97,
-    "mb_per_s": 0.139
-   },
-   "files": [
-    {
-     "file": "resultado-leiloes-transmissao.csv",
-     "url": "https://dadosabertos.aneel.gov.br/dataset/593537c6-9e0e-4ed9-817a-2c5d5de05147/resource/453cb742-8089-4c16-aaf2-42088b5553dc/download/resultado-leiloes-transmissao.csv",
-     "resource_id": "453cb742-8089-4c16-aaf2-42088b5553dc",
-     "bytes": 135242,
-     "sha256": "889c4bc817eb135d011eb43117b6ed8ba9e4c5b278a49ca91a89f41b04013e49"
-    }
-   ]
+   "dataset": {},
+   "resource": {},
+   "download": {},
+   "files": []
   },
   {
    "portal": "https://dadosabertos.aneel.gov.br",
@@ -928,53 +604,21 @@
    "resource_format": "ZIP",
    "label": "dadosabertos.aneel.gov.br › relacao-de-empreendimentos-de-geracao-distribuida › empreendimento-geracao-distribuida.zip",
    "role": "primary",
-   "status": "ok",
-   "reason": null,
+   "status": "portal_unreachable",
+   "reason": "portal não respondeu: tempo esgotado (60 s)",
    "used_by": [
     "microgeneration-above-75-kw",
     "minigeneration-outside-range",
     "municipality-state"
    ],
    "package_show": {
-    "http_status": 200,
-    "seconds": 0.39
+    "seconds": 210.99,
+    "error": "tempo esgotado (60 s)"
    },
-   "dataset": {
-    "title": "Relação de empreendimentos de Mini e Micro Geração Distribuída",
-    "organization": "Agência Nacional de Energia Elétrica",
-    "license": "Open Data Commons Open Database License (ODbL)",
-    "license_id": "odc-odbl",
-    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
-    "metadata_modified": "2026-11-10T06:09:59.038528"
-   },
-   "resource": {
-    "id": "b1bd71e7-d0ad-4214-9053-cbd58e9564a7",
-    "url": "https://dadosabertos.aneel.gov.br/dataset/5e0fafd2-21b9-4d5b-b622-40438d40aba2/resource/b1bd71e7-d0ad-4214-9053-cbd58e9564a7/download/empreendimento-geracao-distribuida.zip",
-    "name": "empreendimento-geracao-distribuida.zip",
-    "metadata_modified": "2026-11-10T06:09:15.778136",
-    "last_modified": "2026-11-10T06:09:15.765344",
-    "size_declared": 113020800
-   },
-   "download": {
-    "http_status": 200,
-    "etag": "\"1794290955.862757-113020800-2148733619\"",
-    "last_modified": "Tue, 10 Nov 2026 06:09:15 GMT",
-    "content_type": "application/zip",
-    "served_by": "dadosabertos.aneel.gov.br",
-    "bytes": 113020800,
-    "sha256": "eed5987b07e43ccbf204c76110a41329cd8388e430f302f9318b28585d217ead",
-    "seconds": 44.3,
-    "mb_per_s": 2.552
-   },
-   "files": [
-    {
-     "file": "empreendimento-geracao-distribuida.zip",
-     "url": "https://dadosabertos.aneel.gov.br/dataset/5e0fafd2-21b9-4d5b-b622-40438d40aba2/resource/b1bd71e7-d0ad-4214-9053-cbd58e9564a7/download/empreendimento-geracao-distribuida.zip",
-     "resource_id": "b1bd71e7-d0ad-4214-9053-cbd58e9564a7",
-     "bytes": 113020800,
-     "sha256": "eed5987b07e43ccbf204c76110a41329cd8388e430f302f9318b28585d217ead"
-    }
-   ]
+   "dataset": {},
+   "resource": {},
+   "download": {},
+   "files": []
   },
   {
    "portal": "https://dadosabertos.aneel.gov.br",
@@ -983,8 +627,8 @@
    "resource_format": "CSV",
    "label": "dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv",
    "role": "primary",
-   "status": "ok",
-   "reason": null,
+   "status": "portal_unreachable",
+   "reason": "portal não respondeu: tempo esgotado (60 s)",
    "used_by": [
     "cgh-above-5000-kw",
     "pch-outside-5000-30000-kw",
@@ -992,45 +636,13 @@
     "plant-coordinates-outside-brazil"
    ],
    "package_show": {
-    "http_status": 200,
-    "seconds": 0.65
+    "seconds": 211.01,
+    "error": "tempo esgotado (60 s)"
    },
-   "dataset": {
-    "title": "SIGA - Sistema de Informações de Geração da ANEEL",
-    "organization": "Agência Nacional de Energia Elétrica",
-    "license": "Open Data Commons Open Database License (ODbL)",
-    "license_id": "odc-odbl",
-    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
-    "metadata_modified": "2026-11-11T10:58:19.105677"
-   },
-   "resource": {
-    "id": "11ec447d-698d-4ab8-977f-b424d5deee6a",
-    "url": "https://dadosabertos.aneel.gov.br/dataset/6d90b77c-c5f5-4d81-bdec-7bc619494bb9/resource/11ec447d-698d-4ab8-977f-b424d5deee6a/download/siga-empreendimentos-geracao.csv",
-    "name": "siga-empreendimentos-geracao.csv",
-    "metadata_modified": "2026-11-01T05:11:05.610469",
-    "last_modified": "2026-11-01T05:07:52.318843",
-    "size_declared": 7883527
-   },
-   "download": {
-    "http_status": 200,
-    "etag": "\"1793509672.3443902-7883527-2068648745\"",
-    "last_modified": "Sun, 01 Nov 2026 05:07:52 GMT",
-    "content_type": "text/csv",
-    "served_by": "dadosabertos.aneel.gov.br",
-    "bytes": 7883527,
-    "sha256": "9f21aa730a5ccde82b62bad64b40ba1ceb245c84e15f05d12df718ac303e72ef",
-    "seconds": 3.87,
-    "mb_per_s": 2.037
-   },
-   "files": [
-    {
-     "file": "siga-empreendimentos-geracao.csv",
-     "url": "https://dadosabertos.aneel.gov.br/dataset/6d90b77c-c5f5-4d81-bdec-7bc619494bb9/resource/11ec447d-698d-4ab8-977f-b424d5deee6a/download/siga-empreendimentos-geracao.csv",
-     "resource_id": "11ec447d-698d-4ab8-977f-b424d5deee6a",
-     "bytes": 7883527,
-     "sha256": "9f21aa730a5ccde82b62bad64b40ba1ceb245c84e15f05d12df718ac303e72ef"
-    }
-   ]
+   "dataset": {},
+   "resource": {},
+   "download": {},
+   "files": []
   },
   {
    "portal": "https://dadosabertos.aneel.gov.br",
@@ -1039,8 +651,8 @@
    "resource_format": "CSV",
    "label": "dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv",
    "role": "primary",
-   "status": "ok",
-   "reason": null,
+   "status": "portal_unreachable",
+   "reason": "portal não respondeu: tempo esgotado (60 s)",
    "used_by": [
     "board-decision-before-appeal",
     "fine-after-appeal-above-original",
@@ -1048,45 +660,13 @@
     "warning-with-fine-value"
    ],
    "package_show": {
-    "http_status": 200,
-    "seconds": 0.19
+    "seconds": 210.49,
+    "error": "tempo esgotado (60 s)"
    },
-   "dataset": {
-    "title": "Auto de Infração",
-    "organization": "Agência Nacional de Energia Elétrica",
-    "license": "Open Data Commons Open Database License (ODbL)",
-    "license_id": "odc-odbl",
-    "license_url": "http://www.opendefinition.org/licenses/odc-odbl",
-    "metadata_modified": "2026-11-02T08:03:11.146119"
-   },
-   "resource": {
-    "id": "f221158a-93a3-423f-b794-4312b6985a24",
-    "url": "https://dadosabertos.aneel.gov.br/dataset/4d690c9d-8158-4b04-ae44-7d3de8616271/resource/f221158a-93a3-423f-b794-4312b6985a24/download/auto-infracao.csv",
-    "name": "auto-infracao.csv",
-    "metadata_modified": "2026-11-02T08:03:11.131016",
-    "last_modified": "2026-11-02T08:02:51.778895",
-    "size_declared": 713364
-   },
-   "download": {
-    "http_status": 200,
-    "etag": "\"1793606571.8075657-713364-1793331652\"",
-    "last_modified": "Mon, 02 Nov 2026 08:02:51 GMT",
-    "content_type": "text/csv",
-    "served_by": "dadosabertos.aneel.gov.br",
-    "bytes": 713364,
-    "sha256": "f3ef9fe8b40f487877ee4181acbc57937671547ca82c445f7d86ef68892fd4d7",
-    "seconds": 2.51,
-    "mb_per_s": 0.284
-   },
-   "files": [
-    {
-     "file": "auto-infracao.csv",
-     "url": "https://dadosabertos.aneel.gov.br/dataset/4d690c9d-8158-4b04-ae44-7d3de8616271/resource/f221158a-93a3-423f-b794-4312b6985a24/download/auto-infracao.csv",
-     "resource_id": "f221158a-93a3-423f-b794-4312b6985a24",
-     "bytes": 713364,
-     "sha256": "f3ef9fe8b40f487877ee4181acbc57937671547ca82c445f7d86ef68892fd4d7"
-    }
-   ]
+   "dataset": {},
+   "resource": {},
+   "download": {},
+   "files": []
   },
   {
    "portal": "https://dadosabertos.tse.jus.br",
@@ -1102,7 +682,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.64
+    "seconds": 0.36
    },
    "dataset": {
     "title": "Códigos oficiais de UF e municípios segundo o TSE e o IBGE",
@@ -1122,28 +702,28 @@
    },
    "download": {
     "http_status": 200,
-    "etag": "\"21f3a-65fc296dbbfee\"",
-    "last_modified": "Sun, 08 Nov 2026 12:00:19 GMT",
+    "etag": "\"21f2e-66064ba7cda11\"",
+    "last_modified": "Mon, 16 Nov 2026 13:26:42 GMT",
     "content_type": "application/zip",
     "served_by": "cdn.tse.jus.br",
-    "bytes": 139066,
-    "sha256": "40d0a698d3d56c299e8afdbaa846453c230c8042c1b0b878010cc0e19f80c544",
-    "seconds": 0.35,
-    "mb_per_s": 0.393
+    "bytes": 139054,
+    "sha256": "dba4a4a3bfcc34f4fbca827c539c614105b742434542ca2a535d8c0f34101428",
+    "seconds": 0.67,
+    "mb_per_s": 0.206
    },
    "files": [
     {
      "file": "municipio_tse_ibge.zip",
      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/municipio_tse_ibge/municipio_tse_ibge.zip",
      "resource_id": "c6c767d7-f341-4256-8dff-010683a9c796",
-     "bytes": 139066,
-     "sha256": "40d0a698d3d56c299e8afdbaa846453c230c8042c1b0b878010cc0e19f80c544"
+     "bytes": 139054,
+     "sha256": "dba4a4a3bfcc34f4fbca827c539c614105b742434542ca2a535d8c0f34101428"
     }
    ]
   }
  ],
  "engine": {
-  "commit": "d49c0877d2fed5a2a8577bc4e68cc3231c2dbe33",
+  "commit": "4cbc1c3e88697fb10c636cdf4209a0c7b60e6734",
   "uncommitted_changes": false,
   "python": "3.12.16",
   "duckdb": "2.0.0"
@@ -1231,27 +811,22 @@
  "primary_portal": "https://dadosabertos.aneel.gov.br",
  "download_speed": {
   "primary": {
-   "resources": 5,
-   "bytes": 122175811,
-   "seconds": 56.59,
-   "mb_per_s": 2.159
+   "resources": 0,
+   "bytes": 0,
+   "seconds": 0,
+   "mb_per_s": null
   },
   "secondary": {
    "resources": 1,
-   "bytes": 139066,
-   "seconds": 0.35,
-   "mb_per_s": 0.397
-  },
-  "processing": {
-   "bytes": 122314877,
-   "seconds": 37.68,
-   "mb_per_s": 3.246
+   "bytes": 139054,
+   "seconds": 0.67,
+   "mb_per_s": 0.208
   }
  },
  "timings": {
-  "download_s": 67.5,
-  "processing_s": 37.68,
-  "bytes_processed": 122314877,
+  "download_s": 1055.33,
+  "processing_s": 0.0,
+  "bytes_processed": 139054,
   "outputs_s": 0.02
  },
  "portal": {
@@ -3260,6 +2835,119 @@
     "download_s": 67.5,
     "processing_s": 37.68,
     "bytes_processed": 122314877,
+    "outputs_s": 0.02
+   }
+  },
+  {
+   "run_id": "44311870487",
+   "environment": "github-actions",
+   "at": "2026-11-18T13:33:16+00:00",
+   "rules": {
+    "generation-price-above-ceiling": {
+     "status": "not_evaluated",
+     "reason_code": "source_portal_unreachable",
+     "total": null,
+     "counts": null
+    },
+    "transmission-rap-above-edital": {
+     "status": "not_evaluated",
+     "reason_code": "source_portal_unreachable",
+     "total": null,
+     "counts": null
+    },
+    "microgeneration-above-75-kw": {
+     "status": "not_evaluated",
+     "reason_code": "source_portal_unreachable",
+     "total": null,
+     "counts": null
+    },
+    "minigeneration-outside-range": {
+     "status": "not_evaluated",
+     "reason_code": "source_portal_unreachable",
+     "total": null,
+     "counts": null
+    },
+    "cgh-above-5000-kw": {
+     "status": "not_evaluated",
+     "reason_code": "source_portal_unreachable",
+     "total": null,
+     "counts": null
+    },
+    "pch-outside-5000-30000-kw": {
+     "status": "not_evaluated",
+     "reason_code": "source_portal_unreachable",
+     "total": null,
+     "counts": null
+    },
+    "physical-guarantee-above-granted-power": {
+     "status": "not_evaluated",
+     "reason_code": "source_portal_unreachable",
+     "total": null,
+     "counts": null
+    },
+    "plant-coordinates-outside-brazil": {
+     "status": "not_evaluated",
+     "reason_code": "source_portal_unreachable",
+     "total": null,
+     "counts": null
+    },
+    "board-decision-before-appeal": {
+     "status": "not_evaluated",
+     "reason_code": "source_portal_unreachable",
+     "total": null,
+     "counts": null
+    },
+    "fine-after-appeal-above-original": {
+     "status": "not_evaluated",
+     "reason_code": "source_portal_unreachable",
+     "total": null,
+     "counts": null
+    },
+    "notice-received-before-issue": {
+     "status": "not_evaluated",
+     "reason_code": "source_portal_unreachable",
+     "total": null,
+     "counts": null
+    },
+    "warning-with-fine-value": {
+     "status": "not_evaluated",
+     "reason_code": "source_portal_unreachable",
+     "total": null,
+     "counts": null
+    },
+    "municipality-state": {
+     "status": "not_evaluated",
+     "reason_code": "source_portal_unreachable",
+     "total": null,
+     "counts": null
+    }
+   },
+   "sources": {
+    "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-geracao.csv": "portal_unreachable",
+    "dadosabertos.aneel.gov.br › resultado-de-leiloes › resultado-leiloes-transmissao.csv": "portal_unreachable",
+    "dadosabertos.aneel.gov.br › relacao-de-empreendimentos-de-geracao-distribuida › empreendimento-geracao-distribuida.zip": "portal_unreachable",
+    "dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv": "portal_unreachable",
+    "dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv": "portal_unreachable",
+    "dadosabertos.tse.jus.br › codigos-oficiais-de-uf-e-municipios-segundo-o-tse-e-o-ibge › Códigos oficiais de UF e municípios segundo o TSE e o IBGE": "ok"
+   },
+   "download_speed": {
+    "primary": {
+     "resources": 0,
+     "bytes": 0,
+     "seconds": 0,
+     "mb_per_s": null
+    },
+    "secondary": {
+     "resources": 1,
+     "bytes": 139054,
+     "seconds": 0.67,
+     "mb_per_s": 0.208
+    }
+   },
+   "timings": {
+    "download_s": 1055.33,
+    "processing_s": 0.0,
+    "bytes_processed": 139054,
     "outputs_s": 0.02
    }
   }
