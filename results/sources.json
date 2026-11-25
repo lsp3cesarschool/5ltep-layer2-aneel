@@ -1,8 +1,8 @@
 {
- "run_id": "44311870487",
+ "run_id": "45637050232",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/44311870487",
- "checked_at": "2026-11-18T13:33:16+00:00",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/45637050232",
+ "checked_at": "2026-11-25T15:00:42+00:00",
  "sources": [
   {
    "portal": "https://dadosabertos.aneel.gov.br",
@@ -17,7 +17,7 @@
     "generation-price-above-ceiling"
    ],
    "package_show": {
-    "seconds": 210.88,
+    "seconds": 210.14,
     "error": "tempo esgotado (60 s)"
    },
    "dataset": {},
@@ -38,7 +38,7 @@
     "transmission-rap-above-edital"
    ],
    "package_show": {
-    "seconds": 210.93,
+    "seconds": 210.17,
     "error": "tempo esgotado (60 s)"
    },
    "dataset": {},
@@ -61,7 +61,7 @@
     "municipality-state"
    ],
    "package_show": {
-    "seconds": 210.99,
+    "seconds": 210.11,
     "error": "tempo esgotado (60 s)"
    },
    "dataset": {},
@@ -85,7 +85,7 @@
     "plant-coordinates-outside-brazil"
    ],
    "package_show": {
-    "seconds": 211.01,
+    "seconds": 210.13,
     "error": "tempo esgotado (60 s)"
    },
    "dataset": {},
@@ -109,7 +109,7 @@
     "warning-with-fine-value"
    ],
    "package_show": {
-    "seconds": 210.49,
+    "seconds": 210.15,
     "error": "tempo esgotado (60 s)"
    },
    "dataset": {},
@@ -131,7 +131,7 @@
    ],
    "package_show": {
     "http_status": 200,
-    "seconds": 0.36
+    "seconds": 0.34
    },
    "dataset": {
     "title": "Códigos oficiais de UF e municípios segundo o TSE e o IBGE",
@@ -151,22 +151,22 @@
    },
    "download": {
     "http_status": 200,
-    "etag": "\"21f2e-66064ba7cda11\"",
-    "last_modified": "Mon, 16 Nov 2026 13:26:42 GMT",
+    "etag": "\"21f31-660dc3880f43b\"",
+    "last_modified": "Sun, 22 Nov 2026 12:00:17 GMT",
     "content_type": "application/zip",
     "served_by": "cdn.tse.jus.br",
-    "bytes": 139054,
-    "sha256": "dba4a4a3bfcc34f4fbca827c539c614105b742434542ca2a535d8c0f34101428",
-    "seconds": 0.67,
-    "mb_per_s": 0.206
+    "bytes": 139057,
+    "sha256": "a0a9551c2e9acc83c98f2b9bc3c167d4cbbf0490708b5425365b7da063e89db7",
+    "seconds": 0.49,
+    "mb_per_s": 0.286
    },
    "files": [
     {
      "file": "municipio_tse_ibge.zip",
      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/municipio_tse_ibge/municipio_tse_ibge.zip",
      "resource_id": "c6c767d7-f341-4256-8dff-010683a9c796",
-     "bytes": 139054,
-     "sha256": "dba4a4a3bfcc34f4fbca827c539c614105b742434542ca2a535d8c0f34101428"
+     "bytes": 139057,
+     "sha256": "a0a9551c2e9acc83c98f2b9bc3c167d4cbbf0490708b5425365b7da063e89db7"
     }
    ]
   }

@@ -6,7 +6,7 @@ Generated automatically by the publish job from the checked results; do not edit
 shown here: the record numbers are on the dashboard and in [`docs/data/rules/`](docs/data/rules/),
 and no value read from the portals is published. Times are UTC.
 
-- **Run:** [44311870487](https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/44311870487), finished 2026-11-18 13:33 UTC (github-actions)
+- **Run:** [45637050232](https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/45637050232), finished 2026-11-25 15:00 UTC (github-actions)
 - **Rules:** 13 (0 evaluated, 13 not evaluated)
 - **Sources:** 6 CKAN resources (1 available)
 - **Records flagged:** 0
@@ -43,4 +43,4 @@ than one match). Records outside a rule's scope (`where`) are not signals.
 | dadosabertos.aneel.gov.br › relacao-de-empreendimentos-de-geracao-distribuida › empreendimento-geracao-distribuida.zip | primary | failed: portal não respondeu: tempo esgotado (60 s) | – | – | microgeneration-above-75-kw, minigeneration-outside-range, municipality-state |
 | dadosabertos.aneel.gov.br › siga-sistema-de-informacoes-de-geracao-da-aneel › siga-empreendimentos-geracao.csv | primary | failed: portal não respondeu: tempo esgotado (60 s) | – | – | cgh-above-5000-kw, pch-outside-5000-30000-kw, physical-guarantee-above-granted-power, plant-coordinates-outside-brazil |
 | dadosabertos.aneel.gov.br › auto-de-infracao › auto-infracao.csv | primary | failed: portal não respondeu: tempo esgotado (60 s) | – | – | board-decision-before-appeal, fine-after-appeal-above-original, notice-received-before-issue, warning-with-fine-value |
-| dadosabertos.tse.jus.br › codigos-oficiais-de-uf-e-municipios-segundo-o-tse-e-o-ibge › Códigos oficiais de UF e municípios segundo o TSE e o IBGE | secondary | available | 0.1 MB | 0.7 s | municipality-state |
+| dadosabertos.tse.jus.br › codigos-oficiais-de-uf-e-municipios-segundo-o-tse-e-o-ibge › Códigos oficiais de UF e municípios segundo o TSE e o IBGE | secondary | available | 0.1 MB | 0.5 s | municipality-state |

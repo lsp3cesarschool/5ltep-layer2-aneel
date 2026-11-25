@@ -1,14 +1,14 @@
 {
- "run_id": "44311870487",
+ "run_id": "45637050232",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/44311870487",
- "started_at": "2026-11-18T13:15:40+00:00",
- "finished_at": "2026-11-18T13:33:16+00:00",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/45637050232",
+ "started_at": "2026-11-25T14:43:10+00:00",
+ "finished_at": "2026-11-25T15:00:42+00:00",
  "engine": {
-  "commit": "4cbc1c3e88697fb10c636cdf4209a0c7b60e6734",
+  "commit": "e50fd86d014725850963a5b5a7fd6ab01a3f144c",
   "uncommitted_changes": false,
   "python": "3.12.16",
-  "duckdb": "2.0.0"
+  "duckdb": "2.0.1"
  },
  "primary_portal": "https://dadosabertos.aneel.gov.br",
  "download_speed": {
@@ -20,9 +20,9 @@
   },
   "secondary": {
    "resources": 1,
-   "bytes": 139054,
-   "seconds": 0.67,
-   "mb_per_s": 0.208
+   "bytes": 139057,
+   "seconds": 0.49,
+   "mb_per_s": 0.284
   }
  },
  "rules": [
@@ -151,8 +151,8 @@
    "status": "ok",
    "resource_id": "c6c767d7-f341-4256-8dff-010683a9c796",
    "metadata_modified": "2025-06-24T18:07:38.590296",
-   "bytes": 139054,
-   "sha256": "dba4a4a3bfcc34f4fbca827c539c614105b742434542ca2a535d8c0f34101428"
+   "bytes": 139057,
+   "sha256": "a0a9551c2e9acc83c98f2b9bc3c167d4cbbf0490708b5425365b7da063e89db7"
   }
  ]
 }

@@ -1,7 +1,7 @@
 {
- "run_id": "44311870487",
+ "run_id": "45637050232",
  "environment": "github-actions",
- "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/44311870487",
+ "run_url": "https://github.com/lsp3cesarschool/5ltep-layer2-aneel/actions/runs/45637050232",
  "id": "municipality-state",
  "rule_version": "0.1.1",
  "origin": "cross_reference",
@@ -48,7 +48,7 @@
   "tse_municipios": {
    "resource": "dadosabertos.tse.jus.br › codigos-oficiais-de-uf-e-municipios-segundo-o-tse-e-o-ibge › Códigos oficiais de UF e municípios segundo o TSE e o IBGE",
    "fetch_status": "ok",
-   "sha256": "dba4a4a3bfcc34f4fbca827c539c614105b742434542ca2a535d8c0f34101428",
+   "sha256": "a0a9551c2e9acc83c98f2b9bc3c167d4cbbf0490708b5425365b7da063e89db7",
    "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/municipio_tse_ibge/municipio_tse_ibge.zip",
    "file": "municipio_tse_ibge.zip",
    "files": null,
